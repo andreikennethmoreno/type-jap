@@ -44,8 +44,7 @@ export default function RootLayout({
               {/* container to center the content */}
               <div className="max-w-7xl mx-auto px-4">
                 <div>
-                  <BreadcrumbBar />
-
+                  {/* <BreadcrumbBar /> */}
                   {children}
                 </div>
               </div>
