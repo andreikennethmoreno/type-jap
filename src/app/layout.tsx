@@ -3,8 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
-import { Breadcrumb } from "@/components/ui/breadcrumb";
-import { BreadcrumbBar } from "@/components/breadcrumb-bar";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +43,6 @@ export default function RootLayout({
               {/* container to center the content */}
               <div className="max-w-7xl mx-auto px-4">
                 <div>
-                  {/* <BreadcrumbBar /> */}
                   {children}
                 </div>
               </div>

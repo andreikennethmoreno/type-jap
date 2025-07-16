@@ -19,6 +19,8 @@ function MobileNavbar() {
 
   return (
     <div className="flex md:hidden items-center space-x-2">
+      <ModeToggle />
+
       <Sheet open={showMobileMenu} onOpenChange={setShowMobileMenu}>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon">
@@ -46,8 +48,6 @@ function MobileNavbar() {
           </nav>
         </SheetContent>
       </Sheet>
-
-      <ModeToggle />
     </div>
   );
 }
