@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { ZodSchema } from "zod";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
-import { checkKatakanaRomanji } from "@/lib/trainers/katakana/romanji";
 
 // ✅ TEMP: Hardcoded import for testing
+import { checkKatakanaRomanji } from "@/lib/trainers/katakana/romanji";
 
 interface UseTrainerProps {
   words: KatakanaWord[];
@@ -23,41 +23,46 @@ export function useTrainer({ words, script, mode, schema }: UseTrainerProps) {
   >(null);
   const [error, setError] = useState<string | null>(null);
 
+  const [history, setHistory] = useState<
+    { word: KatakanaWord; userInput: string; result: "correct" | "wrong" }[]
+  >([]);
+
   const current = words[index];
 
   useEffect(() => {
-    // ✅ TEMP: Use fixed function instead of dynamic import
     setCheckAnswer(() => checkKatakanaRomanji);
-
-    // ❌ Comment out dynamic logic for now
-    /*
-    import(`@/lib/trainers/${script}/${mode}`)
-      .then((mod) => {
-        const checkFn = Object.values(mod)[0] as (
-          input: string,
-          word: any
-        ) => boolean;
-        setCheckAnswer(() => checkFn);
-      })
-      .catch(() => console.error("Invalid trainer logic."));
-    */
   }, [script, mode]);
 
-  const handleSubmit = () => {
-    const result = schema.safeParse({ inputText: input });
-    if (!result.success) {
-      // Extract the first error message for a cleaner user experience
-      const firstError = result.error.issues[0];
-      setError(firstError.message);
-      return;
-    }
+ const handleSubmit = () => {
+   const result = schema.safeParse({ inputText: input });
+   if (!result.success) {
+     setError(result.error.issues[0].message);
+     return;
+   }
 
-    setError(null);
-    if (!checkAnswer) return;
+   setError(null);
+   if (!checkAnswer) return;
 
-    const isCorrect = checkAnswer(input, current);
-    setFeedback(isCorrect ? "correct" : "wrong");
-  };
+   const isCorrect = checkAnswer(input, current);
+   const resultLabel = isCorrect ? "correct" : "wrong";
+
+   setFeedback(resultLabel);
+   setHistory((prev) => [
+     ...prev,
+     {
+       word: current,
+       userInput: input,
+       result: resultLabel,
+     },
+   ]);
+
+   // Automatically go to next word after small delay
+   setTimeout(() => {
+     handleNext();
+   }, 1000); // Adjust delay as needed
+ };
+
+
   const handleNext = () => {
     setInput("");
     setFeedback(null);
@@ -73,5 +78,6 @@ export function useTrainer({ words, script, mode, schema }: UseTrainerProps) {
     current,
     handleSubmit,
     handleNext,
+    history, // ✅ Return properly typed history
   };
 }
