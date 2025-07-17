@@ -30,7 +30,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="mt-6 flex justify-center gap-3">
-              <Link href="/base" passHref>
+              <Link href="/convert" passHref>
                 <Button
                   asChild
                   className="shadow-sm transition-shadow hover:shadow"
