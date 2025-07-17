@@ -1,4 +1,4 @@
-# Text Converter Playground 🧪
+# Simple Web App Template
 
 A modern, feature-rich Next.js application that provides text conversion utilities with a beautiful, responsive interface. Built with cutting-edge technologies and designed for extensibility.
 
