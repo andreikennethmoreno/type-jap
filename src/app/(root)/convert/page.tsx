@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { converters } from "@/lib/converters";
+import { converterList } from "@/config/converter-list";
 import {
   Card,
   CardHeader,
@@ -21,7 +21,7 @@ export default function ConvertHomePage() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {Object.entries(converters).map(([slug, { name, description }]) => (
+        {converterList.map(({ slug, name, description }) => (
           <Link key={slug} href={`/convert/${slug}`}>
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>

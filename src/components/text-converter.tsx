@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { converters } from "@/lib/converters"; // OK now since it's on the client
+import { useEffect, useState } from "react";
 import { useFormHandler } from "@/hooks/use-form-handler";
 import {
   converterInputSchema,
@@ -26,8 +25,25 @@ interface Props {
 
 export default function TextConverter({ slug, name, description }: Props) {
   const [result, setResult] = useState("");
+  const [converterFn, setConverterFn] = useState<
+    ((input: string) => string) | null
+  >(null);
 
-  const converterFn = converters[slug]?.convert;
+  // ✅ Lazy load converter module on mount
+  useEffect(() => {
+    const loadConverter = async () => {
+      try {
+        const mod = await import(`@/lib/converters/${slug}`);
+        setConverterFn(() => mod.default.convert); // preserve function ref
+      } catch (err) {
+        console.error("Converter not found:", err);
+        setConverterFn(null);
+      }
+    };
+
+    loadConverter();
+  }, [slug]);
+
   const { data, error, handleChange, handleSubmit, reset } =
     useFormHandler<ConverterInput>(converterInputSchema, ({ input }) => {
       if (!converterFn) return;
@@ -63,7 +79,9 @@ export default function TextConverter({ slug, name, description }: Props) {
             />
             {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
             <div className="flex gap-2 mt-4">
-              <Button onClick={handleSubmit}>Convert</Button>
+              <Button onClick={handleSubmit} disabled={!converterFn}>
+                Convert
+              </Button>
               <Button variant="outline" onClick={reset}>
                 Clear
               </Button>
