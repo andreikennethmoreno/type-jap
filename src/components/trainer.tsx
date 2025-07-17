@@ -1,9 +1,12 @@
+// components/Trainer.tsx
 "use client";
 
-import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
+import { TestFormSchema } from "@/lib/form-scehma";
+import { useTrainer } from "@/hooks/use-trainer";
+
 
 interface Props {
   words: KatakanaWord[];
@@ -12,27 +15,20 @@ interface Props {
 }
 
 export default function Trainer({ words, script, mode }: Props) {
-  const [index, setIndex] = useState(0);
-  const [input, setInput] = useState("");
-  const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
-
-  const current = words[index];
-
-  const handleSubmit = () => {
-    if (mode === "romaji") {
-      const isCorrect =
-        input.trim().toLowerCase() === current.Romanji.toLowerCase();
-      setFeedback(isCorrect ? "correct" : "wrong");
-    }
-
-    // Add other modes here like "meaning"
-  };
-
-  const handleNext = () => {
-    setInput("");
-    setFeedback(null);
-    setIndex((prev) => (prev + 1) % words.length);
-  };
+  const {
+    input,
+    setInput,
+    feedback,
+    error,
+    current,
+    handleSubmit,
+    handleNext,
+  } = useTrainer({
+    words,
+    script,
+    mode,
+    schema: TestFormSchema,
+  });
 
   return (
     <div className="max-w-md mx-auto mt-10 text-center space-y-4">
@@ -40,9 +36,7 @@ export default function Trainer({ words, script, mode }: Props) {
       <p className="text-muted-foreground">{current.Meaning}</p>
 
       <Input
-        placeholder={
-          mode === "romaji" ? "Type romaji..." : "Enter your guess..."
-        }
+        placeholder={`Enter ${mode}...`}
         value={input}
         onChange={(e) => setInput(e.target.value)}
         className={
@@ -53,6 +47,7 @@ export default function Trainer({ words, script, mode }: Props) {
             : ""
         }
       />
+      {error && <p className="text-sm text-red-500">{error}</p>}
 
       <div className="space-x-2">
         <Button onClick={handleSubmit}>Check</Button>
