@@ -1,14 +1,21 @@
-// components/Trainer.tsx
 "use client";
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
 import { TestFormSchema } from "@/lib/form-scehma";
 import { useTrainer } from "@/hooks/use-trainer";
-import History from "@/components/history"; 
+import History from "@/components/history";
 import ToggleRevealEng from "./toggle-reveal-eng";
-
+import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
 
 interface Props {
   words: KatakanaWord[];
@@ -24,8 +31,8 @@ export default function Trainer({ words, script, mode }: Props) {
     error,
     current,
     handleSubmit,
-      handleNext,
-    history
+    handleNext,
+    history,
   } = useTrainer({
     words,
     script,
@@ -33,50 +40,101 @@ export default function Trainer({ words, script, mode }: Props) {
     schema: TestFormSchema,
   });
 
+  const correctCount = history.filter((h) => h.result === "correct").length;
+  const totalAttempts = history.length;
+  const accuracy =
+    totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : 0;
+
   return (
-    <div className="max-w-md mx-auto mt-10 text-center space-y-4">
-      <h1 className="text-4xl font-bold">{current.Japanese}</h1>
-      {/* <p className="text-muted-foreground">{current.Meaning}</p> */}
-      <ToggleRevealEng
-        hiddenText={current.Romanji}
-        label="Show Romaji"
-        hideLabel="Hide Romaji"
-      />
+    <div className="max-w-4xl mx-auto mt-6 p-4 space-y-6">
+      {/* Stats Header */}
+      <div className="flex justify-center gap-4">
+        <Badge variant="outline" className="text-sm">
+          <Brain className="w-4 h-4 mr-1" />
+          {correctCount} Correct
+        </Badge>
+        <Badge variant="outline" className="text-sm">
+          <Zap className="w-4 h-4 mr-1" />
+          {accuracy}% Accuracy
+        </Badge>
+      </div>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          handleSubmit();
-        }}
-        className="space-y-4"
-      >
-        <Input
-          placeholder={`Enter ${mode}...`}
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className={
-            feedback === "correct"
-              ? "border-green-500"
-              : feedback === "wrong"
-              ? "border-red-500"
-              : ""
-          }
-        />
-        {error && <p className="text-sm text-red-500">{error}</p>}
+      {/* Main Trainer Card */}
+      <Card className="mx-auto max-w-md">
+        <CardHeader className="text-center pb-2">
+          <CardTitle className="text-6xl font-bold mb-2 tracking-wider">
+            {current.Japanese}
+          </CardTitle>
+          <CardDescription className="text-base">
+            Type the {mode} for this character
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <ToggleRevealEng
+            hiddenText={current.Romanji}
+            label="Show Romaji"
+            hideLabel="Hide Romaji"
+          />
 
-        <div className="space-x-2">
-          <Button type="submit">Check</Button>
-          {/* {feedback && <Button onClick={handleNext}>Next</Button>} */}
-        </div>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSubmit();
+            }}
+            className="space-y-4"
+          >
+            <div className="relative">
+              <Input
+                autoFocus
+                placeholder={`Enter ${mode}...`}
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                className={`text-lg text-center transition-all duration-300 ${
+                  feedback === "correct"
+                    ? "border-green-500 bg-green-50 dark:bg-green-900/20"
+                    : feedback === "wrong"
+                    ? "border-red-500 bg-red-50 dark:bg-red-900/20"
+                    : ""
+                }`}
+              />
+              {feedback === "correct" && (
+                <CheckCircle className="absolute right-3 top-1/2 transform -translate-y-1/2 text-green-500 w-5 h-5" />
+              )}
+              {feedback === "wrong" && (
+                <XCircle className="absolute right-3 top-1/2 transform -translate-y-1/2 text-red-500 w-5 h-5" />
+              )}
+            </div>
 
-        {feedback === "correct" && (
-          <p className="text-green-600 font-medium">Correct!</p>
-        )}
-        {feedback === "wrong" && (
-          <p className="text-red-600 font-medium">Wrong! Try again.</p>
-        )}
-      </form>
+            {error && (
+              <p className="text-sm text-destructive text-center">{error}</p>
+            )}
 
+            <Button type="submit" className="w-full" size="lg">
+              Check Answer
+            </Button>
+
+            {/* Feedback Messages */}
+            {feedback === "correct" && (
+              <div className="text-center p-3 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
+                <p className="text-green-700 dark:text-green-300 font-medium flex items-center justify-center gap-2">
+                  <span className="text-2xl">🎉</span>
+                  Perfect! Well done!
+                </p>
+              </div>
+            )}
+            {feedback === "wrong" && (
+              <div className="text-center p-3 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
+                <p className="text-red-700 dark:text-red-300 font-medium flex items-center justify-center gap-2">
+                  <span className="text-2xl">💪</span>
+                  Keep trying! You've got this!
+                </p>
+              </div>
+            )}
+          </form>
+        </CardContent>
+      </Card>
+
+      {/* History Section */}
       <History history={history} />
     </div>
   );

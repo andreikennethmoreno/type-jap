@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Eye, EyeOff } from "lucide-react";
 
 interface Props {
   label?: string;
@@ -17,18 +18,32 @@ export default function ToggleRevealEng({
   const [revealed, setRevealed] = useState(false);
 
   return (
-    <div className="mt-2 text-sm text-muted-foreground space-y-1">
+    <div className="text-center space-y-3">
       <Button
         variant="ghost"
         size="sm"
         onClick={() => setRevealed(!revealed)}
-        className="text-xs underline"
+        className="text-muted-foreground hover:text-foreground transition-colors"
       >
-        {revealed ? hideLabel : label}
+        {revealed ? (
+          <>
+            <EyeOff className="w-4 h-4 mr-2" />
+            {hideLabel}
+          </>
+        ) : (
+          <>
+            <Eye className="w-4 h-4 mr-2" />
+            {label}
+          </>
+        )}
       </Button>
 
       {revealed && (
-        <div className="text-lg font-semibold text-primary">{hiddenText}</div>
+        <div className="p-3 rounded-lg bg-muted/50 border border-border">
+          <div className="text-xl font-mono font-semibold text-primary">
+            {hiddenText}
+          </div>
+        </div>
       )}
     </div>
   );

@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@import "./../themes/pastel-dreams.css";
+@import "./../themes/sakura-tides.css";
 
 @layer base {
   * {
