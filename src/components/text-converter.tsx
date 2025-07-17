@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { z } from "zod";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,55 +9,42 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useFormHandler } from "@/hooks/use-form-handler";
+import {
+  converterInputSchema,
+  ConverterInput,
+} from "@/schemas/converter.schema";
+import { useState } from "react";
 
-const convertSchema = z.object({
-  input: z.string().min(1, "Must be at least 1 character").max(1000),
-});
+interface Props {
+  name: string;
+  description?: string;
+  convertFn: (input: string) => string;
+}
 
-export default function ZodOnlyTextConverter() {
-  const [input, setInput] = useState("");
-  const [error, setError] = useState<string | null>(null);
+export const TextConverter = ({ name, description, convertFn }: Props) => {
   const [result, setResult] = useState("");
 
-  const handleConvert = () => {
-    const result = convertSchema.safeParse({ input });
-
-    if (!result.success) {
-      const firstError = result.error.message; 
-      setError(firstError || "Unknown error");
-      setResult("");
-      return;
-    }
-
-    
-    setError(null);
-    const converted = input.split("").reverse().join(""); // Replace with actual logic
-    setResult(converted);
-  };
-
-  const handleClear = () => {
-    setInput("");
-    setError(null);
-    setResult("");
-  };
+  const { data, error, handleChange, handleSubmit, reset } =
+    useFormHandler<ConverterInput>(converterInputSchema, ({ input }) => {
+      const converted = convertFn(input);
+      setResult(converted);
+    });
 
   return (
-    <div className="min-h-screen py-12 px-4 ">
-      {/* Header */}
+    <div className="min-h-screen py-12 px-4">
       <div className="text-center max-w-4xl mx-auto mb-12">
         <h1 className="mb-6 text-2xl font-bold tracking-tight text-pretty lg:text-5xl">
-          Text{" "}
-          <span className="text-primary">Printer</span>
+          {name} <span className="text-primary">Converter</span>
         </h1>
-        <p className="mx-auto max-w-3xl text-muted-foreground lg:text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur.
-          Explicabo.
-        </p>
+        {description && (
+          <p className="mx-auto max-w-3xl text-muted-foreground lg:text-xl">
+            {description}
+          </p>
+        )}
       </div>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Input Card */}
         <Card>
           <CardHeader>
             <CardTitle>Input</CardTitle>
@@ -67,23 +52,21 @@ export default function ZodOnlyTextConverter() {
           </CardHeader>
           <CardContent>
             <Textarea
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
+              value={data.input ?? ""}
+              onChange={(e) => handleChange("input", e.target.value)}
               placeholder="Type here..."
               className="min-h-[200px]"
             />
             {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
-
             <div className="flex gap-2 mt-4">
-              <Button onClick={handleConvert}>Convert</Button>
-              <Button variant="outline" onClick={handleClear}>
+              <Button onClick={handleSubmit}>Convert</Button>
+              <Button variant="outline" onClick={reset}>
                 Clear
               </Button>
             </div>
           </CardContent>
         </Card>
 
-        {/* Result Card */}
         <Card>
           <CardHeader>
             <CardTitle>Result</CardTitle>
@@ -101,4 +84,4 @@ export default function ZodOnlyTextConverter() {
       </div>
     </div>
   );
-}
+};
