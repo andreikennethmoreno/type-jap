@@ -2,21 +2,23 @@ import TextConverter from "@/components/text-converter";
 import { converters } from "@/lib/converters";
 import { notFound } from "next/navigation";
 
-
 export default async function ConverterPage({
   params,
 }: {
-  params: { converter: string };
+  params: Promise<{ converter: string }>;
 }) {
-  const converter = converters[params.converter];
+  // Await the params since they're now a Promise in Next.js 15
+  const { converter } = await params;
 
-  if (!converter) return notFound();
+  const converterConfig = converters[converter];
+
+  if (!converterConfig) return notFound();
 
   return (
     <TextConverter
-      slug={params.converter}
-      name={converter.name}
-      description={converter.description}
+      slug={converter}
+      name={converterConfig.name}
+      description={converterConfig.description}
     />
   );
 }
