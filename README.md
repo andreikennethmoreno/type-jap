@@ -2,6 +2,9 @@
 
 A modern, feature-rich Next.js application that provides text conversion utilities with a beautiful, responsive interface. Built with cutting-edge technologies and designed for extensibility.
 
+<img width="1361" height="734" alt="image" src="https://github.com/user-attachments/assets/e77f1f14-9173-44ad-aa87-d47a7daab422" />
+
+
 ## 🔧 Features & Functionality
 
 - **Text Conversion Tools**: Multiple text transformation utilities including:
