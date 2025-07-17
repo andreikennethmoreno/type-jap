@@ -7,10 +7,10 @@ A modern, feature-rich Next.js application that provides text conversion utiliti
 
 ## 🔧 Features & Functionality
 
-- **Text Conversion Tools**: Multiple text transformation utilities including:
-  - Uppercase text converter
-  - Reverse text converter
-  - Extensible converter system for adding new transformations
+- **Text Conversion Tools**: Modular and lazy-loaded transformation utilities:
+    - Built-in converters like Uppercase and Reverse
+    - Plug-and-play system for adding new converters
+    - Uses lazy-loading to load only the logic needed for the selected tool
 - **Modern UI/UX**: Clean, responsive design with multiple theme options
 - **Theme System**: Multiple beautiful themes including:
   - Pastel Dreams (default)
