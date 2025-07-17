@@ -1,5 +1,13 @@
 "use client";
 
+import { useState } from "react";
+import { converters } from "@/lib/converters"; // OK now since it's on the client
+import { useFormHandler } from "@/hooks/use-form-handler";
+import {
+  converterInputSchema,
+  ConverterInput,
+} from "@/schemas/converter.schema";
+
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import {
@@ -9,25 +17,21 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { useFormHandler } from "@/hooks/use-form-handler";
-import {
-  converterInputSchema,
-  ConverterInput,
-} from "@/schemas/converter.schema";
-import { useState } from "react";
 
 interface Props {
+  slug: string;
   name: string;
   description?: string;
-  convertFn: (input: string) => string;
 }
 
-export const TextConverter = ({ name, description, convertFn }: Props) => {
+export default function TextConverter({ slug, name, description }: Props) {
   const [result, setResult] = useState("");
 
+  const converterFn = converters[slug]?.convert;
   const { data, error, handleChange, handleSubmit, reset } =
     useFormHandler<ConverterInput>(converterInputSchema, ({ input }) => {
-      const converted = convertFn(input);
+      if (!converterFn) return;
+      const converted = converterFn(input);
       setResult(converted);
     });
 
@@ -84,4 +88,4 @@ export const TextConverter = ({ name, description, convertFn }: Props) => {
       </div>
     </div>
   );
-};
+}

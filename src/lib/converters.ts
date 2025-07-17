@@ -4,12 +4,12 @@ import { TextConverterDefinition } from "@/interface/converter.interface";
 
 
 export const converters: Record<string, TextConverterDefinition> = {
-  reverse: {
+  "reverse-text": {
     name: "Reverse Text",
     description: "Reverses the input text.",
     convert: (input: string) => input.split("").reverse().join(""),
   },
-  upper: {
+  "uppercase-text": {
     name: "Uppercase Text",
     description: "Converts text to uppercase.",
     convert: (input: string) => input.toUpperCase(),

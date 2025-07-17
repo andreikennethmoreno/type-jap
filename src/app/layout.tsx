@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const geistSans = Geist({
@@ -42,12 +44,11 @@ export default function RootLayout({
             <main className="py-8">
               {/* container to center the content */}
               <div className="max-w-7xl mx-auto px-4">
-                <div>
-                  {children}
-                </div>
+                <div>{children}</div>
               </div>
             </main>
           </div>
+          <ToastContainer position="top-right" autoClose={3000} />
         </ThemeProvider>
       </body>
     </html>

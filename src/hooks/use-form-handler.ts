@@ -1,9 +1,15 @@
 import { useState } from "react";
 import { ZodSchema } from "zod";
+import { toast } from "react-toastify";
 
 export function useFormHandler<T extends Record<string, unknown>>(
   schema: ZodSchema<T>,
-  onValid: (data: T) => void
+  onValid: (data: T) => void,
+  options?: {
+    successMessage?: string;
+    errorMessage?: string;
+    toast?: boolean;
+  }
 ) {
   const [data, setData] = useState<Partial<T>>({});
   const [error, setError] = useState<string | null>(null);
@@ -15,10 +21,16 @@ export function useFormHandler<T extends Record<string, unknown>>(
   const handleSubmit = () => {
     const result = schema.safeParse(data);
     if (!result.success) {
-      setError(result.error.message ?? "Unknown error");
+      const message =
+        options?.errorMessage ?? result.error.message ?? "Unknown error";
+      setError(message);
+      if (options?.toast !== false) toast.error(message);
     } else {
       setError(null);
       onValid(result.data);
+      if (options?.toast !== false) {
+        toast.success(options?.successMessage ?? "Successfully submitted!");
+      }
     }
   };
 

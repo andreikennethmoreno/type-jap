@@ -1,24 +1,31 @@
-import { HomeIcon, BellIcon, UserIcon } from "lucide-react";
+import {
+  LayoutDashboardIcon,
+  SettingsIcon,
+  ArrowRightLeft,
+  TypeIcon,
+} from "lucide-react";
 
 export const navLinks = [
   {
-    href: "/",
-    label: "Home",
-    icon: HomeIcon,
+    href: "/feature",
+    label: "Feature",
+    icon: LayoutDashboardIcon,
   },
   {
-    href: "/base",
-    label: "Base",
-    icon: UserIcon,
+    href: "/convert",
+    label: "Convert",
+    icon: ArrowRightLeft,
+    children: [
+      {
+        href: "/convert/uppercase-text",
+        label: "Uppercase",
+        icon: TypeIcon,
+      },
+      {
+        href: "/convert/reverse-text",
+        label: "Reverse Text",
+        icon: TypeIcon,
+      },
+    ],
   },
-  //   {
-  //     href: "/notifications",
-  //     label: "Notifications",
-  //     icon: BellIcon,
-  //   },
-  //   {
-  //     href: "/profile",
-  //     label: "Profile",
-  //     icon: UserIcon,
-  //   },
 ];
