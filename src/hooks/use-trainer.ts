@@ -77,7 +77,7 @@ export function useTrainer({ words, script, mode, schema }: UseTrainerProps) {
     error,
     current,
     handleSubmit,
-    handleNext,
+    // handleNext,
     history, // ✅ Return properly typed history
   };
 }

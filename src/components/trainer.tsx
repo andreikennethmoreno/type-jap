@@ -31,7 +31,7 @@ export default function Trainer({ words, script, mode }: Props) {
     error,
     current,
     handleSubmit,
-    handleNext,
+    // handleNext,
     history,
   } = useTrainer({
     words,
