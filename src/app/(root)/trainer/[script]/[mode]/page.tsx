@@ -3,18 +3,16 @@ import Trainer from "@/components/trainer";
 import katakanaWords from "@/lib/load/load-katakana";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
 
-
-
 function shuffle<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-export default function Page({
+export default async function Page({
   params,
 }: {
-  params: { script: string; mode: string };
+  params: Promise<{ script: string; mode: string }>;
 }) {
-  const { script, mode } = params;
+  const { script, mode } = await params;
 
   let words: KatakanaWord[] | null = null;
 
@@ -34,7 +32,7 @@ export default function Page({
 
   if (!words || words.length === 0) return notFound();
 
-  const shuffledWords = shuffle(words); // 👈 shuffle here
+  const shuffledWords = shuffle(words);
 
   return <Trainer words={shuffledWords} script={script} mode={mode} />;
 }
