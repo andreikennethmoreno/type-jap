@@ -113,7 +113,7 @@ export default function Trainer({ words, script, mode }: Props) {
               Check Answer
             </Button>
 
-            {/* Feedback Messages */}
+            {/* Feedback Messages
             {feedback === "correct" && (
               <div className="text-center p-3 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
                 <p className="text-green-700 dark:text-green-300 font-medium flex items-center justify-center gap-2">
@@ -129,7 +129,7 @@ export default function Trainer({ words, script, mode }: Props) {
                   {`Keep trying! You've got this!`}
                 </p>
               </div>
-            )}
+            )} */}
           </form>
         </CardContent>
       </Card>

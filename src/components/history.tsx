@@ -17,15 +17,6 @@ export default function History({ history }: Props) {
 
   return (
     <Card className="w-full max-w-lg mx-auto">
-      <CardHeader className="pb-3">
-        <CardTitle className="text-xl flex items-center gap-2">
-          🧠 Practice History
-          <Badge variant="secondary" className="ml-auto text-sm">
-            {history.length} attempts
-          </Badge>
-        </CardTitle>
-      </CardHeader>
-
       <CardContent>
         <ScrollArea className="h-96">
           <div className="space-y-2">
@@ -95,6 +86,15 @@ export default function History({ history }: Props) {
           </div>
         </ScrollArea>
       </CardContent>
+
+      <CardHeader className="pb-3">
+        <CardTitle className="text-xl flex items-center gap-2">
+          Practice History
+          <Badge variant="secondary" className="ml-auto text-sm">
+            {history.length} attempts
+          </Badge>
+        </CardTitle>
+      </CardHeader>
     </Card>
   );
 }
