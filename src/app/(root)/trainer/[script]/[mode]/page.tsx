@@ -7,12 +7,15 @@ function shuffle<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-// ✅ CORRECT WAY
-export default async function Page({
-  params,
-}: {
-  params: { script: string; mode: string };
-}) {
+// ✅ FIXED: params should NOT be a Promise
+type PageProps = {
+  params: {
+    script: string;
+    mode: string;
+  };
+};
+
+export default async function Page({ params }: PageProps) {
   const { script, mode } = params;
 
   let words: KatakanaWord[] | null = null;
@@ -28,7 +31,7 @@ export default async function Page({
       // words = kanjiWords;
       break;
     default:
-      notFound();
+      return notFound();
   }
 
   if (!words || words.length === 0) return notFound();
