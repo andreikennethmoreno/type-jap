@@ -9,14 +9,13 @@ import SkeletonLoader from "@/components/skeleton-loader";
 export default async function ConverterPage({
   params,
 }: {
-  params: Promise<{ converter: string }>;
+  params: { converter: string };
 }) {
-  const { converter } = await params;
+  const { converter } = params;
 
   let converterConfig: TextConverterDefinition | null = null;
 
   //const wait = (ms: number) => new Promise((res) => setTimeout(res, ms));
-
 
   try {
     // Dynamically import the converter file using the slug
