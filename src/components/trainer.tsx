@@ -60,7 +60,7 @@ export default function Trainer({ words, script, mode }: Props) {
       </div>
 
       {/* Main Trainer Card */}
-      <Card className="mx-auto max-w-md">
+      <Card className="mx-auto max-w-lg">
         <CardHeader className="text-center pb-2">
           <CardTitle className="text-6xl font-bold mb-2 tracking-wider">
             {current.Japanese}
