@@ -3,12 +3,12 @@ import Trainer from "@/components/trainer";
 import katakanaWords from "@/lib/load/load-katakana";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
 
-// ✅ Define PageProps cleanly
+// ✅ Updated PageProps for Next.js 15
 type PageProps = {
-  params: {
+  params: Promise<{
     script: string;
     mode: string;
-  };
+  }>;
 };
 
 function shuffle<T>(array: T[]): T[] {
@@ -16,7 +16,8 @@ function shuffle<T>(array: T[]): T[] {
 }
 
 export default async function Page({ params }: PageProps) {
-  const { script, mode } = params;
+  // ✅ Await the params Promise
+  const { script, mode } = await params;
 
   let words: KatakanaWord[] | null = null;
 
