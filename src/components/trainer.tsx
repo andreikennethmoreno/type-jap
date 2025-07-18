@@ -72,8 +72,8 @@ export default function Trainer({ words, script, mode }: Props) {
         <CardContent className="space-y-4">
           <ToggleRevealEng
             hiddenText={current.Meaning}
-            label="Show Romaji"
-            hideLabel="Hide Romaji"
+            label="Show English"
+            hideLabel="Hide English"
           />
 
           <form
