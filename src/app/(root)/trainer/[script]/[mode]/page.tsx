@@ -8,7 +8,7 @@ function shuffle<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-type CustomPageProps = {
+type PageProps = {
   params: {
     script: string;
     mode: string;
@@ -17,9 +17,7 @@ type CustomPageProps = {
 
 export default async function Page({
   params,
-}: {
-  params: { script: string; mode: string };
-}): Promise<JSX.Element> {
+}: PageProps): Promise<JSX.Element> {
   const { script, mode } = params;
 
   let words: KatakanaWord[] | null = null;
