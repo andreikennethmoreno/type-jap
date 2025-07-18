@@ -6,15 +6,13 @@ import katakanaWords from "@/lib/load/load-katakana";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
 import { JSX } from "react";
 
-// Define the exact type for your PageProps
+// Define the correct type for Next.js 15+ PageProps
 interface TrainerPageProps {
-  params: {
+  params: Promise<{
     script: string;
     mode: string;
-  };
-  // Next.js also provides a 'searchParams' object, even if empty.
-  // It's good practice to include it in your type definition.
-  searchParams?: { [key: string]: string | string[] | undefined };
+  }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 function shuffle<T>(array: T[]): T[] {
@@ -25,8 +23,8 @@ function shuffle<T>(array: T[]): T[] {
 export default async function Page({
   params,
 }: TrainerPageProps): Promise<JSX.Element> {
-  // You can keep Promise<JSX.Element> or remove it, let's keep it for now
-  const { script, mode } = params;
+  // Await the params Promise
+  const { script, mode } = await params;
 
   let words: KatakanaWord[] | null = null;
 
