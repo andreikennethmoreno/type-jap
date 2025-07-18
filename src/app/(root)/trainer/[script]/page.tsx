@@ -1,13 +1,11 @@
-// app/trainer/[script]/page.tsx
-
 import { notFound } from "next/navigation";
 
-export default function ScriptLanding({
+export default async function ScriptLanding({
   params,
 }: {
-  params: { script: string };
+  params: Promise<{ script: string }>;
 }) {
-  const { script } = params;
+  const { script } = await params;
   const modes = ["romaji", "meaning", "recognition"];
   const validScripts = ["katakana", "hiragana", "kanji"];
 
