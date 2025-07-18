@@ -7,11 +7,14 @@ function shuffle<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-export default async function Page({
-  params,
-}: {
-  params: { script: string; mode: string };
-}) {
+type CustomPageProps = {
+  params: {
+    script: string;
+    mode: string;
+  };
+};
+
+export default async function Page({ params }: CustomPageProps) {
   const { script, mode } = params;
 
   let words: KatakanaWord[] | null = null;
