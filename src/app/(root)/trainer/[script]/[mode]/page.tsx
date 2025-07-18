@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Trainer from "@/components/trainer";
 import katakanaWords from "@/lib/load/load-katakana";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
+import { JSX } from "react";
 
 function shuffle<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
@@ -14,7 +15,11 @@ type CustomPageProps = {
   };
 };
 
-export default async function Page({ params }: CustomPageProps) {
+export default async function Page({
+  params,
+}: {
+  params: { script: string; mode: string };
+}): Promise<JSX.Element> {
   const { script, mode } = params;
 
   let words: KatakanaWord[] | null = null;
