@@ -10,9 +10,9 @@ function shuffle<T>(array: T[]): T[] {
 export default async function Page({
   params,
 }: {
-  params: Promise<{ script: string; mode: string }>;
+  params: { script: string; mode: string };
 }) {
-  const { script, mode } = await params;
+  const { script, mode } = params;
 
   let words: KatakanaWord[] | null = null;
 
