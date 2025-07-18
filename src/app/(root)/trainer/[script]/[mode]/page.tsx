@@ -5,10 +5,10 @@ import { KatakanaWord } from "@/interface/katakana-word.interface";
 import { JSX } from "react";
 
 interface TrainerPageProps {
-  params: Promise<{
+  params: {
     script: string;
     mode: string;
-  }>;
+  };
 }
 
 function shuffle<T>(array: T[]): T[] {
@@ -18,9 +18,7 @@ function shuffle<T>(array: T[]): T[] {
 export default async function Page({
   params,
 }: TrainerPageProps): Promise<JSX.Element> {
-  // Await the params directly as it's a Promise in Next.js 15
-  const awaitedParams = await params;
-  const { script, mode } = awaitedParams;
+  const { script, mode } = params;
 
   let words: KatakanaWord[] | null = null;
 
