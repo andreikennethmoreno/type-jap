@@ -12,7 +12,8 @@ export default async function Page({
   params,
 }: {
   params: { script: string; mode: string };
-}): Promise<JSX.Element> {
+}) {
+  // Removed ": Promise<JSX.Element>"
   const { script, mode } = params;
 
   let words: KatakanaWord[] | null = null;
