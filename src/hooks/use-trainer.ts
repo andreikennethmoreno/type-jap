@@ -19,7 +19,7 @@ export function useTrainer({ words, script, mode, schema }: UseTrainerProps) {
   const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
   const [index, setIndex] = useState(0);
   const [checkAnswer, setCheckAnswer] = useState<
-    ((input: string, word: any) => boolean) | null
+    ((input: string, word: KatakanaWord) => boolean) | null
   >(null);
   const [error, setError] = useState<string | null>(null);
 
