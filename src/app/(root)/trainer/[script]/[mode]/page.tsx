@@ -1,16 +1,10 @@
+// app/trainer/[script]/[mode]/page.tsx
+
 import { notFound } from "next/navigation";
 import Trainer from "@/components/trainer";
 import katakanaWords from "@/lib/load/load-katakana";
 import { KatakanaWord } from "@/interface/katakana-word.interface";
 import { JSX } from "react";
-
-// Now params is a Promise that resolves to your route parameters
-interface TrainerPageProps {
-  params: Promise<{
-    script: string;
-    mode: string;
-  }>;
-}
 
 function shuffle<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5);
@@ -18,8 +12,9 @@ function shuffle<T>(array: T[]): T[] {
 
 export default async function Page({
   params,
-}: TrainerPageProps): Promise<JSX.Element> {
-  // unwrap the promise!
+}: {
+  params: Promise<{ script: string; mode: string }>;
+}): Promise<JSX.Element> {
   const { script, mode } = await params;
 
   let words: KatakanaWord[] | null = null;
@@ -28,18 +23,13 @@ export default async function Page({
       words = katakanaWords;
       break;
     case "hiragana":
-      // words = hiraganaWords;
-      break;
     case "kanji":
-      // words = kanjiWords;
       break;
     default:
       return notFound();
   }
 
-  if (!words || words.length === 0) {
-    return notFound();
-  }
+  if (!words?.length) return notFound();
 
   const shuffledWords = shuffle(words);
   return <Trainer words={shuffledWords} script={script} mode={mode} />;
