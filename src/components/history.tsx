@@ -25,27 +25,32 @@ export default function History({ history }: Props) {
               return (
                 <div
                   key={idx}
-                  className={`flex items-center gap-4 px-4 py-3 rounded-md border transition-colors ${
+                  className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 px-4 py-3 rounded-md border transition-colors ${
                     isCorrect
                       ? "bg-green-50 dark:bg-green-900/10 border-green-200 dark:border-green-800/50"
                       : "bg-red-50 dark:bg-red-900/10 border-red-200 dark:border-red-800/50"
                   }`}
                 >
-                  {/* Emoji status icon */}
-                  <div className="text-xl">{isCorrect ? "✅" : "❌"}</div>
-
-                  {/* Katakana + Meaning */}
-                  <div className="min-w-[90px]">
-                    <div className="text-lg font-semibold text-primary leading-tight">
-                      {entry.word.Japanese}
+                  {/* Status + Katakana Block */}
+                  <div className="flex items-start gap-3 sm:gap-4 min-w-[100px]">
+                    {/* Emoji icon */}
+                    <div className="text-xl pt-1">
+                      {isCorrect ? "✅" : "❌"}
                     </div>
-                    <div className="text-sm text-muted-foreground leading-tight">
-                      {entry.word.Meaning}
+
+                    {/* Word + Meaning */}
+                    <div>
+                      <div className="text-lg font-semibold text-primary leading-tight">
+                        {entry.word.Japanese}
+                      </div>
+                      <div className="text-sm text-muted-foreground leading-tight">
+                        {entry.word.Meaning}
+                      </div>
                     </div>
                   </div>
 
-                  {/* Answer section */}
-                  <div className="flex items-center gap-2 flex-wrap text-sm text-muted-foreground">
+                  {/* User Answer + Correct Answer */}
+                  <div className="flex flex-wrap sm:flex-nowrap items-center gap-2 text-sm text-muted-foreground">
                     <span className="text-nowrap">
                       You:{" "}
                       <code
@@ -61,7 +66,7 @@ export default function History({ history }: Props) {
 
                     {!isCorrect && (
                       <>
-                        <ArrowRight className="w-4 h-4" />
+                        <ArrowRight className="w-4 h-4 shrink-0" />
                         <span className="text-nowrap">
                           Correct:{" "}
                           <code className="font-mono px-2 py-0.5 rounded bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300">
