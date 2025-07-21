@@ -2,6 +2,7 @@ import Link from "next/link";
 import DesktopNavbar from "./desktop-navbar";
 import MobileNavbar from "./mobile-navbar";
 import ModeToggle from "./mode-toggle";
+import UserDropdown from "./user-dropdown.";
 
 export default function Navbar() {
   return (
@@ -17,11 +18,14 @@ export default function Navbar() {
           <DesktopNavbar />
         </div>
 
-        {/* Right: Desktop Toggle OR Mobile Toggle/Menu */}
+        {/* Right: Mode toggle, Auth, Mobile nav */}
         <div className="flex items-center gap-2 z-10">
-          <div className="hidden md:block">
+          {/* Desktop only: Theme toggle and Auth */}
+          <div className="hidden md:flex items-center gap-2">
             <ModeToggle />
+            <UserDropdown />
           </div>
+          {/* Always show on mobile */}
           <MobileNavbar />
         </div>
       </div>
