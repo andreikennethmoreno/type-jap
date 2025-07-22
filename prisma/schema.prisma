@@ -37,6 +37,29 @@ model History {
   score      Int
   createdAt  DateTime   @default(now())
   metadata   Json?
+  promptIds  String[] // store which prompts were used in this run
+
 
   session    Session    @relation(fields: [sessionId], references: [id])
 }
+
+
+model Prompt {
+  id          String   @id @default(uuid())
+  type        PromptType @default(KATAKANA) // future-proof: grammar, vocab, kana, etc.
+  question    String // the katakana or phrase shown
+  answer      String // correct romaji or meaning
+  explanation String? // optional: why this is the correct answer
+  level       String? // N5, N4, etc.
+  tags        String[] // ["loanword", "place", "tech"] — could help you filter
+  createdAt   DateTime @default(now())
+}
+
+
+enum PromptType {
+  KATAKANA
+  MEANING
+  GRAMMAR
+  FILL_IN_THE_BLANK
+}
+
