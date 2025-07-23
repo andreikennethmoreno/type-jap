@@ -49,7 +49,7 @@ export function useTrainer({ script, mode, schema }: UseTrainerProps) {
     const init = async () => {
       setLoading(true);
       
-      const { session } = await startOrResumeSession( script as any);
+      const { session } = await startOrResumeSession( script as string);
       console.log("[SESSION] Active session ID:", session.id);
       console.log("[SESSION] Loaded prompt IDs:", session.promptIds);
 
@@ -133,7 +133,7 @@ if (!sessionId || !checkAnswer || !currentPrompt) {
       }
 
       // Start or resume next session automatically
-      const { session: newSession } = await startOrResumeSession(script as any);
+      const { session: newSession } = await startOrResumeSession(script as string);
       console.log("[SESSION] New session started with ID:", newSession.id);
 
       setSessionId(newSession.id);
