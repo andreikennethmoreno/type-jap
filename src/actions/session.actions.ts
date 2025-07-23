@@ -5,16 +5,9 @@ import { PromptType } from "@prisma/client";
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
 import { getRandomPrompts } from "./prompt.actions";
+import { toPromptType } from "@/lib/helpers/prompt";
 
 
-// Helper to convert a string to a valid PromptType
-function toPromptType(type: string): PromptType {
-  const upper = type.toUpperCase();
-  if (!Object.values(PromptType).includes(upper as PromptType)) {
-    throw new Error(`Invalid prompt type: ${type}`);
-  }
-  return upper as PromptType;
-}
 
 export async function startOrResumeSession( type: string) {
     const userId = await getDbUserId();

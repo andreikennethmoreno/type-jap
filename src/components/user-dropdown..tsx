@@ -15,7 +15,7 @@ import {
   UserProfile,
 } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
-import { BarChart2, LogOut, Settings } from "lucide-react";
+import { BarChart2, Clock, LogOut, Settings } from "lucide-react";
 import Image from "next/image";
 
 export default function UserDropdown() {
@@ -57,13 +57,14 @@ export default function UserDropdown() {
 
       <DropdownMenuContent align="end" className="w-56">
         <DropdownMenuItem
-          onClick={() => router.push("/stats")}
+          onClick={() => router.push("/history")}
           className="flex items-center gap-2"
         >
-          <BarChart2 className="w-4 h-4 text-muted-foreground" />
-          <span>User Stats</span>
+          <Clock className="w-4 h-4 text-muted-foreground" />
+          <span>Session History</span>
         </DropdownMenuItem>
 
+        
         <DropdownMenuItem
           onClick={() => router.push("/settings")}
           className="flex items-center gap-2"

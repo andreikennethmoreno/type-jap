@@ -10,8 +10,9 @@ import {
   submitAnswer,
   updateSessionProgress,
 } from "@/actions/session.actions";
-import { getPromptById } from "@/actions/prompt.actions";
+import { getPromptById, getRandomPrompts } from "@/actions/prompt.actions";
 import { PromptType } from "@prisma/client";
+import { useUser } from "@clerk/nextjs";
 
 interface UseTrainerProps {
   script: string;
@@ -20,6 +21,7 @@ interface UseTrainerProps {
 }
 
 export function useTrainer({ script, mode, schema }: UseTrainerProps) {
+  const { user } = useUser();
   const [submitting, setSubmitting] = useState(false);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [promptIds, setPromptIds] = useState<string[]>([]);
@@ -44,34 +46,41 @@ export function useTrainer({ script, mode, schema }: UseTrainerProps) {
     console.log("[INIT] Answer checker set up for script:", script);
   }, [script, mode]);
 
-  // 2. Start or resume session on mount
+  // 2. Start session OR fetch guest prompts
   useEffect(() => {
     const init = async () => {
       setLoading(true);
-      
-      const { session } = await startOrResumeSession( script as string);
-      console.log("[SESSION] Active session ID:", session.id);
-      console.log("[SESSION] Loaded prompt IDs:", session.promptIds);
 
-      setSessionId(session.id);
-      setPromptIds(session.promptIds);
-      setCurrentIndex(session.progress || 0);
+      if (user) {
+        const { session } = await startOrResumeSession(script as PromptType);
+        console.log("[SESSION] Active session ID:", session.id);
 
-      const firstPrompt = await getPromptById(
-        session.promptIds[session.progress || 0]
-      );
-      setCurrentPrompt(firstPrompt);
+        setSessionId(session.id);
+        setPromptIds(session.promptIds);
+        setCurrentIndex(session.progress || 0);
 
-      console.log("[PROMPT] Loaded first prompt:" , firstPrompt);
+        const firstPrompt = await getPromptById(
+          session.promptIds[session.progress || 0]
+        );
+        setCurrentPrompt(firstPrompt);
+        console.log("[PROMPT] Loaded first prompt (user):", firstPrompt);
+      } else {
+        const prompts = await getRandomPrompts(script as PromptType, 10);
+        const ids = prompts.map((p) => p.id);
+        setPromptIds(ids);
+        setCurrentIndex(0);
+        setCurrentPrompt(prompts[0] || null);
+        console.log("[PROMPT] Loaded random prompts (guest):", prompts);
+      }
 
       setLoading(false);
     };
 
     init();
-  }, [ script]);
+  }, [script]);
 
   const handleSubmit = async () => {
-    if (submitting) return; // Prevent spam
+    if (submitting) return;
     setSubmitting(true);
 
     console.log("[SUBMIT] Submitting input:", input);
@@ -81,24 +90,25 @@ export function useTrainer({ script, mode, schema }: UseTrainerProps) {
       const issue = result.error.issues[0].message;
       setError(issue);
       console.warn("[VALIDATION] Error:", issue);
-      setSubmitting(false); 
+      setSubmitting(false);
       return;
     }
 
-if (!sessionId || !checkAnswer || !currentPrompt) {
-  console.warn("[SUBMIT] Blocked: Data not yet initialized.");
-  setSubmitting(false);
-  return;
-}
+    if (!checkAnswer || !currentPrompt) {
+      console.warn("[SUBMIT] Blocked: Data not yet initialized.");
+      setSubmitting(false);
+      return;
+    }
+
     setError(null);
     const isCorrect = checkAnswer(input, currentPrompt);
     const resultLabel = isCorrect ? "correct" : "wrong";
-
     console.log(`[CHECK] Input is ${resultLabel}.`);
 
-    // Save answer to DB
-    await submitAnswer(sessionId, currentPrompt.id, input, isCorrect);
-    console.log("[DB] Answer submitted for prompt ID:", currentPrompt.id);
+    if (user && sessionId) {
+      await submitAnswer(sessionId, currentPrompt.id, input, isCorrect);
+      console.log("[DB] Answer submitted for prompt ID:", currentPrompt.id);
+    }
 
     setFeedback(resultLabel);
     setHistory((prev) => [
@@ -112,7 +122,7 @@ if (!sessionId || !checkAnswer || !currentPrompt) {
 
     setTimeout(() => {
       handleNext();
-      setSubmitting(false); 
+      setSubmitting(false);
     }, 1000);
   };
 
@@ -123,44 +133,47 @@ if (!sessionId || !checkAnswer || !currentPrompt) {
 
     const nextIndex = currentIndex + 1;
 
-    // If all prompts completed
     if (nextIndex >= promptIds.length) {
-      console.log("[SESSION] Reached end of session.");
+      console.log("[SESSION] Reached end of prompts.");
 
-      if (sessionId) {
+      if (user && sessionId) {
         await finalizeSession(sessionId);
         console.log("[SESSION] Session marked as completed.");
+
+        const { session: newSession } = await startOrResumeSession(
+          script as PromptType
+        );
+        setSessionId(newSession.id);
+        setPromptIds(newSession.promptIds);
+        setCurrentIndex(newSession.progress || 0);
+
+        const firstPrompt = await getPromptById(
+          newSession.promptIds[newSession.progress || 0]
+        );
+        setCurrentPrompt(firstPrompt);
+        console.log("[PROMPT] Loaded next session prompt:", firstPrompt);
+      } else {
+        const prompts = await getRandomPrompts(script as PromptType, 10);
+        const ids = prompts.map((p) => p.id);
+        setPromptIds(ids);
+        setCurrentIndex(0);
+        setCurrentPrompt(prompts[0] || null);
+        console.log("[PROMPT] Guest: reshuffled new prompts.");
       }
 
-      // Start or resume next session automatically
-      const { session: newSession } = await startOrResumeSession(script as string);
-      console.log("[SESSION] New session started with ID:", newSession.id);
-
-      setSessionId(newSession.id);
-      setPromptIds(newSession.promptIds);
-      setCurrentIndex(newSession.progress || 0);
-
-      const firstPrompt = await getPromptById(
-        newSession.promptIds[newSession.progress || 0]
-      );
-      setCurrentPrompt(firstPrompt);
-
-      console.log("[PROMPT] Loaded new prompt after completion:", firstPrompt);
       return;
     }
 
-    // Continue to next prompt in current session
     const nextPrompt = await getPromptById(promptIds[nextIndex]);
     setCurrentPrompt(nextPrompt);
     setCurrentIndex(nextIndex);
 
-    if (sessionId) {
+    if (user && sessionId) {
       await updateSessionProgress(sessionId, nextIndex);
     }
 
-    console.log(`[PROMPT] Moved to prompt index ${nextIndex}:`, nextPrompt);
+    console.log(`[PROMPT] Moved to index ${nextIndex}:`, nextPrompt);
   };
-
 
   return {
     submitting,
