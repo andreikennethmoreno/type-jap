@@ -3,13 +3,29 @@
 // /actions/session.actions.ts
 import { PromptType } from "@prisma/client";
 import { prisma } from "../../lib";
+import { getDbUserId } from "./user.actions";
+import { getRandomPrompts } from "./prompt.actions";
 
-export async function startOrResumeSession(userId: string, type: PromptType) {
-  // 1. Check if there's an unfinished session of this type
+
+// Helper to convert a string to a valid PromptType
+function toPromptType(type: string): PromptType {
+  const upper = type.toUpperCase();
+  if (!Object.values(PromptType).includes(upper as PromptType)) {
+    throw new Error(`Invalid prompt type: ${type}`);
+  }
+  return upper as PromptType;
+}
+
+export async function startOrResumeSession( type: string) {
+    const userId = await getDbUserId();
+    if (!userId) throw new Error("User not found");
+    
+    const normalizedType = toPromptType(type);
+
   const existing = await prisma.session.findFirst({
     where: {
       userId,
-      type,
+      type: normalizedType,
       isCompleted: false,
     },
   });
@@ -21,20 +37,15 @@ export async function startOrResumeSession(userId: string, type: PromptType) {
     };
   }
 
-  // 2. Fetch 10 random prompts of this type
-  const prompts = await prisma.prompt.findMany({
-    where: { type },
-    orderBy: { createdAt: "asc" }, // Replace with random logic later
-    take: 10,
-  });
+   const prompts = await getRandomPrompts(normalizedType, 10);
+   if (!prompts.length) throw new Error("No prompts found for this type");
 
   const promptIds = prompts.map((p) => p.id);
 
-  // 3. Create a new session
   const session = await prisma.session.create({
     data: {
       userId,
-      type,
+      type: normalizedType,
       promptIds,
     },
   });
@@ -79,8 +90,56 @@ export async function submitAnswer(
   });
 }
 
+export async function updateSessionProgress(
+  sessionId: string,
+  progress: number
+) {
+  return prisma.session.update({
+    where: { id: sessionId },
+    data: { progress },
+  });
+}
 
-export async function markSessionCompleted(sessionId: string) {
+export async function finalizeSession(sessionId: string) {
+  const session = await prisma.session.findUnique({
+    where: { id: sessionId },
+    include: {
+      answers: true,
+    },
+  });
+
+  if (!session) throw new Error("Session not found");
+
+  const total = session.answers.length;
+  const correct = session.answers.filter((a) => a.isCorrect).length;
+  const score = Math.round((correct / total) * 100); // % score
+
+  const metadata = {
+    answers: session.answers.map((a) => ({
+      promptId: a.promptId,
+      userAnswer: a.userAnswer,
+      isCorrect: a.isCorrect,
+      answeredAt: a.answeredAt,
+    })),
+  };
+
+  // Create History entry
+  await prisma.history.create({
+    data: {
+      sessionId,
+      score,
+      total,
+      correct,
+      metadata,
+    },
+  });
+
+  // 2. Delete SessionAnswer records (now safely archived)
+  await prisma.sessionAnswer.deleteMany({
+    where: { sessionId },
+  });
+
+  // Mark session complete
   return prisma.session.update({
     where: { id: sessionId },
     data: { isCompleted: true },

@@ -17,12 +17,11 @@ import ToggleRevealEng from "./toggle-reveal-eng";
 import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
 
 interface Props {
-  userId: string;
   script: string;
   mode: string;
 }
 
-export default function Trainer({ userId, script, mode }: Props) {
+export default function Trainer({ script, mode }: Props) {
   const {
     input,
     setInput,
@@ -33,8 +32,8 @@ export default function Trainer({ userId, script, mode }: Props) {
     history,
     sessionComplete,
     loading,
+    submitting,
   } = useTrainer({
-    userId,
     script,
     mode,
     schema: TestFormSchema,
@@ -127,8 +126,13 @@ export default function Trainer({ userId, script, mode }: Props) {
               <p className="text-sm text-destructive text-center">{error}</p>
             )}
 
-            <Button type="submit" className="w-full" size="lg">
-              Check Answer
+            <Button
+              type="submit"
+              className="w-full"
+              size="lg"
+              disabled={submitting}
+            >
+              {submitting ? "Checking..." : "Check Answer"}
             </Button>
           </form>
         </CardContent>

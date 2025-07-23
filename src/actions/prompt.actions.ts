@@ -3,26 +3,19 @@
 import { PromptType } from "@prisma/client";
 import { prisma } from "../../lib";
 
-export async function getRandomPrompt(script: string) {
-  const type = script.toUpperCase() as PromptType;
-
-  const count = await prisma.prompt.count({
+export async function getRandomPrompts(type: PromptType, count = 10) {
+  const allPrompts = await prisma.prompt.findMany({
     where: { type },
   });
 
-  if (count === 0) return null;
+  if (!allPrompts.length) return [];
 
-  const randomIndex = Math.floor(Math.random() * count);
+  // Shuffle aggressively in memory
+  const shuffled = allPrompts.sort(() => Math.random() - 0.5);
 
-  const prompt = await prisma.prompt.findMany({
-    where: { type },
-    skip: randomIndex,
-    take: 1,
-  });
-
-  return prompt[0] ?? null;
+  // Take only the top `count`
+  return shuffled.slice(0, count);
 }
-
 
 export async function getPromptById(id: string) {
   return prisma.prompt.findUnique({
