@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Master Japanese through active recall, typing in Romaji, Kana, and Kanji. TypeNihongo helps you reinforce grammar, vocab, and more — the smart, interactive way.",
   keywords: [
     "Japanese learning",
-    "Romaji to Kana",
+    "Romanji to Kana",
     "Active recall app",
     "JLPT practice",
     "Learn Japanese typing",

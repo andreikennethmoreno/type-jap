@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { ZodSchema } from "zod";
-import { KatakanaWord } from "@/interface/katakana-word.interface";
 
 // ✅ TEMP: Hardcoded import for testing
 import { checkKatakanaRomanji } from "@/lib/trainers/katakana/romanji";
+import { JapanesePrompt } from "@/interface/katakana-word.interface";
 
 interface UseTrainerProps {
-  words: KatakanaWord[];
+  words: JapanesePrompt[];
   script: string;
   mode: string;
   schema: ZodSchema<{ inputText: string }>;
@@ -19,12 +19,12 @@ export function useTrainer({ words, script, mode, schema }: UseTrainerProps) {
   const [feedback, setFeedback] = useState<"correct" | "wrong" | null>(null);
   const [index, setIndex] = useState(0);
   const [checkAnswer, setCheckAnswer] = useState<
-    ((input: string, word: KatakanaWord) => boolean) | null
+    ((input: string, word: JapanesePrompt) => boolean) | null
   >(null);
   const [error, setError] = useState<string | null>(null);
 
   const [history, setHistory] = useState<
-    { word: KatakanaWord; userInput: string; result: "correct" | "wrong" }[]
+    { word: JapanesePrompt; userInput: string; result: "correct" | "wrong" }[]
   >([]);
 
   const current = words[index];

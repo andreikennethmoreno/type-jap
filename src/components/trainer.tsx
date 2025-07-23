@@ -10,15 +10,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { KatakanaWord } from "@/interface/katakana-word.interface";
 import { TestFormSchema } from "@/lib/form-scehma";
 import { useTrainer } from "@/hooks/use-trainer";
 import History from "@/components/history";
 import ToggleRevealEng from "./toggle-reveal-eng";
 import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
+import { JapanesePrompt } from "@/interface/katakana-word.interface";
 
 interface Props {
-  words: KatakanaWord[];
+  words: JapanesePrompt[];
   script: string;
   mode: string;
 }
@@ -63,7 +63,7 @@ export default function Trainer({ words, script, mode }: Props) {
       <Card className="mx-auto max-w-lg">
         <CardHeader className="text-center pb-2">
           <CardTitle className="text-6xl font-bold mb-2 tracking-wider">
-            {current.Japanese}
+            {current.japanese}
           </CardTitle>
           <CardDescription className="text-base">
             Type the {mode} for this character
@@ -71,7 +71,7 @@ export default function Trainer({ words, script, mode }: Props) {
         </CardHeader>
         <CardContent className="space-y-4">
           <ToggleRevealEng
-            hiddenText={current.Meaning}
+            hiddenText={current.meaning}
             label="Show English"
             hideLabel="Hide English"
           />

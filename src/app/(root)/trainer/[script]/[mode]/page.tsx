@@ -1,14 +1,7 @@
-// app/trainer/[script]/[mode]/page.tsx
-
 import { notFound } from "next/navigation";
 import Trainer from "@/components/trainer";
-import katakanaWords from "@/lib/load/load-katakana";
-import { KatakanaWord } from "@/interface/katakana-word.interface";
 import { JSX } from "react";
-
-function shuffle<T>(array: T[]): T[] {
-  return [...array].sort(() => Math.random() - 0.5);
-}
+import { getRandomPrompt } from "@/actions/prompt.actions";
 
 export default async function Page({
   params,
@@ -17,20 +10,11 @@ export default async function Page({
 }): Promise<JSX.Element> {
   const { script, mode } = await params;
 
-  let words: KatakanaWord[] | null = null;
-  switch (script) {
-    case "katakana":
-      words = katakanaWords;
-      break;
-    case "hiragana":
-    case "kanji":
-      break;
-    default:
-      return notFound();
-  }
+  const prompt = await getRandomPrompt(script);
+  if (!prompt) return notFound();
 
-  if (!words?.length) return notFound();
+  // simulate words array to match Trainer's expected props
+  const words = [prompt]; // just one random word for now
 
-  const shuffledWords = shuffle(words);
-  return <Trainer words={shuffledWords} script={script} mode={mode} />;
+  return <Trainer words={words} script={script} mode={mode} />;
 }

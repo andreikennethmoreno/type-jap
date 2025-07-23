@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const scripts = ["katakana", "hiragana", "kanji"];
-const modes = ["romaji", "meaning", "recognition"];
+const modes = ["romanji", "meaning", "recognition"];
 
 export default function TrainerHome() {
   return (

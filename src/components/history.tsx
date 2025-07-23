@@ -78,7 +78,7 @@ export default function History({ history }: Props) {
 
                     {isCorrect && (
                       <span className="text-nowrap">
-                        Romaji:{" "}
+                        Romanji:{" "}
                         <code className="font-mono px-2 py-0.5 text-muted-foreground">
                           {entry.word.Romanji}
                         </code>

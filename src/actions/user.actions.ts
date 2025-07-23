@@ -1,7 +1,6 @@
 "use server";
 
 import { auth, currentUser } from "@clerk/nextjs/server";
-import { revalidatePath } from "next/cache";
 import { prisma } from "../../lib";
 
 export async function syncUser() {

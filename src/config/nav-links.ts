@@ -15,23 +15,6 @@ export const navLinks = [
     icon: LayoutDashboardIcon,
   },
   {
-    href: "/convert",
-    label: "Convert",
-    icon: ArrowRightLeft,
-    children: [
-      {
-        href: "/convert/uppercase-text",
-        label: "Uppercase",
-        icon: TypeIcon,
-      },
-      {
-        href: "/convert/reverse-text",
-        label: "Reverse Text",
-        icon: TypeIcon,
-      },
-    ],
-  },
-  {
     href: "/trainer",
     label: "Trainer",
     icon: BookOpenCheckIcon,

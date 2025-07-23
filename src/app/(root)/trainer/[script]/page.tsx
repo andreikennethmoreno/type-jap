@@ -6,7 +6,7 @@ export default async function ScriptLanding({
   params: Promise<{ script: string }>;
 }) {
   const { script } = await params;
-  const modes = ["romaji", "meaning", "recognition"];
+  const modes = ["romanji", "meaning", "recognition"];
   const validScripts = ["katakana", "hiragana", "kanji"];
 
   if (!validScripts.includes(script)) return notFound();
