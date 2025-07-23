@@ -1,5 +1,5 @@
 export interface JapanesePrompt {
-  romanji: string;
+  romaji: string;
   japanese: string;
   meaning: string;
 }

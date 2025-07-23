@@ -1,12 +1,12 @@
-import { KatakanaWord } from "@/interface/katakana-word.interface";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ArrowRight } from "lucide-react";
+import { JapanesePrompt } from "@/interface/katakana-word.interface";
 
 interface Props {
   history: {
-    word: KatakanaWord;
+    word: JapanesePrompt;
     userInput: string;
     result: "correct" | "wrong";
   }[];
@@ -41,10 +41,10 @@ export default function History({ history }: Props) {
                     {/* Word + Meaning */}
                     <div>
                       <div className="text-lg font-semibold text-primary leading-tight">
-                        {entry.word.Japanese}
+                        {entry.word.japanese}
                       </div>
                       <div className="text-sm text-muted-foreground leading-tight">
-                        {entry.word.Meaning}
+                        {entry.word.meaning}
                       </div>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ export default function History({ history }: Props) {
                         <span className="text-nowrap">
                           Correct:{" "}
                           <code className="font-mono px-2 py-0.5 rounded bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300">
-                            {entry.word.Romanji}
+                            {entry.word.romaji}
                           </code>
                         </span>
                       </>
@@ -78,9 +78,9 @@ export default function History({ history }: Props) {
 
                     {isCorrect && (
                       <span className="text-nowrap">
-                        Romanji:{" "}
+                        Romaji:{" "}
                         <code className="font-mono px-2 py-0.5 text-muted-foreground">
-                          {entry.word.Romanji}
+                          {entry.word.romaji}
                         </code>
                       </span>
                     )}

@@ -2,7 +2,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アフリカ",
-    romanji: "afurika",
+    romaji: "afurika",
     meaning: "Africa",
     level: "N4",
     tags: ["loanword", "place"],
@@ -10,7 +10,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アジア",
-    romanji: "ajia",
+    romaji: "ajia",
     meaning: "Asia",
     level: "N4",
     tags: ["loanword", "place"],
@@ -18,7 +18,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アクセサリー",
-    romanji: "akusesarii",
+    romaji: "akusesarii",
     meaning: "accessory",
     level: "N4",
     tags: ["loanword"],
@@ -26,7 +26,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アメリカ",
-    romanji: "amerika",
+    romaji: "amerika",
     meaning: "America",
     level: "N4",
     tags: ["loanword", "place"],
@@ -34,7 +34,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アナウンサー",
-    romanji: "anaunsaa",
+    romaji: "anaunsaa",
     meaning: "announcer",
     level: "N4",
     tags: ["loanword", "profession"],
@@ -42,7 +42,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アパート",
-    romanji: "apaato",
+    romaji: "apaato",
     meaning: "apartment",
     level: "N5",
     tags: ["loanword", "housing"],
@@ -50,7 +50,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アルバイト",
-    romanji: "arubaito",
+    romaji: "arubaito",
     meaning: "part-time job",
     level: "N4",
     tags: ["loanword", "work"],
@@ -58,7 +58,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "アルコール",
-    romanji: "arukooru",
+    romaji: "arukooru",
     meaning: "alcohol",
     level: "N4",
     tags: ["loanword", "food_drink"],
@@ -66,7 +66,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "バス",
-    romanji: "basu",
+    romaji: "basu",
     meaning: "bus",
     level: "N5",
     tags: ["loanword", "transportation"],
@@ -74,7 +74,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "バター",
-    romanji: "bataa",
+    romaji: "bataa",
     meaning: "butter",
     level: "N5",
     tags: ["loanword", "food_drink"],
@@ -82,7 +82,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ベッド",
-    romanji: "beddo",
+    romaji: "beddo",
     meaning: "bed",
     level: "N5",
     tags: ["loanword", "furniture"],
@@ -90,7 +90,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ベル",
-    romanji: "beru",
+    romaji: "beru",
     meaning: "bell",
     level: "N4",
     tags: ["loanword"],
@@ -98,7 +98,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ビル",
-    romanji: "biru",
+    romaji: "biru",
     meaning: "building",
     level: "N4",
     tags: ["loanword", "architecture"],
@@ -106,7 +106,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ボールペン",
-    romanji: "boorupen",
+    romaji: "boorupen",
     meaning: "ball-point pen",
     level: "N5",
     tags: ["loanword", "stationery"],
@@ -114,7 +114,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ボタン",
-    romanji: "botan",
+    romaji: "botan",
     meaning: "button",
     level: "N5",
     tags: ["loanword"],
@@ -122,7 +122,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "チェック",
-    romanji: "chekku",
+    romaji: "chekku",
     meaning: "to check",
     level: "N4",
     tags: ["loanword", "verb"],
@@ -130,7 +130,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "デパート",
-    romanji: "depaato",
+    romaji: "depaato",
     meaning: "department store",
     level: "N5",
     tags: ["loanword", "shopping"],
@@ -138,7 +138,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ドア",
-    romanji: "doa",
+    romaji: "doa",
     meaning: "door",
     level: "N5",
     tags: ["loanword", "housing"],
@@ -146,7 +146,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "エレベーター",
-    romanji: "erebeetaa",
+    romaji: "erebeetaa",
     meaning: "elevator",
     level: "N5",
     tags: ["loanword", "tech"],
@@ -154,7 +154,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "エスカレーター",
-    romanji: "esukareetaa",
+    romaji: "esukareetaa",
     meaning: "escalator",
     level: "N4",
     tags: ["loanword", "tech"],
@@ -162,7 +162,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ファックス",
-    romanji: "fakkusu",
+    romaji: "fakkusu",
     meaning: "fax",
     level: "N4",
     tags: ["loanword", "tech"],
@@ -170,7 +170,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "フィルム",
-    romanji: "firumu",
+    romaji: "firumu",
     meaning: "film",
     level: "N5",
     tags: ["loanword", "photography"],
@@ -178,7 +178,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "フォーク",
-    romanji: "fooku",
+    romaji: "fooku",
     meaning: "fork",
     level: "N5",
     tags: ["loanword", "kitchen"],
@@ -186,7 +186,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ガラス",
-    romanji: "garasu",
+    romaji: "garasu",
     meaning: "a glass",
     level: "N4",
     tags: ["loanword", "material"],
@@ -194,7 +194,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ガソリン",
-    romanji: "gasorin",
+    romaji: "gasorin",
     meaning: "gasoline; petrol",
     level: "N4",
     tags: ["loanword", "fuel"],
@@ -202,7 +202,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ガソリンスタンド",
-    romanji: "gasorin sutando",
+    romaji: "gasorin sutando",
     meaning: "petrol station",
     level: "N4",
     tags: ["loanword", "place"],
@@ -210,7 +210,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ガス",
-    romanji: "gasu",
+    romaji: "gasu",
     meaning: "petrol",
     level: "N4",
     tags: ["loanword", "fuel"],
@@ -218,7 +218,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ギター",
-    romanji: "gitaa",
+    romaji: "gitaa",
     meaning: "guitar",
     level: "N5",
     tags: ["loanword", "music"],
@@ -226,7 +226,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ごみ",
-    romanji: "gomi",
+    romaji: "gomi",
     meaning: "rubbish",
     level: "N4",
     tags: ["noun"], // "gomi" is a native Japanese word, not a loanword.
@@ -234,7 +234,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "グラム",
-    romanji: "guramu",
+    romaji: "guramu",
     meaning: "gram",
     level: "N5",
     tags: ["loanword", "unit"],
@@ -242,7 +242,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ハンドバッグ",
-    romanji: "handobaggu",
+    romaji: "handobaggu",
     meaning: "handbag",
     level: "N4",
     tags: ["loanword", "fashion"],
@@ -250,7 +250,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ハンカチ",
-    romanji: "hankachi",
+    romaji: "hankachi",
     meaning: "handkerchief",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -258,7 +258,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ホテル",
-    romanji: "hoteru",
+    romaji: "hoteru",
     meaning: "hotel",
     level: "N5",
     tags: ["loanword", "place", "travel"],
@@ -266,7 +266,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ジャム",
-    romanji: "jamu",
+    romaji: "jamu",
     meaning: "jam",
     level: "N4",
     tags: ["loanword", "food_drink"],
@@ -274,7 +274,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "カーテン",
-    romanji: "kaaten",
+    romaji: "kaaten",
     meaning: "curtain",
     level: "N4",
     tags: ["loanword", "furniture"],
@@ -282,7 +282,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "カメラ",
-    romanji: "kamera",
+    romaji: "kamera",
     meaning: "camera",
     level: "N5",
     tags: ["loanword", "tech"],
@@ -290,7 +290,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "カップ",
-    romanji: "kappu",
+    romaji: "kappu",
     meaning: "cup",
     level: "N5",
     tags: ["loanword", "kitchen"],
@@ -298,7 +298,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "カレー",
-    romanji: "karee",
+    romaji: "karee",
     meaning: "curry",
     level: "N5",
     tags: ["loanword", "food_drink"],
@@ -306,7 +306,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "カレンダー",
-    romanji: "karendaa",
+    romaji: "karendaa",
     meaning: "calendar",
     level: "N5",
     tags: ["loanword"],
@@ -314,7 +314,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ケーキ",
-    romanji: "keeki",
+    romaji: "keeki",
     meaning: "cake",
     level: "N4",
     tags: ["loanword", "food_drink"],
@@ -322,7 +322,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "キログラム",
-    romanji: "kiro guramu",
+    romaji: "kiro guramu",
     meaning: "kilogram",
     level: "N5",
     tags: ["loanword", "unit"],
@@ -330,7 +330,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "キロメートル",
-    romanji: "kiro meetoru",
+    romaji: "kiro meetoru",
     meaning: "kilometer",
     level: "N5",
     tags: ["loanword", "unit"],
@@ -338,7 +338,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "コンピュータ",
-    romanji: "konpyuuta",
+    romaji: "konpyuuta",
     meaning: "computer",
     level: "N4",
     tags: ["loanword", "tech"],
@@ -346,7 +346,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "コンサート",
-    romanji: "konsaato",
+    romaji: "konsaato",
     meaning: "concert",
     level: "N4",
     tags: ["loanword", "music"],
@@ -354,7 +354,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "コーヒー",
-    romanji: "koohii",
+    romaji: "koohii",
     meaning: "Coffee",
     level: "N5",
     tags: ["loanword", "food_drink"],
@@ -362,7 +362,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "コート",
-    romanji: "kooto",
+    romaji: "kooto",
     meaning: "coat",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -370,7 +370,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "コピー",
-    romanji: "kopii",
+    romaji: "kopii",
     meaning: "copy; photocopy",
     level: "N5",
     tags: ["loanword", "office"],
@@ -378,7 +378,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "コップ",
-    romanji: "koppu",
+    romaji: "koppu",
     meaning: "glass (drinking vessel); tumbler",
     level: "N5",
     tags: ["loanword", "kitchen"],
@@ -386,7 +386,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "クラス",
-    romanji: "kurasu",
+    romaji: "kurasu",
     meaning: "class",
     level: "N5",
     tags: ["loanword", "education"],
@@ -394,7 +394,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "マッチ",
-    romanji: "macchi",
+    romaji: "macchi",
     meaning: "match",
     level: "N5",
     tags: ["loanword"],
@@ -402,7 +402,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "メートル",
-    romanji: "meetoru",
+    romaji: "meetoru",
     meaning: "metre; meter",
     level: "N5",
     tags: ["loanword", "unit"],
@@ -410,7 +410,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ナイフ",
-    romanji: "naifu",
+    romaji: "naifu",
     meaning: "knife",
     level: "N5",
     tags: ["loanword", "kitchen"],
@@ -418,7 +418,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ネクタイ",
-    romanji: "nekutai",
+    romaji: "nekutai",
     meaning: "tie; necktie",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -426,7 +426,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ノート",
-    romanji: "nooto",
+    romaji: "nooto",
     meaning: "notebook",
     level: "N5",
     tags: ["loanword", "stationery"],
@@ -434,7 +434,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ニュース",
-    romanji: "nyuusu",
+    romaji: "nyuusu",
     meaning: "news",
     level: "N5",
     tags: ["loanword", "media"],
@@ -442,7 +442,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "オートバイ",
-    romanji: "ootobai",
+    romaji: "ootobai",
     meaning: "motorcycle",
     level: "N4",
     tags: ["loanword", "transportation"],
@@ -450,7 +450,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "パーティー",
-    romanji: "paatii",
+    romaji: "paatii",
     meaning: "party",
     level: "N5",
     tags: ["loanword", "event"],
@@ -458,7 +458,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "パート",
-    romanji: "paato",
+    romaji: "paato",
     meaning: "part; part time",
     level: "N4",
     tags: ["loanword", "work"],
@@ -466,7 +466,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "パン",
-    romanji: "pan",
+    romaji: "pan",
     meaning: "bread",
     level: "N5",
     tags: ["loanword", "food_drink"],
@@ -474,7 +474,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ページ",
-    romanji: "peeji",
+    romaji: "peeji",
     meaning: "page",
     level: "N5",
     tags: ["loanword", "text"],
@@ -482,7 +482,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ペン",
-    romanji: "pen",
+    romaji: "pen",
     meaning: "pen",
     level: "N5",
     tags: ["loanword", "stationery"],
@@ -490,7 +490,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ペット",
-    romanji: "petto",
+    romaji: "petto",
     meaning: "pet",
     level: "N5",
     tags: ["loanword", "animal"],
@@ -498,7 +498,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ピアノ",
-    romanji: "piano",
+    romaji: "piano",
     meaning: "piano",
     level: "N4",
     tags: ["loanword", "music"],
@@ -506,7 +506,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ポケット",
-    romanji: "poketto",
+    romaji: "poketto",
     meaning: "pocket",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -514,7 +514,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ポスト",
-    romanji: "posuto",
+    romaji: "posuto",
     meaning: "post",
     level: "N5",
     tags: ["loanword", "mail"],
@@ -522,7 +522,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "プレゼント",
-    romanji: "purezento",
+    romaji: "purezento",
     meaning: "present; gift",
     level: "N4",
     tags: ["loanword"],
@@ -530,7 +530,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "プール",
-    romanji: "puuru",
+    romaji: "puuru",
     meaning: "swimming pool",
     level: "N5",
     tags: ["loanword", "place", "sports"],
@@ -538,7 +538,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ラジオ",
-    romanji: "rajiio",
+    romaji: "rajiio",
     meaning: "radio",
     level: "N5",
     tags: ["loanword", "tech"],
@@ -546,7 +546,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "レジ",
-    romanji: "reji",
+    romaji: "reji",
     meaning: "cashier",
     level: "N4",
     tags: ["loanword", "shopping"],
@@ -554,7 +554,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "レコード",
-    romanji: "rekoodo",
+    romaji: "rekoodo",
     meaning: "record",
     level: "N5",
     tags: ["loanword", "music"],
@@ -562,7 +562,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "レストラン",
-    romanji: "resutoran",
+    romaji: "resutoran",
     meaning: "restaurant",
     level: "N5",
     tags: ["loanword", "food_drink", "place"],
@@ -570,7 +570,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "サンダル",
-    romanji: "sandaru",
+    romaji: "sandaru",
     meaning: "sandal",
     level: "N4",
     tags: ["loanword", "clothing"],
@@ -578,7 +578,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "サンドイッチ",
-    romanji: "sandoicchi",
+    romaji: "sandoicchi",
     meaning: "sandwich",
     level: "N4",
     tags: ["loanword", "food_drink"],
@@ -586,7 +586,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "サラダ",
-    romanji: "sarada",
+    romaji: "sarada",
     meaning: "salad",
     level: "N4",
     tags: ["loanword", "food_drink"],
@@ -594,7 +594,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "セーター",
-    romanji: "seetaa",
+    romaji: "seetaa",
     meaning: "sweater; jumper",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -602,7 +602,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "シャツ",
-    romanji: "shatsu",
+    romaji: "shatsu",
     meaning: "shirt",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -610,7 +610,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "シャワー",
-    romanji: "shawaa",
+    romaji: "shawaa",
     meaning: "shower",
     level: "N5",
     tags: ["loanword", "daily_life"],
@@ -618,7 +618,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ソフト",
-    romanji: "sofuto",
+    romaji: "sofuto",
     meaning: "soft",
     level: "N4",
     tags: ["loanword", "adjective"],
@@ -626,7 +626,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "スカート",
-    romanji: "sukaato",
+    romaji: "sukaato",
     meaning: "skirt",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -634,7 +634,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "スクリーン",
-    romanji: "sukuriin",
+    romaji: "sukuriin",
     meaning: "screen",
     level: "N4",
     tags: ["loanword", "technology"],
@@ -642,7 +642,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "スポーツ",
-    romanji: "supootsu",
+    romaji: "supootsu",
     meaning: "sport; sports",
     level: "N5",
     tags: ["loanword", "activity"],
@@ -650,7 +650,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "スプーン",
-    romanji: "supuun",
+    romaji: "supuun",
     meaning: "spoon",
     level: "N5",
     tags: ["loanword", "kitchen"],
@@ -658,7 +658,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "スリッパ",
-    romanji: "surippa",
+    romaji: "surippa",
     meaning: "slipper; slippers",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -666,7 +666,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "スーツケース",
-    romanji: "sustsukeesu",
+    romaji: "sustsukeesu",
     meaning: "suitcase",
     level: "N4",
     tags: ["loanword", "travel"],
@@ -674,7 +674,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ステーキ",
-    romanji: "suteeki",
+    romaji: "suteeki",
     meaning: "steak",
     level: "N4",
     tags: ["loanword", "food_drink"],
@@ -682,7 +682,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ステレオ",
-    romanji: "sutereo",
+    romaji: "sutereo",
     meaning: "stereo",
     level: "N4",
     tags: ["loanword", "technology"],
@@ -690,7 +690,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ストーブ",
-    romanji: "sutoobu",
+    romaji: "sutoobu",
     meaning: "heater; stove",
     level: "N5",
     tags: ["loanword", "home_appliance"],
@@ -698,7 +698,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "スーツ",
-    romanji: "suutsu",
+    romaji: "suutsu",
     meaning: "suit",
     level: "N4",
     tags: ["loanword", "clothing"],
@@ -706,7 +706,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "タイプ",
-    romanji: "taipu",
+    romaji: "taipu",
     meaning: "type,style",
     level: "N4",
     tags: ["loanword", "general"],
@@ -714,7 +714,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "タクシー",
-    romanji: "takushii",
+    romaji: "takushii",
     meaning: "taxi",
     level: "N5",
     tags: ["loanword", "transportation"],
@@ -722,7 +722,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "テーブル",
-    romanji: "teeburu",
+    romaji: "teeburu",
     meaning: "table",
     level: "N5",
     tags: ["loanword", "furniture"],
@@ -730,7 +730,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "テープ",
-    romanji: "teepu",
+    romaji: "teepu",
     meaning: "tape",
     level: "N5",
     tags: ["loanword", "stationery"],
@@ -738,7 +738,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "テープレコーダー",
-    romanji: "teepu rekoodaa",
+    romaji: "teepu rekoodaa",
     meaning: "tape recorder",
     level: "N5",
     tags: ["loanword", "technology"],
@@ -746,7 +746,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "テニス",
-    romanji: "tenisu",
+    romaji: "tenisu",
     meaning: "tennis",
     level: "N4",
     tags: ["loanword", "activity"],
@@ -754,7 +754,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "テレビ",
-    romanji: "terebi",
+    romaji: "terebi",
     meaning: "television; TV",
     level: "N5",
     tags: ["loanword", "home_appliance"],
@@ -762,7 +762,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "テスト",
-    romanji: "tesuto",
+    romaji: "tesuto",
     meaning: "examination; quiz; test",
     level: "N5",
     tags: ["loanword", "education"],
@@ -770,7 +770,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "トイレ",
-    romanji: "toire",
+    romaji: "toire",
     meaning: "toilet",
     level: "N5",
     tags: ["loanword", "place"],
@@ -778,7 +778,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ワープロ",
-    romanji: "waapuro",
+    romaji: "waapuro",
     meaning: "word processor",
     level: "N4",
     tags: ["loanword", "technology"],
@@ -786,7 +786,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ワイシャツ",
-    romanji: "wai shatsu",
+    romaji: "wai shatsu",
     meaning: "shirt",
     level: "N5",
     tags: ["loanword", "clothing"],
@@ -794,7 +794,7 @@ export const promptSeedData = [
   {
     type: "KATAKANA",
     japanese: "ゼロ",
-    romanji: "zero",
+    romaji: "zero",
     meaning: "zero",
     level: "N5",
     tags: ["loanword", "number"],

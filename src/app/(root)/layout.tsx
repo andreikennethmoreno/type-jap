@@ -2,14 +2,13 @@
 import { BreadcrumbBar } from "@/components/breadcrumb-bar";
 import { Metadata } from "next";
 
-
 export const metadata: Metadata = {
   title: "TypeNihongo — Learn Japanese by Typing & Recall",
   description:
     "Master Japanese through active recall, typing in Romaji, Kana, and Kanji. TypeNihongo helps you reinforce grammar, vocab, and more — the smart, interactive way.",
   keywords: [
     "Japanese learning",
-    "Romanji to Kana",
+    "Romaji to Kana",
     "Active recall app",
     "JLPT practice",
     "Learn Japanese typing",

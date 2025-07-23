@@ -2,10 +2,10 @@
 
 import { JapanesePrompt } from "@/interface/katakana-word.interface";
 
-export function checkKatakanaRomanji(
+export function checkKatakanaRomaji(
   input: string,
   word: JapanesePrompt
 ): boolean {
   const normalize = (str: string) => str.replace(/[\s-]/g, "").toLowerCase();
-  return normalize(input) === normalize(word.romanji);
+  return normalize(input) === normalize(word.romaji);
 }

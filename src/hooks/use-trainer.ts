@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { ZodSchema } from "zod";
 
 // ✅ TEMP: Hardcoded import for testing
-import { checkKatakanaRomanji } from "@/lib/trainers/katakana/romanji";
 import { JapanesePrompt } from "@/interface/katakana-word.interface";
+import { checkKatakanaRomaji } from "@/lib/trainers/katakana/romaji";
 
 interface UseTrainerProps {
   words: JapanesePrompt[];
@@ -30,38 +30,37 @@ export function useTrainer({ words, script, mode, schema }: UseTrainerProps) {
   const current = words[index];
 
   useEffect(() => {
-    setCheckAnswer(() => checkKatakanaRomanji);
+    setCheckAnswer(() => checkKatakanaRomaji);
   }, [script, mode]);
 
- const handleSubmit = () => {
-   const result = schema.safeParse({ inputText: input });
-   if (!result.success) {
-     setError(result.error.issues[0].message);
-     return;
-   }
+  const handleSubmit = () => {
+    const result = schema.safeParse({ inputText: input });
+    if (!result.success) {
+      setError(result.error.issues[0].message);
+      return;
+    }
 
-   setError(null);
-   if (!checkAnswer) return;
+    setError(null);
+    if (!checkAnswer) return;
 
-   const isCorrect = checkAnswer(input, current);
-   const resultLabel = isCorrect ? "correct" : "wrong";
+    const isCorrect = checkAnswer(input, current);
+    const resultLabel = isCorrect ? "correct" : "wrong";
 
-   setFeedback(resultLabel);
-   setHistory((prev) => [
-     ...prev,
-     {
-       word: current,
-       userInput: input,
-       result: resultLabel,
-     },
-   ]);
+    setFeedback(resultLabel);
+    setHistory((prev) => [
+      ...prev,
+      {
+        word: current,
+        userInput: input,
+        result: resultLabel,
+      },
+    ]);
 
-   // Automatically go to next word after small delay
-   setTimeout(() => {
-     handleNext();
-   }, 1000); // Adjust delay as needed
- };
-
+    // Automatically go to next word after small delay
+    setTimeout(() => {
+      handleNext();
+    }, 1000); // Adjust delay as needed
+  };
 
   const handleNext = () => {
     setInput("");

@@ -46,7 +46,7 @@ model Prompt {
   id          String     @id @default(uuid())
   type        PromptType @default(KATAKANA)
   japanese    String     // the katakana or phrase shown
-  romanji      String     // correct romaji or spelling
+  romaji      String     // correct romaji or spelling
   meaning     String     // required: English meaning of the word
   level       String?    // N5, N4, etc.
   tags        String[]   // ["loanword", "place", "tech"]

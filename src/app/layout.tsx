@@ -14,7 +14,6 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
     "Master Japanese through active recall, typing in Romaji, Kana, and Kanji. TypeNihongo helps you reinforce grammar, vocab, and more — the smart, interactive way.",
   keywords: [
     "Japanese learning",
-    "Romanji to Kana",
+    "Romaji to Kana",
     "Active recall app",
     "JLPT practice",
     "Learn Japanese typing",
@@ -61,7 +60,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
 
 export default function RootLayout({
   children,
