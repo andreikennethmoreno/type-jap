@@ -18,12 +18,12 @@ import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
 import { JapanesePrompt } from "@/interface/katakana-word.interface";
 
 interface Props {
-  words: JapanesePrompt[];
+  initialPrompt: JapanesePrompt;
   script: string;
   mode: string;
 }
 
-export default function Trainer({ words, script, mode }: Props) {
+export default function Trainer({ initialPrompt, script, mode }: Props) {
   const {
     input,
     setInput,
@@ -34,9 +34,10 @@ export default function Trainer({ words, script, mode }: Props) {
     // handleNext,
     history,
   } = useTrainer({
-    words,
+    initialPrompt,
     script,
     mode,
+
     schema: TestFormSchema,
   });
 

@@ -13,8 +13,5 @@ export default async function Page({
   const prompt = await getRandomPrompt(script);
   if (!prompt) return notFound();
 
-  // simulate words array to match Trainer's expected props
-  const words = [prompt]; // just one random word for now
-
-  return <Trainer words={words} script={script} mode={mode} />;
+  return <Trainer initialPrompt={prompt} script={script} mode={mode} />;
 }
