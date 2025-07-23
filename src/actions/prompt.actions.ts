@@ -22,3 +22,10 @@ export async function getRandomPrompt(script: string) {
 
   return prompt[0] ?? null;
 }
+
+
+export async function getPromptById(id: string) {
+  return prisma.prompt.findUnique({
+    where: { id },
+  });
+}

@@ -10,20 +10,19 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { TestFormSchema } from "@/lib/form-scehma";
+import { TestFormSchema } from "@/lib/form-schema";
 import { useTrainer } from "@/hooks/use-trainer";
 import History from "@/components/history";
 import ToggleRevealEng from "./toggle-reveal-eng";
 import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
-import { JapanesePrompt } from "@/interface/katakana-word.interface";
 
 interface Props {
-  initialPrompt: JapanesePrompt;
+  userId: string;
   script: string;
   mode: string;
 }
 
-export default function Trainer({ initialPrompt, script, mode }: Props) {
+export default function Trainer({ userId, script, mode }: Props) {
   const {
     input,
     setInput,
@@ -31,13 +30,13 @@ export default function Trainer({ initialPrompt, script, mode }: Props) {
     error,
     current,
     handleSubmit,
-    // handleNext,
     history,
+    sessionComplete,
+    loading,
   } = useTrainer({
-    initialPrompt,
+    userId,
     script,
     mode,
-
     schema: TestFormSchema,
   });
 
@@ -45,6 +44,24 @@ export default function Trainer({ initialPrompt, script, mode }: Props) {
   const totalAttempts = history.length;
   const accuracy =
     totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : 0;
+
+  if (loading) {
+    return <div className="text-center mt-10 text-lg">Loading session...</div>;
+  }
+
+  if (!current) {
+    return <div className="text-center mt-10 text-lg">Loading prompt...</div>;
+  }
+
+  if (sessionComplete) {
+    return (
+      <div className="text-center mt-10 space-y-4">
+        <h2 className="text-2xl font-bold">🎉 Session Complete!</h2>
+        <p>You answered {history.length} prompts.</p>
+        <p>Accuracy: {accuracy}%</p>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-4xl mx-auto mt-6 p-4 space-y-6">
@@ -113,24 +130,6 @@ export default function Trainer({ initialPrompt, script, mode }: Props) {
             <Button type="submit" className="w-full" size="lg">
               Check Answer
             </Button>
-
-            {/* Feedback Messages
-            {feedback === "correct" && (
-              <div className="text-center p-3 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
-                <p className="text-green-700 dark:text-green-300 font-medium flex items-center justify-center gap-2">
-                  <span className="text-2xl">🎉</span>
-                  Perfect! Well done!
-                </p>
-              </div>
-            )}
-            {feedback === "wrong" && (
-              <div className="text-center p-3 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
-                <p className="text-red-700 dark:text-red-300 font-medium flex items-center justify-center gap-2">
-                  <span className="text-2xl">💪</span>
-                  {`Keep trying! You've got this!`}
-                </p>
-              </div>
-            )} */}
           </form>
         </CardContent>
       </Card>

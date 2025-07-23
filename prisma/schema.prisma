@@ -14,33 +14,50 @@ model User {
   email      String
   name       String
   createdAt  DateTime  @default(now())
-  clerkId   String  @unique
-
+  clerkId    String    @unique
 
   sessions   Session[]
 }
 
 model Session {
-  id         String     @id @default(uuid())
-  userId     String
-  startedAt  DateTime   @default(now())
-  endedAt    DateTime?
+  id          String    @id @default(uuid())
+  userId      String
+  startedAt   DateTime  @default(now())
+  endedAt     DateTime?
+  isCompleted Boolean   @default(false) // track if session is finished
+  progress    Int       @default(0)     // how many prompts have been answered
+  type        PromptType                 // session mode (KATAKANA, etc.)
+  promptIds   String[]                  // prompts assigned to this session (in order)
 
-  user       User       @relation(fields: [userId], references: [id])
-  histories  History[]
+  user        User      @relation(fields: [userId], references: [id])
+  history     History?  // optional 1:1 relation
+  answers     SessionAnswer[]
 }
 
 model History {
   id         String     @id @default(uuid())
-  sessionId  String
-  type       String
+  sessionId  String     @unique             // enforce 1:1 with Session
   score      Int
+  total      Int
+  correct    Int
   createdAt  DateTime   @default(now())
-  metadata   Json?
-  promptIds  String[] // store which prompts were used in this run
+  metadata   Json?                            // { answers: [...] }
   session    Session    @relation(fields: [sessionId], references: [id])
 }
 
+model SessionAnswer {
+  id         String   @id @default(uuid())
+  sessionId  String
+  promptId   String
+  userAnswer String
+  isCorrect  Boolean
+  answeredAt DateTime @default(now())
+
+  session    Session  @relation(fields: [sessionId], references: [id])
+  prompt     Prompt   @relation(fields: [promptId], references: [id])
+
+  @@unique([sessionId, promptId]) // prevent duplicate answers for same prompt in one session
+}
 
 model Prompt {
   id          String     @id @default(uuid())
@@ -51,6 +68,7 @@ model Prompt {
   level       String?    // N5, N4, etc.
   tags        String[]   // ["loanword", "place", "tech"]
   createdAt   DateTime   @default(now())
+  answers     SessionAnswer[]
 }
 
 enum PromptType {

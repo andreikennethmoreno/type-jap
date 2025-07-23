@@ -1,6 +1,6 @@
 // /lib/trainers/katakana/romaji.ts
 
-import { JapanesePrompt } from "@/interface/katakana-word.interface";
+import { JapanesePrompt } from "@/interface/japanese-prompt.interface";
 
 export function checkKatakanaRomaji(
   input: string,
