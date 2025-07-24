@@ -5,11 +5,10 @@ import { JSX } from "react";
 export default async function Page({
   params,
 }: {
-  params: { script: string };
+  params: Promise<{ script: string }>;
 }): Promise<JSX.Element> {
-  const { script } = params;
+  const { script } = await params;
 
-  // Optional: Validate script to prevent invalid URLs
   const validScripts = ["katakana", "hiragana", "kanji"];
   if (!validScripts.includes(script)) notFound();
 
