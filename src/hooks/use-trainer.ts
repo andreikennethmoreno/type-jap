@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { ZodSchema } from "zod";
 import { JapanesePrompt } from "@/interface/japanese-prompt.interface";
-import { checkKatakanaRomaji } from "@/lib/trainers/katakana/romaji";
 import {
   finalizeSession,
   startOrResumeSession,
@@ -13,14 +12,14 @@ import {
 import { getPromptById, getRandomPrompts } from "@/actions/prompt.actions";
 import { PromptType } from "@prisma/client";
 import { useUser } from "@clerk/nextjs";
+import { checkRomaji } from "@/lib/trainers/check-romaji";
 
 interface UseTrainerProps {
   script: string;
-  mode: string;
   schema: ZodSchema<{ inputText: string }>;
 }
 
-export function useTrainer({ script, mode, schema }: UseTrainerProps) {
+export function useTrainer({ script, schema }: UseTrainerProps) {
   const { user } = useUser();
   const [submitting, setSubmitting] = useState(false);
   const [sessionId, setSessionId] = useState<string | null>(null);
@@ -42,9 +41,9 @@ export function useTrainer({ script, mode, schema }: UseTrainerProps) {
 
   // 1. Setup checker function
   useEffect(() => {
-    setCheckAnswer(() => checkKatakanaRomaji);
+    setCheckAnswer(() => checkRomaji);
     console.log("[INIT] Answer checker set up for script:", script);
-  }, [script, mode]);
+  }, [script]);
 
   // 2. Start session OR fetch guest prompts
   useEffect(() => {

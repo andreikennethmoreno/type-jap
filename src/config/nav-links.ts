@@ -1,7 +1,6 @@
 import {
   LayoutDashboardIcon,
   BookOpenCheckIcon,
-  JapaneseYenIcon,
   LanguagesIcon,
 } from "lucide-react";
 
@@ -12,29 +11,24 @@ export const navLinks = [
     icon: LayoutDashboardIcon,
   },
   {
-    href: "/trainer",
-    label: "Trainer",
+    href: "/typing",
+    label: "Typing",
     icon: BookOpenCheckIcon,
     children: [
       {
-        href: "/trainer/katakana/english",
-        label: "Katakana → English (Romaji)",
+        href: "/typing/katakana",
+        label: "Katakana → Romaji",
         icon: LanguagesIcon,
       },
       {
-        href: "/trainer/katakana/meaning",
-        label: "Katakana → English Meaning",
-        icon: JapaneseYenIcon,
-      },
-      {
-        href: "/trainer/hiragana/english",
-        label: "Hiragana → English (Romaji)",
+        href: "/typing/hiragana",
+        label: "Hiragana → Romaji",
         icon: LanguagesIcon,
       },
       {
-        href: "/trainer/kanji/recognition",
-        label: "Kanji Recognition",
-        icon: JapaneseYenIcon,
+        href: "/typing/kanji",
+        label: "Kanji → Romaji",
+        icon: LanguagesIcon,
       },
     ],
   },

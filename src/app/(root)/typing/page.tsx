@@ -1,11 +1,9 @@
-// app/trainer/page.tsx
-
 "use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const scripts = ["katakana", "hiragana", "kanji"];
-const modes = ["romaji", "meaning", "recognition"];
 
 export default function TrainerHome() {
   return (
@@ -15,13 +13,11 @@ export default function TrainerHome() {
         {scripts.map((script) => (
           <div key={script}>
             <h2 className="font-semibold">{script.toUpperCase()}</h2>
-            <div className="flex gap-2 mt-2">
-              {modes.map((mode) => (
-                <Link key={mode} href={`/trainer/${script}/${mode}`}>
-                  <Button variant="outline">{mode}</Button>
-                </Link>
-              ))}
-            </div>
+            <Link href={`/trainer/${script}`}>
+              <Button variant="outline" className="mt-2">
+                Start Romaji Practice
+              </Button>
+            </Link>
           </div>
         ))}
       </div>
