@@ -2,7 +2,7 @@
 
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
-
+import { getPromptsByIds } from "./prompt.actions"; // 👈 import your prompt fetcher
 
 export async function getAllHistory() {
   const userId = await getDbUserId();
@@ -34,5 +34,31 @@ export async function getAllHistory() {
     },
   });
 
-  return histories;
+  // Flatten all promptIds from all history answer metadata
+  const allPromptIds = histories.flatMap((history) => {
+    const metadata = history.metadata as { answers?: any[] } | null;
+    return metadata?.answers?.map((a) => a.promptId) ?? [];
+  });
+
+  // Get unique prompt IDs
+  const uniquePromptIds = [...new Set(allPromptIds)];
+
+  // Fetch all prompts once
+  const prompts = await getPromptsByIds(uniquePromptIds);
+
+  // Index prompts for fast lookup
+  const promptMap = new Map(prompts.map((p) => [p.id, p]));
+
+  return histories.map((history) => {
+    const metadata = history.metadata as { answers?: any[] } | null;
+    const answers = (metadata?.answers ?? []).map((answer) => ({
+      ...answer,
+      prompt: promptMap.get(answer.promptId) ?? null,
+    }));
+
+    return {
+      ...history,
+      answers,
+    };
+  });
 }
