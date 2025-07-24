@@ -20,5 +20,5 @@ export interface HistoryItem {
   total: number;
   correct: number;
   createdAt: Date;
-  metadata: any;
+  metadata: string;
 }
