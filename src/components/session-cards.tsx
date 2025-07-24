@@ -16,7 +16,7 @@ interface SessionCardProps {
     id: string;
     score: number;
     total: number;
-      createdAt: Date;
+    createdAt: string;
     session: {
       id: string;
       type: string;

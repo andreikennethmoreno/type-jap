@@ -60,9 +60,12 @@ export async function getAllHistory() {
 
   return histories.map((history) => {
     const metadata = history.metadata as { answers?: Answer[] } | null;
+
     const answers = (metadata?.answers ?? []).map((answer) => ({
-      ...answer,
-      prompt: promptMap.get(answer.promptId) ?? null,
+      id: answer.promptId, // ✅ explicitly add id
+      isCorrect: answer.isCorrect,
+      userAnswer: answer.userAnswer,
+      prompt: promptMap.get(answer.promptId) ?? undefined,
     }));
 
     return {
@@ -70,7 +73,7 @@ export async function getAllHistory() {
       score: history.score,
       total: history.total,
       correct: history.correct,
-      createdAt: history.createdAt.toISOString(), // ✅ serialize Date
+      createdAt: history.createdAt.toISOString(), // keep serialized
       session: {
         id: history.session.id,
         type: history.session.type,
