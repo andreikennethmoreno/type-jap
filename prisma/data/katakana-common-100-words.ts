@@ -1,3 +1,5 @@
+//N4-N5
+
 export const promptSeedData = [
   {
     type: "KATAKANA",

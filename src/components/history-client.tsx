@@ -27,7 +27,7 @@ interface HistoryItem {
   }>;
 }
 
-export default function HistoryPage() {
+export default function HistoryClient() {
   const [histories, setHistories] = useState<HistoryItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedType, setSelectedType] = useState("all");

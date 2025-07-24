@@ -12,16 +12,15 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { TestFormSchema } from "@/lib/form-schema";
 import { useTrainer } from "@/hooks/use-trainer";
-import History from "@/components/history";
+import History from "@/components/history-server";
 import ToggleRevealEng from "./toggle-reveal-eng";
 import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
 
 interface Props {
   script: string;
-  mode: string;
 }
 
-export default function Trainer({ script, mode }: Props) {
+export default function Trainer({ script }: Props) {
   const {
     input,
     setInput,
@@ -35,7 +34,6 @@ export default function Trainer({ script, mode }: Props) {
     submitting,
   } = useTrainer({
     script,
-    mode,
     schema: TestFormSchema,
   });
 
@@ -83,7 +81,7 @@ export default function Trainer({ script, mode }: Props) {
             {current.japanese}
           </CardTitle>
           <CardDescription className="text-base">
-            Type the {mode} for this character
+            Type the <strong>romaji</strong> for this character
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -103,7 +101,7 @@ export default function Trainer({ script, mode }: Props) {
             <div className="relative">
               <Input
                 autoFocus
-                placeholder={`Enter ${mode}...`}
+                placeholder="Enter romaji..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 className={`text-lg text-center transition-all duration-300 ${

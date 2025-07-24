@@ -12,10 +12,9 @@ import {
   useUser,
   SignInButton,
   SignOutButton,
-  UserProfile,
 } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
-import { BarChart2, Clock, LogOut, Settings } from "lucide-react";
+import { LogOut, Settings, User } from "lucide-react";
 import Image from "next/image";
 
 export default function UserDropdown() {
@@ -57,14 +56,13 @@ export default function UserDropdown() {
 
       <DropdownMenuContent align="end" className="w-56">
         <DropdownMenuItem
-          onClick={() => router.push("/history")}
+          onClick={() => router.push("/profile")}
           className="flex items-center gap-2"
         >
-          <Clock className="w-4 h-4 text-muted-foreground" />
-          <span>Session History</span>
+          <User className="w-4 h-4 text-muted-foreground" />
+          <span>Profile</span>
         </DropdownMenuItem>
 
-        
         <DropdownMenuItem
           onClick={() => router.push("/settings")}
           className="flex items-center gap-2"
