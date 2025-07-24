@@ -12,7 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { TestFormSchema } from "@/lib/form-schema";
 import { useTrainer } from "@/hooks/use-trainer";
-import History from "@/components/history";
+import History from "@/components/history-server";
 import ToggleRevealEng from "./toggle-reveal-eng";
 import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
 

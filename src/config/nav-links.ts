@@ -1,8 +1,5 @@
 import {
   LayoutDashboardIcon,
-  SettingsIcon,
-  ArrowRightLeft,
-  TypeIcon,
   BookOpenCheckIcon,
   JapaneseYenIcon,
   LanguagesIcon,

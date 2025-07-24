@@ -12,7 +12,7 @@ interface Props {
   }[];
 }
 
-export default function History({ history }: Props) {
+export default function HistoryServer({ history }: Props) {
   if (history.length === 0) return null;
 
   return (
