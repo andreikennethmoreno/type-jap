@@ -73,22 +73,7 @@ export function SessionCard({ history, onRedo, onDelete }: SessionCardProps) {
           </div>
 
           <div className="flex items-center gap-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => onRedo(history.session.id)}
-            >
-              <RotateCcw className="w-4 h-4 mr-1" />
-              Redo
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => onDelete(history.id)}
-              className="text-red-600 hover:text-red-700"
-            >
-              <Trash2 className="w-4 h-4" />
-            </Button>
+          
           </div>
         </div>
       </CardHeader>
