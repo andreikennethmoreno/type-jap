@@ -9,18 +9,20 @@ import { toPromptType } from "@/lib/helpers/prompt";
 
 
 
-export async function startOrResumeSession( type: string) {
-    const userId = await getDbUserId();
-    if (!userId) throw new Error("User not found");
-    
-    const normalizedType = toPromptType(type);
+export async function startOrResumeSession(type: string) {
+  const userId = await getDbUserId();
+  if (!userId) throw new Error("User not found");
 
+  const normalizedType = toPromptType(type);
+
+  // Step 1: Check for existing unfinished session
   const existing = await prisma.session.findFirst({
     where: {
       userId,
       type: normalizedType,
       isCompleted: false,
     },
+    orderBy: { startedAt: "desc" }, // prioritize most recent unfinished session
   });
 
   if (existing) {
@@ -30,16 +32,27 @@ export async function startOrResumeSession( type: string) {
     };
   }
 
-   const prompts = await getRandomPrompts(normalizedType, 10);
-   if (!prompts.length) throw new Error("No prompts found for this type");
+  // Step 2: Generate prompt IDs with fast random fetching
+  const prompts = await getRandomPrompts(normalizedType, 10);
+  if (!prompts.length) throw new Error("No prompts found for this type");
 
   const promptIds = prompts.map((p) => p.id);
 
+  // Step 3: Create new session with prompt IDs
   const session = await prisma.session.create({
     data: {
       userId,
       type: normalizedType,
       promptIds,
+    },
+    select: {
+      id: true,
+      userId: true,
+      type: true,
+      promptIds: true,
+      startedAt: true,
+      isCompleted: true,
+      progress: true,
     },
   });
 
@@ -48,6 +61,7 @@ export async function startOrResumeSession( type: string) {
     session,
   };
 }
+
 
 
 
