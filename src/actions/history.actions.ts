@@ -2,7 +2,20 @@
 
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
-import { getPromptsByIds } from "./prompt.actions"; // 👈 import your prompt fetcher
+import { getPromptsByIds } from "./prompt.actions";
+
+interface Answer {
+  promptId: string;
+  userAnswer: string;
+  isCorrect: boolean;
+}
+
+interface Prompt {
+  id: string;
+  japanese: string;
+  romaji: string;
+  meaning: string;
+}
 
 export async function getAllHistory() {
   const userId = await getDbUserId();
@@ -34,30 +47,35 @@ export async function getAllHistory() {
     },
   });
 
-  // Flatten all promptIds from all history answer metadata
   const allPromptIds = histories.flatMap((history) => {
-    const metadata = history.metadata as { answers?: any[] } | null;
+    const metadata = history.metadata as { answers?: Answer[] } | null;
     return metadata?.answers?.map((a) => a.promptId) ?? [];
   });
 
-  // Get unique prompt IDs
   const uniquePromptIds = [...new Set(allPromptIds)];
 
-  // Fetch all prompts once
   const prompts = await getPromptsByIds(uniquePromptIds);
 
-  // Index prompts for fast lookup
-  const promptMap = new Map(prompts.map((p) => [p.id, p]));
+  const promptMap = new Map(prompts.map((p: Prompt) => [p.id, p]));
 
   return histories.map((history) => {
-    const metadata = history.metadata as { answers?: any[] } | null;
+    const metadata = history.metadata as { answers?: Answer[] } | null;
     const answers = (metadata?.answers ?? []).map((answer) => ({
       ...answer,
       prompt: promptMap.get(answer.promptId) ?? null,
     }));
 
     return {
-      ...history,
+      id: history.id,
+      score: history.score,
+      total: history.total,
+      correct: history.correct,
+      createdAt: history.createdAt.toISOString(), // ✅ serialize Date
+      session: {
+        id: history.session.id,
+        type: history.session.type,
+        promptIds: history.session.promptIds,
+      },
       answers,
     };
   });
