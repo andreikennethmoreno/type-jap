@@ -1,7 +1,6 @@
 "use client";
 
 import { useSessionHistory } from "@/hooks/use-history";
-import { BarChart3, Brain, TrendingUp } from "lucide-react";
 import { LoadingState } from "@/components/analytics/loading-state";
 import { ErrorState } from "@/components/analytics/error-state";
 import { EmptyState } from "@/components/analytics/empty-state";

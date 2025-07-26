@@ -190,8 +190,8 @@ export function PerformanceByTypeChart({
                           <strong>{averageScore}%</strong>
                         </p>
                         <p>
-                          • You've completed <strong>{history.length}</strong>{" "}
-                          practice sessions
+                          • You&apos;ve completed{" "}
+                          <strong>{history.length}</strong> practice sessions
                         </p>
                         <p>
                           • Recent performance:{" "}

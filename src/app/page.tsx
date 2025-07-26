@@ -1,4 +1,3 @@
-import { Feature } from "@/components/feature";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 

@@ -1,7 +1,6 @@
 "use server"
 
 // /actions/session.actions.ts
-import { PromptType } from "@prisma/client";
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
 import { getRandomPrompts } from "./prompt.actions";
