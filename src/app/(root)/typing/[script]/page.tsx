@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import Trainer from "@/components/trainer";
+import Trainer from "@/components/typing/trainer";
 import { JSX } from "react";
 
 export default async function Page({

@@ -47,6 +47,13 @@ export async function getUserByClerkId(clerkId: string) {
   }
 }
 
+export async function getCurrentDbUser() {
+  const { userId } = await auth();
+  if (!userId) return null;
+
+  return await getUserByClerkId(userId);
+}
+
 export async function getDbUserId() {
   const { userId: clerkId } = await auth();
 

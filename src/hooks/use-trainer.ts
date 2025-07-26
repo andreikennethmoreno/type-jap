@@ -11,7 +11,7 @@ import {
 } from "@/actions/session.actions";
 import { getPromptById, getRandomPrompts } from "@/actions/prompt.actions";
 import { PromptType } from "@prisma/client";
-import { useUser } from "@clerk/nextjs";
+import { getCurrentDbUser } from "@/actions/user.actions";
 import { checkRomaji } from "@/lib/trainers/check-romaji";
 
 interface UseTrainerProps {
@@ -20,7 +20,7 @@ interface UseTrainerProps {
 }
 
 export function useTrainer({ script, schema }: UseTrainerProps) {
-  const { user } = useUser();
+  const [user, setUser] = useState<any>(null);
   const [submitting, setSubmitting] = useState(false);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [promptIds, setPromptIds] = useState<string[]>([]);
@@ -38,6 +38,17 @@ export function useTrainer({ script, schema }: UseTrainerProps) {
     { word: JapanesePrompt; userInput: string; result: "correct" | "wrong" }[]
   >([]);
   const [loading, setLoading] = useState(true);
+
+  // 0. Get current user
+  useEffect(() => {
+    const fetchUser = async () => {
+      const currentUser = await getCurrentDbUser();
+      setUser(currentUser);
+      console.log("[USER] Current user:", currentUser);
+    };
+
+    fetchUser();
+  }, []);
 
   // 1. Setup checker function
   useEffect(() => {
@@ -75,8 +86,11 @@ export function useTrainer({ script, schema }: UseTrainerProps) {
       setLoading(false);
     };
 
-    init();
-  }, [script]);
+    // Only initialize when we have determined the user state
+    if (user !== undefined) {
+      init();
+    }
+  }, [script, user]);
 
   const handleSubmit = async () => {
     if (submitting) return;

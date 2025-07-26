@@ -54,9 +54,8 @@ model SessionAnswer {
   answeredAt DateTime @default(now())
 
   session    Session  @relation(fields: [sessionId], references: [id])
-  prompt     Prompt   @relation(fields: [promptId], references: [id])
 
-  @@unique([sessionId, promptId]) // prevent duplicate answers for same prompt in one session
+@@unique([sessionId, promptId])// prevent duplicate answers for same prompt in one session
 }
 
 model Prompt {
@@ -68,7 +67,6 @@ model Prompt {
   level       String?    // N5, N4, etc.
   tags        String[]   // ["loanword", "place", "tech"]
   createdAt   DateTime   @default(now())
-  answers     SessionAnswer[]
 }
 
 enum PromptType {

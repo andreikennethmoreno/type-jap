@@ -12,9 +12,10 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { TestFormSchema } from "@/lib/form-schema";
 import { useTrainer } from "@/hooks/use-trainer";
-import History from "@/components/history-server";
+import History from "@/components/typing/history-server";
 import ToggleRevealEng from "./toggle-reveal-eng";
 import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
+import CombinedTrainerLoading from "./loading-state";
 
 interface Props {
   script: string;
@@ -42,13 +43,11 @@ export default function Trainer({ script }: Props) {
   const accuracy =
     totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : 0;
 
-  if (loading) {
-    return <div className="text-center mt-10 text-lg">Loading session...</div>;
-  }
-
-  if (!current) {
-    return <div className="text-center mt-10 text-lg">Loading prompt...</div>;
-  }
+    if (loading || !current) {
+      return (
+        <CombinedTrainerLoading/>
+      );
+    }
 
   if (sessionComplete) {
     return (
