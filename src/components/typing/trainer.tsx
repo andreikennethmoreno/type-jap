@@ -21,6 +21,8 @@ interface Props {
   script: string;
 }
 
+
+
 export default function Trainer({ script }: Props) {
   const {
     input,

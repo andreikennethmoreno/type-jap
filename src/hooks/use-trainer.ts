@@ -19,8 +19,16 @@ interface UseTrainerProps {
   schema: ZodSchema<{ inputText: string }>;
 }
 
+interface DbUser {
+  id: string;
+  email: string;
+  name: string;
+  createdAt: Date;
+  clerkId: string;
+}
+
 export function useTrainer({ script, schema }: UseTrainerProps) {
-  const [user, setUser] = useState<any>(null);
+const [user, setUser] = useState<DbUser | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [promptIds, setPromptIds] = useState<string[]>([]);
@@ -43,7 +51,7 @@ export function useTrainer({ script, schema }: UseTrainerProps) {
   useEffect(() => {
     const fetchUser = async () => {
       const currentUser = await getCurrentDbUser();
-      setUser(currentUser);
+      setUser(currentUser ?? null);
       console.log("[USER] Current user:", currentUser);
     };
 

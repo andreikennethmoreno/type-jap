@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, TrendingUp } from "lucide-react";
+import { BookOpen} from "lucide-react";
 
 export function EmptyState() {
   return (
