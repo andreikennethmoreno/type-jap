@@ -1,6 +1,6 @@
 import { PrismaClient, PromptType } from "@prisma/client";
 //import { promptSeedData } from "./data/hiragana-common-100-words";
-import { promptSeedData } from "./data/kanji-common-100-words";
+import { promptSeedData } from "./data/seeding/kanji-common-100-words";
 
 
 const prisma = new PrismaClient();

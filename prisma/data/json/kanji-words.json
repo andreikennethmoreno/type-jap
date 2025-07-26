@@ -1,0 +1,3782 @@
+{
+    "vocabulary": [
+      {
+        "type": "KANJI",
+        "japanese": "人",
+        "romaji": "hito",
+        "meaning": "person",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "日",
+        "romaji": "hi",
+        "meaning": "day; sun",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "年",
+        "romaji": "toshi",
+        "meaning": "year",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "時",
+        "romaji": "toki",
+        "meaning": "time; hour",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "手",
+        "romaji": "te",
+        "meaning": "hand",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "目",
+        "romaji": "me",
+        "meaning": "eye",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "口",
+        "romaji": "kuchi",
+        "meaning": "mouth",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "水",
+        "romaji": "mizu",
+        "meaning": "water",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "火",
+        "romaji": "hi",
+        "meaning": "fire",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "木",
+        "romaji": "ki",
+        "meaning": "tree; wood",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "金",
+        "romaji": "kane",
+        "meaning": "money; gold",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "土",
+        "romaji": "tsuchi",
+        "meaning": "earth; soil",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "空",
+        "romaji": "sora",
+        "meaning": "sky",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "山",
+        "romaji": "yama",
+        "meaning": "mountain",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "川",
+        "romaji": "kawa",
+        "meaning": "river",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "雨",
+        "romaji": "ame",
+        "meaning": "rain",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "石",
+        "romaji": "ishi",
+        "meaning": "stone",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "花",
+        "romaji": "hana",
+        "meaning": "flower",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "犬",
+        "romaji": "inu",
+        "meaning": "dog",
+        "level": "N5",
+        "tags": ["animal"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "猫",
+        "romaji": "neko",
+        "meaning": "cat",
+        "level": "N5",
+        "tags": ["animal"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "魚",
+        "romaji": "sakana",
+        "meaning": "fish",
+        "level": "N5",
+        "tags": ["animal", "food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "鳥",
+        "romaji": "tori",
+        "meaning": "bird",
+        "level": "N5",
+        "tags": ["animal"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "車",
+        "romaji": "kuruma",
+        "meaning": "car",
+        "level": "N5",
+        "tags": ["transportation"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "駅",
+        "romaji": "eki",
+        "meaning": "station",
+        "level": "N5",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "店",
+        "romaji": "mise",
+        "meaning": "store; shop",
+        "level": "N5",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "家",
+        "romaji": "ie",
+        "meaning": "house; home",
+        "level": "N5",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "父",
+        "romaji": "chichi",
+        "meaning": "father",
+        "level": "N5",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "母",
+        "romaji": "haha",
+        "meaning": "mother",
+        "level": "N5",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "兄",
+        "romaji": "ani",
+        "meaning": "older brother",
+        "level": "N5",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "姉",
+        "romaji": "ane",
+        "meaning": "older sister",
+        "level": "N5",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "弟",
+        "romaji": "otōto",
+        "meaning": "younger brother",
+        "level": "N5",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "妹",
+        "romaji": "imōto",
+        "meaning": "younger sister",
+        "level": "N5",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "友",
+        "romaji": "tomo",
+        "meaning": "friend",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "名",
+        "romaji": "na",
+        "meaning": "name",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "男",
+        "romaji": "otoko",
+        "meaning": "man",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "女",
+        "romaji": "onna",
+        "meaning": "woman",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "先",
+        "romaji": "saki",
+        "meaning": "ahead; previous",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "生",
+        "romaji": "sei",
+        "meaning": "life; birth",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "学",
+        "romaji": "gaku",
+        "meaning": "study; learning",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "校",
+        "romaji": "kō",
+        "meaning": "school",
+        "level": "N5",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "文",
+        "romaji": "bun",
+        "meaning": "sentence; writing",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "本",
+        "romaji": "hon",
+        "meaning": "book; origin",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "語",
+        "romaji": "go",
+        "meaning": "language; word",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "体",
+        "romaji": "karada",
+        "meaning": "body",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "力",
+        "romaji": "chikara",
+        "meaning": "power; strength",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "音",
+        "romaji": "oto",
+        "meaning": "sound",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "色",
+        "romaji": "iro",
+        "meaning": "color",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "白",
+        "romaji": "shiro",
+        "meaning": "white",
+        "level": "N5",
+        "tags": ["color"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "黒",
+        "romaji": "kuro",
+        "meaning": "black",
+        "level": "N5",
+        "tags": ["color"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "赤",
+        "romaji": "aka",
+        "meaning": "red",
+        "level": "N5",
+        "tags": ["color"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "青",
+        "romaji": "ao",
+        "meaning": "blue",
+        "level": "N5",
+        "tags": ["color"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "早",
+        "romaji": "haya",
+        "meaning": "early",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "行",
+        "romaji": "iku",
+        "meaning": "go",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "来",
+        "romaji": "kuru",
+        "meaning": "come",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "見",
+        "romaji": "miru",
+        "meaning": "see",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "聞",
+        "romaji": "kiku",
+        "meaning": "hear; ask",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "言",
+        "romaji": "iu",
+        "meaning": "say",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "話",
+        "romaji": "hanashi",
+        "meaning": "talk; story",
+        "level": "N5",
+        "tags": ["verb", "noun"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "食",
+        "romaji": "taberu",
+        "meaning": "eat",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "飲",
+        "romaji": "nomu",
+        "meaning": "drink",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "買",
+        "romaji": "kau",
+        "meaning": "buy",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "売",
+        "romaji": "uru",
+        "meaning": "sell",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "読",
+        "romaji": "yomu",
+        "meaning": "read",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "書",
+        "romaji": "kaku",
+        "meaning": "write",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "休",
+        "romaji": "yasumu",
+        "meaning": "rest",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "走",
+        "romaji": "hashiru",
+        "meaning": "run",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "歩",
+        "romaji": "aruku",
+        "meaning": "walk",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "立",
+        "romaji": "tatsu",
+        "meaning": "stand",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "入",
+        "romaji": "hairu",
+        "meaning": "enter",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "出",
+        "romaji": "deru",
+        "meaning": "exit",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "開",
+        "romaji": "hiraku",
+        "meaning": "open",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "閉",
+        "romaji": "tojiru",
+        "meaning": "close",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "思",
+        "romaji": "omou",
+        "meaning": "think",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "知",
+        "romaji": "shiru",
+        "meaning": "know",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "作",
+        "romaji": "tsukuru",
+        "meaning": "make",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "使",
+        "romaji": "tsukau",
+        "meaning": "use",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "働",
+        "romaji": "hataraku",
+        "meaning": "work",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "住",
+        "romaji": "sumu",
+        "meaning": "live (reside)",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "帰",
+        "romaji": "kaeru",
+        "meaning": "return home",
+        "level": "N5",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "場",
+        "romaji": "ba",
+        "meaning": "place",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "道",
+        "romaji": "michi",
+        "meaning": "road; path",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "海",
+        "romaji": "umi",
+        "meaning": "sea",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "国",
+        "romaji": "kuni",
+        "meaning": "country",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "町",
+        "romaji": "machi",
+        "meaning": "town",
+        "level": "N5",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "村",
+        "romaji": "mura",
+        "meaning": "village",
+        "level": "N5",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "朝",
+        "romaji": "asa",
+        "meaning": "morning",
+        "level": "N5",
+        "tags": ["time"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "昼",
+        "romaji": "hiru",
+        "meaning": "noon",
+        "level": "N5",
+        "tags": ["time"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "夜",
+        "romaji": "yoru",
+        "meaning": "night",
+        "level": "N5",
+        "tags": ["time"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "今",
+        "romaji": "ima",
+        "meaning": "now",
+        "level": "N5",
+        "tags": ["time"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "前",
+        "romaji": "mae",
+        "meaning": "before; front",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "後",
+        "romaji": "ato",
+        "meaning": "after; behind",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "間",
+        "romaji": "aida",
+        "meaning": "between; interval",
+        "level": "N5",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "高",
+        "romaji": "takai",
+        "meaning": "high; expensive",
+        "level": "N5",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "深",
+        "romaji": "fukai",
+        "meaning": "deep",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "浅",
+        "romaji": "asai",
+        "meaning": "shallow",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "厚",
+        "romaji": "atsui",
+        "meaning": "thick",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "薄",
+        "romaji": "usui",
+        "meaning": "thin",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "正",
+        "romaji": "tadashii",
+        "meaning": "correct; right",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "危",
+        "romaji": "abunai",
+        "meaning": "dangerous",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "集",
+        "romaji": "atsumeru",
+        "meaning": "gather; collect",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "配",
+        "romaji": "kubaru",
+        "meaning": "distribute; deliver",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "送",
+        "romaji": "okuru",
+        "meaning": "send",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "迎",
+        "romaji": "mukaeru",
+        "meaning": "welcome; receive",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "渡",
+        "romaji": "wataru",
+        "meaning": "cross; hand over",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "運",
+        "romaji": "hakobu",
+        "meaning": "carry; transport",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "動",
+        "romaji": "ugoku",
+        "meaning": "move",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "止",
+        "romaji": "tomaru",
+        "meaning": "stop",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "押",
+        "romaji": "osu",
+        "meaning": "push",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "引",
+        "romaji": "hiku",
+        "meaning": "pull",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "投",
+        "romaji": "nageru",
+        "meaning": "throw",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "取",
+        "romaji": "toru",
+        "meaning": "take",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "置",
+        "romaji": "oku",
+        "meaning": "put; place",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "落",
+        "romaji": "ochiru",
+        "meaning": "fall; drop",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "起",
+        "romaji": "okiru",
+        "meaning": "wake up; occur",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "寝",
+        "romaji": "neru",
+        "meaning": "sleep",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "座",
+        "romaji": "suwaru",
+        "meaning": "sit",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "泳",
+        "romaji": "oyogu",
+        "meaning": "swim",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "飛",
+        "romaji": "tobu",
+        "meaning": "fly; jump",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "乗",
+        "romaji": "noru",
+        "meaning": "ride; board",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "降",
+        "romaji": "oriru",
+        "meaning": "get off; descend",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "昇",
+        "romaji": "noboru",
+        "meaning": "climb; rise",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "登",
+        "romaji": "noboru",
+        "meaning": "climb; ascend",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "笑",
+        "romaji": "warau",
+        "meaning": "laugh; smile",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "泣",
+        "romaji": "naku",
+        "meaning": "cry",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "怒",
+        "romaji": "okoru",
+        "meaning": "get angry",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "悲",
+        "romaji": "kanashii",
+        "meaning": "sad",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "喜",
+        "romaji": "yorokobu",
+        "meaning": "be happy; rejoice",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "楽",
+        "romaji": "tanoshii",
+        "meaning": "fun; easy",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "苦",
+        "romaji": "kurushii",
+        "meaning": "painful; bitter",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "痛",
+        "romaji": "itai",
+        "meaning": "painful",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "病",
+        "romaji": "byōki",
+        "meaning": "illness; sick",
+        "level": "N4",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "死",
+        "romaji": "shinu",
+        "meaning": "die",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "医",
+        "romaji": "isha",
+        "meaning": "doctor; medicine",
+        "level": "N4",
+        "tags": ["medical", "profession"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "薬",
+        "romaji": "kusuri",
+        "meaning": "medicine; drug",
+        "level": "N4",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "肉",
+        "romaji": "niku",
+        "meaning": "meat",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "野",
+        "romaji": "no",
+        "meaning": "field; wild",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "菜",
+        "romaji": "na",
+        "meaning": "vegetable; greens",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "果",
+        "romaji": "kudamono",
+        "meaning": "fruit",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "米",
+        "romaji": "kome",
+        "meaning": "rice",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "麦",
+        "romaji": "mugi",
+        "meaning": "wheat; barley",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "豆",
+        "romaji": "mame",
+        "meaning": "bean",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "卵",
+        "romaji": "tamago",
+        "meaning": "egg",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "油",
+        "romaji": "abura",
+        "meaning": "oil",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "塩",
+        "romaji": "shio",
+        "meaning": "salt",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "砂",
+        "romaji": "suna",
+        "meaning": "sand",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "糖",
+        "romaji": "tō",
+        "meaning": "sugar",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "服",
+        "romaji": "fuku",
+        "meaning": "clothes",
+        "level": "N4",
+        "tags": ["clothing"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "帽",
+        "romaji": "bō",
+        "meaning": "hat; cap",
+        "level": "N4",
+        "tags": ["clothing"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "靴",
+        "romaji": "kutsu",
+        "meaning": "shoes",
+        "level": "N4",
+        "tags": ["clothing"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "袋",
+        "romaji": "fukuro",
+        "meaning": "bag; sack",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "机",
+        "romaji": "tsukue",
+        "meaning": "desk",
+        "level": "N4",
+        "tags": ["furniture"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "椅",
+        "romaji": "isu",
+        "meaning": "chair",
+        "level": "N4",
+        "tags": ["furniture"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "棚",
+        "romaji": "tana",
+        "meaning": "shelf",
+        "level": "N4",
+        "tags": ["furniture"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "窓",
+        "romaji": "mado",
+        "meaning": "window",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "扉",
+        "romaji": "tobira",
+        "meaning": "door",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "部",
+        "romaji": "bu",
+        "meaning": "part; section",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "屋",
+        "romaji": "ya",
+        "meaning": "shop; roof",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "階",
+        "romaji": "kai",
+        "meaning": "floor; story",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "図",
+        "romaji": "zu",
+        "meaning": "diagram; map",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "館",
+        "romaji": "kan",
+        "meaning": "building; hall",
+        "level": "N4",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "院",
+        "romaji": "in",
+        "meaning": "institution; hospital",
+        "level": "N4",
+        "tags": ["place"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "銀",
+        "romaji": "gin",
+        "meaning": "silver",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "銅",
+        "romaji": "dō",
+        "meaning": "copper",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "鉄",
+        "romaji": "tetsu",
+        "meaning": "iron",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "産",
+        "romaji": "umu",
+        "meaning": "give birth; produce",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "業",
+        "romaji": "gyō",
+        "meaning": "industry; business",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "商",
+        "romaji": "shō",
+        "meaning": "commerce; trade",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "品",
+        "romaji": "hin",
+        "meaning": "goods; product",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "質",
+        "romaji": "shitsu",
+        "meaning": "quality; nature",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "価",
+        "romaji": "ka",
+        "meaning": "price; value",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "格",
+        "romaji": "kaku",
+        "meaning": "status; standard",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "約",
+        "romaji": "yaku",
+        "meaning": "approximately; promise",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "束",
+        "romaji": "taba",
+        "meaning": "bundle; bunch",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "条",
+        "romaji": "jō",
+        "meaning": "article; clause",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "件",
+        "romaji": "ken",
+        "meaning": "matter; case",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "状",
+        "romaji": "jō",
+        "meaning": "condition; letter",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "況",
+        "romaji": "kyō",
+        "meaning": "situation; condition",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "制",
+        "romaji": "sei",
+        "meaning": "system; control",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "法",
+        "romaji": "hō",
+        "meaning": "method; law",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "律",
+        "romaji": "ritsu",
+        "meaning": "law; regulation",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "規",
+        "romaji": "ki",
+        "meaning": "rule; standard",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "則",
+        "romaji": "soku",
+        "meaning": "rule; principle",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "例",
+        "romaji": "rei",
+        "meaning": "example; case",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "習",
+        "romaji": "narau",
+        "meaning": "learn; practice",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "練",
+        "romaji": "neru",
+        "meaning": "practice; train",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "試",
+        "romaji": "tamasu",
+        "meaning": "try; test",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "験",
+        "romaji": "ken",
+        "meaning": "test; experience",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "研",
+        "romaji": "ken",
+        "meaning": "research; study",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "究",
+        "romaji": "kyū",
+        "meaning": "research; investigate",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "科",
+        "romaji": "ka",
+        "meaning": "subject; department",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "技",
+        "romaji": "waza",
+        "meaning": "skill; technique",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "術",
+        "romaji": "jutsu",
+        "meaning": "art; technique",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "芸",
+        "romaji": "gei",
+        "meaning": "art; skill",
+        "level": "N3",
+        "tags": ["art"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "能",
+        "romaji": "nō",
+        "meaning": "ability; function",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "才",
+        "romaji": "sai",
+        "meaning": "talent; age",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "識",
+        "romaji": "shiki",
+        "meaning": "knowledge; consciousness",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "記",
+        "romaji": "ki",
+        "meaning": "record; remember",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "憶",
+        "romaji": "oku",
+        "meaning": "remember; recall",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "忘",
+        "romaji": "wasureru",
+        "meaning": "forget",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "夢",
+        "romaji": "yume",
+        "meaning": "dream",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "希",
+        "romaji": "mare",
+        "meaning": "rare; hope",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "望",
+        "romaji": "nozomu",
+        "meaning": "wish; hope",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "願",
+        "romaji": "negau",
+        "meaning": "wish; request",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "求",
+        "romaji": "motomeru",
+        "meaning": "seek; request",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "要",
+        "romaji": "iru",
+        "meaning": "need; require",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "必",
+        "romaji": "kanarazu",
+        "meaning": "certainly;必ず",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "務",
+        "romaji": "mu",
+        "meaning": "duty; service",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "任",
+        "romaji": "nin",
+        "meaning": "responsibility; duty",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "役",
+        "romaji": "yaku",
+        "meaning": "role; duty",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "職",
+        "romaji": "shoku",
+        "meaning": "job; occupation",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "員",
+        "romaji": "in",
+        "meaning": "member; staff",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "客",
+        "romaji": "kyaku",
+        "meaning": "customer; guest",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "主",
+        "romaji": "nushi",
+        "meaning": "master; main",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "王",
+        "romaji": "ō",
+        "meaning": "king",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "様",
+        "romaji": "sama",
+        "meaning": "appearance; honorific",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "式",
+        "romaji": "shiki",
+        "meaning": "ceremony; style",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "型",
+        "romaji": "kata",
+        "meaning": "type; model",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "形",
+        "romaji": "katachi",
+        "meaning": "shape; form",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "影",
+        "romaji": "kage",
+        "meaning": "shadow; image",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "像",
+        "romaji": "zō",
+        "meaning": "statue; image",
+        "level": "N3",
+        "tags": ["art"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "写",
+        "romaji": "utsusu",
+        "meaning": "copy; photograph",
+        "level": "N3",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "真",
+        "romaji": "shin",
+        "meaning": "truth; real",
+        "level": "N3",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "偽",
+        "romaji": "nise",
+        "meaning": "fake; false",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "実",
+        "romaji": "jitsu",
+        "meaning": "truth; reality",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "想",
+        "romaji": "sō",
+        "meaning": "thought; imagination",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "像",
+        "romaji": "zō",
+        "meaning": "imagine; statue",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "信",
+        "romaji": "shin",
+        "meaning": "believe; trust",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "疑",
+        "romaji": "utagau",
+        "meaning": "doubt; suspect",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "感",
+        "romaji": "kan",
+        "meaning": "feeling; sensation",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "情",
+        "romaji": "jō",
+        "meaning": "emotion; feeling",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "愛",
+        "romaji": "ai",
+        "meaning": "love",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "恋",
+        "romaji": "koi",
+        "meaning": "love; romance",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "憎",
+        "romaji": "nikumu",
+        "meaning": "hate; detest",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "恐",
+        "romaji": "kowai",
+        "meaning": "scary; fear",
+        "level": "N2",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "怖",
+        "romaji": "kowai",
+        "meaning": "frightening; scary",
+        "level": "N2",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "恥",
+        "romaji": "haji",
+        "meaning": "shame; embarrassment",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "誇",
+        "romaji": "hokoru",
+        "meaning": "be proud; boast",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "驚",
+        "romaji": "odoroku",
+        "meaning": "be surprised",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "慣",
+        "romaji": "nareru",
+        "meaning": "get used to",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "億",
+        "romaji": "oku",
+        "meaning": "hundred million",
+        "level": "N2",
+        "tags": ["number"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "兆",
+        "romaji": "chō",
+        "meaning": "trillion; omen",
+        "level": "N2",
+        "tags": ["number"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "算",
+        "romaji": "san",
+        "meaning": "calculate; arithmetic",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "数",
+        "romaji": "kazu",
+        "meaning": "number; count",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "量",
+        "romaji": "ryō",
+        "meaning": "quantity; amount",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "測",
+        "romaji": "hakaru",
+        "meaning": "measure; survey",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "定",
+        "romaji": "sadameru",
+        "meaning": "decide; fix",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "限",
+        "romaji": "kagiru",
+        "meaning": "limit; restrict",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "界",
+        "romaji": "kai",
+        "meaning": "world; boundary",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "境",
+        "romaji": "sakai",
+        "meaning": "boundary; border",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "領",
+        "romaji": "ryō",
+        "meaning": "territory; domain",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "域",
+        "romaji": "iki",
+        "meaning": "region; area",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "地",
+        "romaji": "chi",
+        "meaning": "earth; ground",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "球",
+        "romaji": "kyū",
+        "meaning": "ball; sphere",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "星",
+        "romaji": "hoshi",
+        "meaning": "star",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "宇",
+        "romaji": "u",
+        "meaning": "universe; space",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "宙",
+        "romaji": "chū",
+        "meaning": "space; sky",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "船",
+        "romaji": "fune",
+        "meaning": "ship; boat",
+        "level": "N2",
+        "tags": ["transportation"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "飛",
+        "romaji": "tobu",
+        "meaning": "fly",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "機",
+        "romaji": "ki",
+        "meaning": "machine; aircraft",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "械",
+        "romaji": "kai",
+        "meaning": "machine; apparatus",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "器",
+        "romaji": "ki",
+        "meaning": "vessel; instrument",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "具",
+        "romaji": "gu",
+        "meaning": "tool; equipment",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "材",
+        "romaji": "zai",
+        "meaning": "material; timber",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "素",
+        "romaji": "so",
+        "meaning": "element; plain",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "因",
+        "romaji": "in",
+        "meaning": "cause; factor",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "果",
+        "romaji": "ka",
+        "meaning": "result; effect",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "効",
+        "romaji": "kō",
+        "meaning": "effect; benefit",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "響",
+        "romaji": "hibiku",
+        "meaning": "echo; influence",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "影",
+        "romaji": "kage",
+        "meaning": "shadow; influence",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "達",
+        "romaji": "tassu",
+        "meaning": "achieve; reach",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "成",
+        "romaji": "naru",
+        "meaning": "become; achieve",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "功",
+        "romaji": "kō",
+        "meaning": "success; merit",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "敗",
+        "romaji": "yabureru",
+        "meaning": "defeat; lose",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "勝",
+        "romaji": "katsu",
+        "meaning": "win; victory",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "負",
+        "romaji": "makeru",
+        "meaning": "lose; defeat",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "競",
+        "romaji": "kisou",
+        "meaning": "compete; contest",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "争",
+        "romaji": "arasou",
+        "meaning": "fight; dispute",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "戦",
+        "romaji": "tatakau",
+        "meaning": "fight; war",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "平",
+        "romaji": "taira",
+        "meaning": "flat; peace",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "和",
+        "romaji": "wa",
+        "meaning": "peace; harmony",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "順",
+        "romaji": "jun",
+        "meaning": "order; obedience",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "番",
+        "romaji": "ban",
+        "meaning": "number; turn",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "組",
+        "romaji": "kumu",
+        "meaning": "group; assemble",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "織",
+        "romaji": "oru",
+        "meaning": "weave; organize",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "構",
+        "romaji": "kamau",
+        "meaning": "care; construct",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "造",
+        "romaji": "tsukuru",
+        "meaning": "create; build",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "創",
+        "romaji": "tsukuru",
+        "meaning": "create; originate",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "設",
+        "romaji": "mōkeru",
+        "meaning": "establish; set up",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "備",
+        "romaji": "sonaeru",
+        "meaning": "prepare; equip",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "準",
+        "romaji": "jun",
+        "meaning": "standard; prepare",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "用",
+        "romaji": "mochīru",
+        "meaning": "use; employ",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "利",
+        "romaji": "ri",
+        "meaning": "profit; benefit",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "得",
+        "romaji": "eru",
+        "meaning": "get; obtain",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "失",
+        "romaji": "ushinau",
+        "meaning": "lose; fail",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "破",
+        "romaji": "yaburu",
+        "meaning": "break; tear",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "壊",
+        "romaji": "kowasu",
+        "meaning": "break; destroy",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "害",
+        "romaji": "gai",
+        "meaning": "harm; damage",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "毒",
+        "romaji": "doku",
+        "meaning": "poison; toxic",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "治",
+        "romaji": "naosu",
+        "meaning": "cure; govern",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "療",
+        "romaji": "ryō",
+        "meaning": "treatment; therapy",
+        "level": "N2",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "健",
+        "romaji": "ken",
+        "meaning": "health; strength",
+        "level": "N2",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "康",
+        "romaji": "kō",
+        "meaning": "health; peace",
+        "level": "N2",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "復",
+        "romaji": "fuku",
+        "meaning": "return; restore",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "回",
+        "romaji": "mawaru",
+        "meaning": "turn; return",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "転",
+        "romaji": "korobu",
+        "meaning": "roll; turn",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "変",
+        "romaji": "kawaru",
+        "meaning": "change; strange",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "化",
+        "romaji": "bakeru",
+        "meaning": "change; transform",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "育",
+        "romaji": "sodatsu",
+        "meaning": "grow; raise",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "養",
+        "romaji": "yashinau",
+        "meaning": "raise; support",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "老",
+        "romaji": "oi",
+        "meaning": "old age; elder",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "幼",
+        "romaji": "osanai",
+        "meaning": "young; childish",
+        "level": "N2",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "児",
+        "romaji": "ji",
+        "meaning": "child; infant",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "童",
+        "romaji": "warabe",
+        "meaning": "child;童",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "婦",
+        "romaji": "fu",
+        "meaning": "woman; wife",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "夫",
+        "romaji": "otto",
+        "meaning": "husband",
+        "level": "N2",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "妻",
+        "romaji": "tsuma",
+        "meaning": "wife",
+        "level": "N2",
+        "tags": ["family"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "婚",
+        "romaji": "kon",
+        "meaning": "marriage",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "結",
+        "romaji": "musubu",
+        "meaning": "tie; connect",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "離",
+        "romaji": "hanareru",
+        "meaning": "separate; leave",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "別",
+        "romaji": "betsu",
+        "meaning": "separate; different",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "各",
+        "romaji": "kaku",
+        "meaning": "each; every",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "種",
+        "romaji": "tane",
+        "meaning": "seed; kind",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "類",
+        "romaji": "rui",
+        "meaning": "kind; type",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "比",
+        "romaji": "kuraberu",
+        "meaning": "compare",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "較",
+        "romaji": "kaku",
+        "meaning": "compare; contrast",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "似",
+        "romaji": "niru",
+        "meaning": "resemble; similar",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "違",
+        "romaji": "chigau",
+        "meaning": "differ; wrong",
+        "level": "N2",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "等",
+        "romaji": "tō",
+        "meaning": "equal; etc.",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "級",
+        "romaji": "kyū",
+        "meaning": "class; grade",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "程",
+        "romaji": "hodo",
+        "meaning": "degree; extent",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "度",
+        "romaji": "do",
+        "meaning": "degree; time",
+        "level": "N2",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "温",
+        "romaji": "atatakai",
+        "meaning": "warm; temperature",
+        "level": "N1",
+        "tags": ["adjective", "weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "冷",
+        "romaji": "tsumetai",
+        "meaning": "cold; cool",
+        "level": "N1",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "熱",
+        "romaji": "atsui",
+        "meaning": "hot; fever",
+        "level": "N1",
+        "tags": ["adjective", "medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "涼",
+        "romaji": "suzushii",
+        "meaning": "cool; refreshing",
+        "level": "N1",
+        "tags": ["adjective", "weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "湿",
+        "romaji": "shitsu",
+        "meaning": "moisture; humid",
+        "level": "N1",
+        "tags": ["weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "乾",
+        "romaji": "kawaku",
+        "meaning": "dry",
+        "level": "N1",
+        "tags": ["verb", "weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "雲",
+        "romaji": "kumo",
+        "meaning": "cloud",
+        "level": "N1",
+        "tags": ["weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "雪",
+        "romaji": "yuki",
+        "meaning": "snow",
+        "level": "N1",
+        "tags": ["weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "霧",
+        "romaji": "kiri",
+        "meaning": "fog; mist",
+        "level": "N1",
+        "tags": ["weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "風",
+        "romaji": "kaze",
+        "meaning": "wind",
+        "level": "N1",
+        "tags": ["weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "台",
+        "romaji": "dai",
+        "meaning": "platform; typhoon",
+        "level": "N1",
+        "tags": ["weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "災",
+        "romaji": "saigai",
+        "meaning": "disaster; calamity",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "震",
+        "romaji": "fureru",
+        "meaning": "shake; earthquake",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "津",
+        "romaji": "tsu",
+        "meaning": "harbor; tsunami",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "波",
+        "romaji": "nami",
+        "meaning": "wave",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "洪",
+        "romaji": "kō",
+        "meaning": "flood; vast",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "救",
+        "romaji": "sukuu",
+        "meaning": "save; rescue",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "助",
+        "romaji": "tasukeru",
+        "meaning": "help; assist",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "支",
+        "romaji": "sasaeru",
+        "meaning": "support; branch",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "援",
+        "romaji": "en",
+        "meaning": "aid; assistance",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "協",
+        "romaji": "kyō",
+        "meaning": "cooperation",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "力",
+        "romaji": "chikara",
+        "meaning": "power; cooperation",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "団",
+        "romaji": "dan",
+        "meaning": "group; organization",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "連",
+        "romaji": "tsureru",
+        "meaning": "connect; bring",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "絡",
+        "romaji": "karamu",
+        "meaning": "entangle; connect",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "関",
+        "romaji": "seki",
+        "meaning": "relation; barrier",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "係",
+        "romaji": "kakari",
+        "meaning": "person in charge",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "担",
+        "romaji": "katsugu",
+        "meaning": "carry; bear",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "当",
+        "romaji": "ataru",
+        "meaning": "hit; appropriate",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "該",
+        "romaji": "gai",
+        "meaning": "applicable; relevant",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "応",
+        "romaji": "ō",
+        "meaning": "respond; correspond",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "答",
+        "romaji": "kotaeru",
+        "meaning": "answer; reply",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "解",
+        "romaji": "tokeru",
+        "meaning": "solve; understand",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "析",
+        "romaji": "seki",
+        "meaning": "analyze; divide",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "検",
+        "romaji": "ken",
+        "meaning": "examine; inspect",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "討",
+        "romaji": "tō",
+        "meaning": "discuss; attack",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "論",
+        "romaji": "ron",
+        "meaning": "theory; discussion",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "議",
+        "romaji": "gi",
+        "meaning": "discussion; meeting",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "会",
+        "romaji": "au",
+        "meaning": "meet; society",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "社",
+        "romaji": "sha",
+        "meaning": "company; society",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "民",
+        "romaji": "min",
+        "meaning": "people; citizen",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "族",
+        "romaji": "zoku",
+        "meaning": "tribe; family",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "種",
+        "romaji": "shu",
+        "meaning": "species; race",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "血",
+        "romaji": "chi",
+        "meaning": "blood",
+        "level": "N1",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "肌",
+        "romaji": "hada",
+        "meaning": "skin",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "骨",
+        "romaji": "hone",
+        "meaning": "bone",
+        "level": "N1",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "筋",
+        "romaji": "suji",
+        "meaning": "muscle; line",
+        "level": "N1",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "脳",
+        "romaji": "nō",
+        "meaning": "brain",
+        "level": "N1",
+        "tags": ["medical"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "神",
+        "romaji": "kami",
+        "meaning": "god; spirit",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "経",
+        "romaji": "kei",
+        "meaning": "pass through; sutra",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "験",
+        "romaji": "ken",
+        "meaning": "experience; test",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "証",
+        "romaji": "shō",
+        "meaning": "proof; evidence",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "明",
+        "romaji": "mei",
+        "meaning": "bright; clear",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "確",
+        "romaji": "tashika",
+        "meaning": "certain; sure",
+        "level": "N1",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "認",
+        "romaji": "mitomeru",
+        "meaning": "recognize; admit",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "承",
+        "romaji": "ukeru",
+        "meaning": "accept; receive",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "諾",
+        "romaji": "daku",
+        "meaning": "consent; agree",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "否",
+        "romaji": "ina",
+        "meaning": "no; deny",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "拒",
+        "romaji": "kyohi",
+        "meaning": "refuse; reject",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "断",
+        "romaji": "kotowaru",
+        "meaning": "refuse; cut off",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "絶",
+        "romaji": "taeru",
+        "meaning": "cease; extreme",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "対",
+        "romaji": "tai",
+        "meaning": "opposite; pair",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "反",
+        "romaji": "han",
+        "meaning": "opposite; anti",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "逆",
+        "romaji": "gyaku",
+        "meaning": "reverse; opposite",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "裏",
+        "romaji": "ura",
+        "meaning": "back; reverse",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "表",
+        "romaji": "omote",
+        "meaning": "surface; table",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "面",
+        "romaji": "men",
+        "meaning": "face; surface",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "側",
+        "romaji": "gawa",
+        "meaning": "side; aspect",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "方",
+        "romaji": "kata",
+        "meaning": "direction; person",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "向",
+        "romaji": "muku",
+        "meaning": "face; turn toward",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "背",
+        "romaji": "se",
+        "meaning": "back; height",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "腹",
+        "romaji": "hara",
+        "meaning": "belly; stomach",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "胸",
+        "romaji": "mune",
+        "meaning": "chest; heart",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "肩",
+        "romaji": "kata",
+        "meaning": "shoulder",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "腕",
+        "romaji": "ude",
+        "meaning": "arm",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "指",
+        "romaji": "yubi",
+        "meaning": "finger; point",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "爪",
+        "romaji": "tsume",
+        "meaning": "nail; claw",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "足",
+        "romaji": "ashi",
+        "meaning": "foot; leg",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "膝",
+        "romaji": "hiza",
+        "meaning": "knee",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "首",
+        "romaji": "kubi",
+        "meaning": "neck; head",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "頭",
+        "romaji": "atama",
+        "meaning": "head",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "髪",
+        "romaji": "kami",
+        "meaning": "hair",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "額",
+        "romaji": "hitai",
+        "meaning": "forehead; amount",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "眉",
+        "romaji": "mayu",
+        "meaning": "eyebrow",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "鼻",
+        "romaji": "hana",
+        "meaning": "nose",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "唇",
+        "romaji": "kuchibiru",
+        "meaning": "lips",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "歯",
+        "romaji": "ha",
+        "meaning": "tooth; teeth",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "舌",
+        "romaji": "shita",
+        "meaning": "tongue",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "耳",
+        "romaji": "mimi",
+        "meaning": "ear",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "声",
+        "romaji": "koe",
+        "meaning": "voice",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "息",
+        "romaji": "iki",
+        "meaning": "breath",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "臭",
+        "romaji": "kusai",
+        "meaning": "smell; stink",
+        "level": "N1",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "香",
+        "romaji": "kaori",
+        "meaning": "fragrance; incense",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "匂",
+        "romaji": "nioi",
+        "meaning": "smell; scent",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "触",
+        "romaji": "sawaru",
+        "meaning": "touch",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "感",
+        "romaji": "kan",
+        "meaning": "feeling; sense",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "覚",
+        "romaji": "oboeru",
+        "meaning": "remember; wake up",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "眠",
+        "romaji": "nemuru",
+        "meaning": "sleep",
+        "level": "N1",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "夢",
+        "romaji": "yume",
+        "meaning": "dream",
+        "level": "N1",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "安",
+        "romaji": "yasui",
+        "meaning": "cheap; safe",
+        "level": "N5",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "多",
+        "romaji": "ōi",
+        "meaning": "many",
+        "level": "N5",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "少",
+        "romaji": "sukunai",
+        "meaning": "few; little",
+        "level": "N5",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "寒",
+        "romaji": "samui",
+        "meaning": "cold (weather)",
+        "level": "N5",
+        "tags": ["adjective", "weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "暑",
+        "romaji": "atsui",
+        "meaning": "hot (weather)",
+        "level": "N5",
+        "tags": ["adjective", "weather"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "心",
+        "romaji": "kokoro",
+        "meaning": "heart; mind",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "特",
+        "romaji": "toku",
+        "meaning": "special",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "意",
+        "romaji": "i",
+        "meaning": "meaning; intention",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "味",
+        "romaji": "aji",
+        "meaning": "taste; flavor",
+        "level": "N4",
+        "tags": ["food"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "計",
+        "romaji": "kei",
+        "meaning": "plan; measure",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "画",
+        "romaji": "ga",
+        "meaning": "picture; drawing",
+        "level": "N4",
+        "tags": ["art"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "始",
+        "romaji": "hajimaru",
+        "meaning": "begin; start",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "終",
+        "romaji": "owaru",
+        "meaning": "end; finish",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "建",
+        "romaji": "tateru",
+        "meaning": "build; construct",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "物",
+        "romaji": "mono",
+        "meaning": "thing; object",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "代",
+        "romaji": "dai",
+        "meaning": "generation; era",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "料",
+        "romaji": "ryō",
+        "meaning": "fee; material",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "理",
+        "romaji": "ri",
+        "meaning": "reason; logic",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "由",
+        "romaji": "yu",
+        "meaning": "reason; cause",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "注",
+        "romaji": "chū",
+        "meaning": "pour; attention",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "意",
+        "romaji": "i",
+        "meaning": "meaning; will",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "選",
+        "romaji": "erabu",
+        "meaning": "choose; select",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "決",
+        "romaji": "kimeru",
+        "meaning": "decide",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "考",
+        "romaji": "kangaeru",
+        "meaning": "think; consider",
+        "level": "N4",
+        "tags": ["verb"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "説",
+        "romaji": "setsu",
+        "meaning": "explain; theory",
+        "level": "N4",
+        "tags": []
+      },
+      {
+        "type": "KANJI",
+        "japanese": "明",
+        "romaji": "akarui",
+        "meaning": "bright; clear",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "暗",
+        "romaji": "kurai",
+        "meaning": "dark",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "重",
+        "romaji": "omoi",
+        "meaning": "heavy; important",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "軽",
+        "romaji": "karui",
+        "meaning": "light (weight)",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "強",
+        "romaji": "tsuyoi",
+        "meaning": "strong",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "弱",
+        "romaji": "yowai",
+        "meaning": "weak",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "新",
+        "romaji": "atarashii",
+        "meaning": "new",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "古",
+        "romaji": "furui",
+        "meaning": "old",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "若",
+        "romaji": "wakai",
+        "meaning": "young",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "速",
+        "romaji": "hayai",
+        "meaning": "fast; quick",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "遅",
+        "romaji": "osoi",
+        "meaning": "slow; late",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "長",
+        "romaji": "nagai",
+        "meaning": "long",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "短",
+        "romaji": "mijikai",
+        "meaning": "short",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "広",
+        "romaji": "hiroi",
+        "meaning": "wide; spacious",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "狭",
+        "romaji": "semai",
+        "meaning": "narrow",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "近",
+        "romaji": "chikai",
+        "meaning": "near; close",
+        "level": "N4",
+        "tags": ["adjective"]
+      },
+      {
+        "type": "KANJI",
+        "japanese": "遠",
+        "romaji": "tōi",
+        "meaning": "far; distant",
+        "level": "N4",
+        "tags": ["adjective"]
+      }
+    ]
+
+      
+}

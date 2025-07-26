@@ -1,0 +1,2533 @@
+{
+  "vocabulary": [
+    {
+      "type": "KATAKANA",
+      "japanese": "アフリカ",
+      "romaji": "afurika",
+      "meaning": "Africa",
+      "level": "N4",
+      "tags": ["loanword", "place"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アジア",
+      "romaji": "ajia",
+      "meaning": "Asia",
+      "level": "N4",
+      "tags": ["loanword", "place"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アクセサリー",
+      "romaji": "akusesarii",
+      "meaning": "accessory",
+      "level": "N4",
+      "tags": ["loanword"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アメリカ",
+      "romaji": "amerika",
+      "meaning": "America",
+      "level": "N4",
+      "tags": ["loanword", "place"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アナウンサー",
+      "romaji": "anaunsaa",
+      "meaning": "announcer",
+      "level": "N4",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アパート",
+      "romaji": "apaato",
+      "meaning": "apartment",
+      "level": "N5",
+      "tags": ["loanword", "housing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アルバイト",
+      "romaji": "arubaito",
+      "meaning": "part-time job",
+      "level": "N4",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アルコール",
+      "romaji": "arukooru",
+      "meaning": "alcohol",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バス",
+      "romaji": "basu",
+      "meaning": "bus",
+      "level": "N5",
+      "tags": ["loanword", "transportation"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バター",
+      "romaji": "bataa",
+      "meaning": "butter",
+      "level": "N5",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ベッド",
+      "romaji": "beddo",
+      "meaning": "bed",
+      "level": "N5",
+      "tags": ["loanword", "furniture"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ベル",
+      "romaji": "beru",
+      "meaning": "bell",
+      "level": "N4",
+      "tags": ["loanword"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ビル",
+      "romaji": "biru",
+      "meaning": "building",
+      "level": "N4",
+      "tags": ["loanword", "architecture"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ボールペン",
+      "romaji": "boorupen",
+      "meaning": "ball-point pen",
+      "level": "N5",
+      "tags": ["loanword", "stationery"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ボタン",
+      "romaji": "botan",
+      "meaning": "button",
+      "level": "N5",
+      "tags": ["loanword"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "チェック",
+      "romaji": "chekku",
+      "meaning": "to check",
+      "level": "N4",
+      "tags": ["loanword", "verb"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "デパート",
+      "romaji": "depaato",
+      "meaning": "department store",
+      "level": "N5",
+      "tags": ["loanword", "shopping"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ドア",
+      "romaji": "doa",
+      "meaning": "door",
+      "level": "N5",
+      "tags": ["loanword", "housing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エレベーター",
+      "romaji": "erebeetaa",
+      "meaning": "elevator",
+      "level": "N5",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エスカレーター",
+      "romaji": "esukareetaa",
+      "meaning": "escalator",
+      "level": "N4",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ファックス",
+      "romaji": "fakkusu",
+      "meaning": "fax",
+      "level": "N4",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フィルム",
+      "romaji": "firumu",
+      "meaning": "film",
+      "level": "N5",
+      "tags": ["loanword", "photography"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フォーク",
+      "romaji": "fooku",
+      "meaning": "fork",
+      "level": "N5",
+      "tags": ["loanword", "kitchen"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ガラス",
+      "romaji": "garasu",
+      "meaning": "a glass",
+      "level": "N4",
+      "tags": ["loanword", "material"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ガソリン",
+      "romaji": "gasorin",
+      "meaning": "gasoline; petrol",
+      "level": "N4",
+      "tags": ["loanword", "fuel"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ガソリンスタンド",
+      "romaji": "gasorin sutando",
+      "meaning": "petrol station",
+      "level": "N4",
+      "tags": ["loanword", "place"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ガス",
+      "romaji": "gasu",
+      "meaning": "petrol",
+      "level": "N4",
+      "tags": ["loanword", "fuel"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ギター",
+      "romaji": "gitaa",
+      "meaning": "guitar",
+      "level": "N5",
+      "tags": ["loanword", "music"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ごみ",
+      "romaji": "gomi",
+      "meaning": "rubbish",
+      "level": "N4",
+      "tags": ["noun"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "グラム",
+      "romaji": "guramu",
+      "meaning": "gram",
+      "level": "N5",
+      "tags": ["loanword", "unit"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ハンドバッグ",
+      "romaji": "handobaggu",
+      "meaning": "handbag",
+      "level": "N4",
+      "tags": ["loanword", "fashion"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ハンカチ",
+      "romaji": "hankachi",
+      "meaning": "handkerchief",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ホテル",
+      "romaji": "hoteru",
+      "meaning": "hotel",
+      "level": "N5",
+      "tags": ["loanword", "place", "travel"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ジャム",
+      "romaji": "jamu",
+      "meaning": "jam",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カーテン",
+      "romaji": "kaaten",
+      "meaning": "curtain",
+      "level": "N4",
+      "tags": ["loanword", "furniture"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カメラ",
+      "romaji": "kamera",
+      "meaning": "camera",
+      "level": "N5",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カップ",
+      "romaji": "kappu",
+      "meaning": "cup",
+      "level": "N5",
+      "tags": ["loanword", "kitchen"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カレー",
+      "romaji": "karee",
+      "meaning": "curry",
+      "level": "N5",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カレンダー",
+      "romaji": "karendaa",
+      "meaning": "calendar",
+      "level": "N5",
+      "tags": ["loanword"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ケーキ",
+      "romaji": "keeki",
+      "meaning": "cake",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "キログラム",
+      "romaji": "kiro guramu",
+      "meaning": "kilogram",
+      "level": "N5",
+      "tags": ["loanword", "unit"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "キロメートル",
+      "romaji": "kiro meetoru",
+      "meaning": "kilometer",
+      "level": "N5",
+      "tags": ["loanword", "unit"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コンピュータ",
+      "romaji": "konpyuuta",
+      "meaning": "computer",
+      "level": "N4",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コンサート",
+      "romaji": "konsaato",
+      "meaning": "concert",
+      "level": "N4",
+      "tags": ["loanword", "music"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コーヒー",
+      "romaji": "koohii",
+      "meaning": "Coffee",
+      "level": "N5",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コート",
+      "romaji": "kooto",
+      "meaning": "coat",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コピー",
+      "romaji": "kopii",
+      "meaning": "copy; photocopy",
+      "level": "N5",
+      "tags": ["loanword", "office"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コップ",
+      "romaji": "koppu",
+      "meaning": "glass (drinking vessel); tumbler",
+      "level": "N5",
+      "tags": ["loanword", "kitchen"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "クラス",
+      "romaji": "kurasu",
+      "meaning": "class",
+      "level": "N5",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "マッチ",
+      "romaji": "macchi",
+      "meaning": "match",
+      "level": "N5",
+      "tags": ["loanword"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "メートル",
+      "romaji": "meetoru",
+      "meaning": "metre; meter",
+      "level": "N5",
+      "tags": ["loanword", "unit"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ナイフ",
+      "romaji": "naifu",
+      "meaning": "knife",
+      "level": "N5",
+      "tags": ["loanword", "kitchen"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ネクタイ",
+      "romaji": "nekutai",
+      "meaning": "tie; necktie",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ノート",
+      "romaji": "nooto",
+      "meaning": "notebook",
+      "level": "N5",
+      "tags": ["loanword", "stationery"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ニュース",
+      "romaji": "nyuusu",
+      "meaning": "news",
+      "level": "N5",
+      "tags": ["loanword", "media"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オートバイ",
+      "romaji": "ootobai",
+      "meaning": "motorcycle",
+      "level": "N4",
+      "tags": ["loanword", "transportation"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パーティー",
+      "romaji": "paatii",
+      "meaning": "party",
+      "level": "N5",
+      "tags": ["loanword", "event"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パート",
+      "romaji": "paato",
+      "meaning": "part; part time",
+      "level": "N4",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パン",
+      "romaji": "pan",
+      "meaning": "bread",
+      "level": "N5",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ページ",
+      "romaji": "peeji",
+      "meaning": "page",
+      "level": "N5",
+      "tags": ["loanword", "text"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ペン",
+      "romaji": "pen",
+      "meaning": "pen",
+      "level": "N5",
+      "tags": ["loanword", "stationery"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ペット",
+      "romaji": "petto",
+      "meaning": "pet",
+      "level": "N5",
+      "tags": ["loanword", "animal"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ピアノ",
+      "romaji": "piano",
+      "meaning": "piano",
+      "level": "N4",
+      "tags": ["loanword", "music"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ポケット",
+      "romaji": "poketto",
+      "meaning": "pocket",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ポスト",
+      "romaji": "posuto",
+      "meaning": "post",
+      "level": "N5",
+      "tags": ["loanword", "mail"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プレゼント",
+      "romaji": "purezento",
+      "meaning": "present; gift",
+      "level": "N4",
+      "tags": ["loanword"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プール",
+      "romaji": "puuru",
+      "meaning": "swimming pool",
+      "level": "N5",
+      "tags": ["loanword", "place", "sports"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ラジオ",
+      "romaji": "rajiio",
+      "meaning": "radio",
+      "level": "N5",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レジ",
+      "romaji": "reji",
+      "meaning": "cashier",
+      "level": "N4",
+      "tags": ["loanword", "shopping"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レコード",
+      "romaji": "rekoodo",
+      "meaning": "record",
+      "level": "N5",
+      "tags": ["loanword", "music"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レストラン",
+      "romaji": "resutoran",
+      "meaning": "restaurant",
+      "level": "N5",
+      "tags": ["loanword", "food_drink", "place"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "サンダル",
+      "romaji": "sandaru",
+      "meaning": "sandal",
+      "level": "N4",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "サンドイッチ",
+      "romaji": "sandoicchi",
+      "meaning": "sandwich",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "サラダ",
+      "romaji": "sarada",
+      "meaning": "salad",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "セーター",
+      "romaji": "seetaa",
+      "meaning": "sweater; jumper",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "シャツ",
+      "romaji": "shatsu",
+      "meaning": "shirt",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "シャワー",
+      "romaji": "shawaa",
+      "meaning": "shower",
+      "level": "N5",
+      "tags": ["loanword", "daily_life"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ソフト",
+      "romaji": "sofuto",
+      "meaning": "soft",
+      "level": "N4",
+      "tags": ["loanword", "adjective"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スカート",
+      "romaji": "sukaato",
+      "meaning": "skirt",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スクリーン",
+      "romaji": "sukuriin",
+      "meaning": "screen",
+      "level": "N4",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スポーツ",
+      "romaji": "supootsu",
+      "meaning": "sport; sports",
+      "level": "N5",
+      "tags": ["loanword", "activity"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スプーン",
+      "romaji": "supuun",
+      "meaning": "spoon",
+      "level": "N5",
+      "tags": ["loanword", "kitchen"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スリッパ",
+      "romaji": "surippa",
+      "meaning": "slipper; slippers",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スーツケース",
+      "romaji": "sustsukeesu",
+      "meaning": "suitcase",
+      "level": "N4",
+      "tags": ["loanword", "travel"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ステーキ",
+      "romaji": "suteeki",
+      "meaning": "steak",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ステレオ",
+      "romaji": "sutereo",
+      "meaning": "stereo",
+      "level": "N4",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ストーブ",
+      "romaji": "sutoobu",
+      "meaning": "heater; stove",
+      "level": "N5",
+      "tags": ["loanword", "home_appliance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スーツ",
+      "romaji": "suutsu",
+      "meaning": "suit",
+      "level": "N4",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "タイプ",
+      "romaji": "taipu",
+      "meaning": "type,style",
+      "level": "N4",
+      "tags": ["loanword", "general"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "タクシー",
+      "romaji": "takushii",
+      "meaning": "taxi",
+      "level": "N5",
+      "tags": ["loanword", "transportation"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テーブル",
+      "romaji": "teeburu",
+      "meaning": "table",
+      "level": "N5",
+      "tags": ["loanword", "furniture"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テープ",
+      "romaji": "teepu",
+      "meaning": "tape",
+      "level": "N5",
+      "tags": ["loanword", "stationery"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テープレコーダー",
+      "romaji": "teepu rekoodaa",
+      "meaning": "tape recorder",
+      "level": "N5",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テニス",
+      "romaji": "tenisu",
+      "meaning": "tennis",
+      "level": "N4",
+      "tags": ["loanword", "activity"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テレビ",
+      "romaji": "terebi",
+      "meaning": "television; TV",
+      "level": "N5",
+      "tags": ["loanword", "home_appliance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テスト",
+      "romaji": "tesuto",
+      "meaning": "examination; quiz; test",
+      "level": "N5",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "トイレ",
+      "romaji": "toire",
+      "meaning": "toilet",
+      "level": "N5",
+      "tags": ["loanword", "place"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ワープロ",
+      "romaji": "waapuro",
+      "meaning": "word processor",
+      "level": "N4",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ワイシャツ",
+      "romaji": "wai shatsu",
+      "meaning": "shirt",
+      "level": "N5",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ゼロ",
+      "romaji": "zero",
+      "meaning": "zero",
+      "level": "N5",
+      "tags": ["loanword", "number"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アイデア",
+      "romaji": "aidea",
+      "meaning": "idea",
+      "level": "N4",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アイスクリーム",
+      "romaji": "aisukuriimu",
+      "meaning": "ice cream",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アクセント",
+      "romaji": "akusento",
+      "meaning": "accent",
+      "level": "N3",
+      "tags": ["loanword", "language"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アドバイス",
+      "romaji": "adobaisu",
+      "meaning": "advice",
+      "level": "N3",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アニメ",
+      "romaji": "anime",
+      "meaning": "animation",
+      "level": "N4",
+      "tags": ["loanword", "entertainment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アレルギー",
+      "romaji": "arerugii",
+      "meaning": "allergy",
+      "level": "N3",
+      "tags": ["loanword", "medical"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バイオリン",
+      "romaji": "baiorin",
+      "meaning": "violin",
+      "level": "N4",
+      "tags": ["loanword", "music"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バランス",
+      "romaji": "baransu",
+      "meaning": "balance",
+      "level": "N3",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バスケットボール",
+      "romaji": "basukettobooru",
+      "meaning": "basketball",
+      "level": "N4",
+      "tags": ["loanword", "sports"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ビジネス",
+      "romaji": "bijinesu",
+      "meaning": "business",
+      "level": "N3",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ブログ",
+      "romaji": "burogu",
+      "meaning": "blog",
+      "level": "N3",
+      "tags": ["loanword", "internet"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ブランド",
+      "romaji": "burando",
+      "meaning": "brand",
+      "level": "N3",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "チーム",
+      "romaji": "chiimu",
+      "meaning": "team",
+      "level": "N4",
+      "tags": ["loanword", "group"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "チャンス",
+      "romaji": "chansu",
+      "meaning": "chance",
+      "level": "N3",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "チャンネル",
+      "romaji": "channeru",
+      "meaning": "channel",
+      "level": "N3",
+      "tags": ["loanword", "media"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "データ",
+      "romaji": "deeta",
+      "meaning": "data",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "デザイン",
+      "romaji": "dezain",
+      "meaning": "design",
+      "level": "N3",
+      "tags": ["loanword", "art"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ダイエット",
+      "romaji": "daietto",
+      "meaning": "diet",
+      "level": "N3",
+      "tags": ["loanword", "health"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ドキュメント",
+      "romaji": "dokyumento",
+      "meaning": "document",
+      "level": "N3",
+      "tags": ["loanword", "office"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ダンス",
+      "romaji": "dansu",
+      "meaning": "dance",
+      "level": "N4",
+      "tags": ["loanword", "activity"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エネルギー",
+      "romaji": "enerugii",
+      "meaning": "energy",
+      "level": "N3",
+      "tags": ["loanword", "science"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エンジン",
+      "romaji": "enjin",
+      "meaning": "engine",
+      "level": "N3",
+      "tags": ["loanword", "mechanical"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エンジニア",
+      "romaji": "enjinia",
+      "meaning": "engineer",
+      "level": "N3",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ファイル",
+      "romaji": "fairu",
+      "meaning": "file",
+      "level": "N3",
+      "tags": ["loanword", "office"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ファッション",
+      "romaji": "fasshon",
+      "meaning": "fashion",
+      "level": "N3",
+      "tags": ["loanword", "clothing"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フィットネス",
+      "romaji": "fittonesu",
+      "meaning": "fitness",
+      "level": "N3",
+      "tags": ["loanword", "health"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フリーター",
+      "romaji": "furiitaa",
+      "meaning": "freeter (part-time worker)",
+      "level": "N3",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ゲーム",
+      "romaji": "geemu",
+      "meaning": "game",
+      "level": "N4",
+      "tags": ["loanword", "entertainment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ゴルフ",
+      "romaji": "gorufu",
+      "meaning": "golf",
+      "level": "N4",
+      "tags": ["loanword", "sports"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "グラフ",
+      "romaji": "gurafu",
+      "meaning": "graph",
+      "level": "N3",
+      "tags": ["loanword", "data"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "グループ",
+      "romaji": "guruupu",
+      "meaning": "group",
+      "level": "N3",
+      "tags": ["loanword", "collective"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ハンバーガー",
+      "romaji": "hanbaagaa",
+      "meaning": "hamburger",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ハードウェア",
+      "romaji": "haadowea",
+      "meaning": "hardware",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ヘルメット",
+      "romaji": "herumetto",
+      "meaning": "helmet",
+      "level": "N3",
+      "tags": ["loanword", "safety"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ホームページ",
+      "romaji": "hoomu peeji",
+      "meaning": "homepage",
+      "level": "N3",
+      "tags": ["loanword", "internet"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "イメージ",
+      "romaji": "imeeji",
+      "meaning": "image",
+      "level": "N3",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インターネット",
+      "romaji": "intaanetto",
+      "meaning": "internet",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インタビュー",
+      "romaji": "intabyuu",
+      "meaning": "interview",
+      "level": "N3",
+      "tags": ["loanword", "media"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ジョギング",
+      "romaji": "jogingu",
+      "meaning": "jogging",
+      "level": "N4",
+      "tags": ["loanword", "sports"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ジャーナリスト",
+      "romaji": "jaanarisuto",
+      "meaning": "journalist",
+      "level": "N2",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ジュース",
+      "romaji": "juusu",
+      "meaning": "juice",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "キーボード",
+      "romaji": "kiiboodo",
+      "meaning": "keyboard",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "キャンペーン",
+      "romaji": "kyanpeen",
+      "meaning": "campaign",
+      "level": "N2",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コミュニケーション",
+      "romaji": "komyunikeeshon",
+      "meaning": "communication",
+      "level": "N3",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コントロール",
+      "romaji": "kontorooru",
+      "meaning": "control",
+      "level": "N3",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "クッキー",
+      "romaji": "kukkii",
+      "meaning": "cookie",
+      "level": "N4",
+      "tags": ["loanword", "food_drink"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "クリスマス",
+      "romaji": "kurisumasu",
+      "meaning": "Christmas",
+      "level": "N4",
+      "tags": ["loanword", "event"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ライセンス",
+      "romaji": "raisensu",
+      "meaning": "license",
+      "level": "N2",
+      "tags": ["loanword", "legal"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "リーダー",
+      "romaji": "riidaa",
+      "meaning": "leader",
+      "level": "N3",
+      "tags": ["loanword", "position"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "リサイクル",
+      "romaji": "risaikuru",
+      "meaning": "recycle",
+      "level": "N3",
+      "tags": ["loanword", "environment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "マーケティング",
+      "romaji": "maaketingu",
+      "meaning": "marketing",
+      "level": "N2",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "マネージャー",
+      "romaji": "maneejaa",
+      "meaning": "manager",
+      "level": "N3",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "マラソン",
+      "romaji": "marason",
+      "meaning": "marathon",
+      "level": "N3",
+      "tags": ["loanword", "sports"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "メンバー",
+      "romaji": "menbaa",
+      "meaning": "member",
+      "level": "N3",
+      "tags": ["loanword", "group"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "メッセージ",
+      "romaji": "messeeji",
+      "meaning": "message",
+      "level": "N3",
+      "tags": ["loanword", "communication"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "モニター",
+      "romaji": "monitaa",
+      "meaning": "monitor",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ナビゲーション",
+      "romaji": "nabigeeshon",
+      "meaning": "navigation",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ネットワーク",
+      "romaji": "nettowaaku",
+      "meaning": "network",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オペレーター",
+      "romaji": "opereetaa",
+      "meaning": "operator",
+      "level": "N3",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オプション",
+      "romaji": "opushon",
+      "meaning": "option",
+      "level": "N3",
+      "tags": ["loanword", "choice"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パスワード",
+      "romaji": "pasuwaado",
+      "meaning": "password",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パターン",
+      "romaji": "pataan",
+      "meaning": "pattern",
+      "level": "N3",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パフォーマンス",
+      "romaji": "pafoomasu",
+      "meaning": "performance",
+      "level": "N2",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プログラム",
+      "romaji": "puroguramu",
+      "meaning": "program",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プロジェクト",
+      "romaji": "purojekuto",
+      "meaning": "project",
+      "level": "N2",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プロフェッショナル",
+      "romaji": "purofesshonaru",
+      "meaning": "professional",
+      "level": "N2",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "リモコン",
+      "romaji": "rimokon",
+      "meaning": "remote control",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レポート",
+      "romaji": "repooto",
+      "meaning": "report",
+      "level": "N3",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レベル",
+      "romaji": "reberu",
+      "meaning": "level",
+      "level": "N3",
+      "tags": ["loanword", "measurement"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "サーバー",
+      "romaji": "saabaa",
+      "meaning": "server",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "サンプル",
+      "romaji": "sanpuru",
+      "meaning": "sample",
+      "level": "N3",
+      "tags": ["loanword", "data"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "システム",
+      "romaji": "shisutemu",
+      "meaning": "system",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ソフトウェア",
+      "romaji": "sofutowea",
+      "meaning": "software",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スマートフォン",
+      "romaji": "sumaatofon",
+      "meaning": "smartphone",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スケジュール",
+      "romaji": "sukejuuru",
+      "meaning": "schedule",
+      "level": "N3",
+      "tags": ["loanword", "time"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ストレス",
+      "romaji": "sutoresu",
+      "meaning": "stress",
+      "level": "N3",
+      "tags": ["loanword", "health"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ストーリー",
+      "romaji": "sutoorii",
+      "meaning": "story",
+      "level": "N3",
+      "tags": ["loanword", "narrative"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スタイル",
+      "romaji": "sutairu",
+      "meaning": "style",
+      "level": "N3",
+      "tags": ["loanword", "fashion"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "タイミング",
+      "romaji": "taimingu",
+      "meaning": "timing",
+      "level": "N3",
+      "tags": ["loanword", "time"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ターゲット",
+      "romaji": "taagetto",
+      "meaning": "target",
+      "level": "N2",
+      "tags": ["loanword", "goal"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "トラブル",
+      "romaji": "toraburu",
+      "meaning": "trouble",
+      "level": "N3",
+      "tags": ["loanword", "problem"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ユーザー",
+      "romaji": "yuuzaa",
+      "meaning": "user",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バージョン",
+      "romaji": "baajon",
+      "meaning": "version",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ベスト",
+      "romaji": "besuto",
+      "meaning": "best",
+      "level": "N3",
+      "tags": ["loanword", "adjective"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ビデオ",
+      "romaji": "bideo",
+      "meaning": "video",
+      "level": "N3",
+      "tags": ["loanword", "media"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ブーム",
+      "romaji": "buumu",
+      "meaning": "boom",
+      "level": "N3",
+      "tags": ["loanword", "trend"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "キャリア",
+      "romaji": "kyaria",
+      "meaning": "career",
+      "level": "N2",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "キャンセル",
+      "romaji": "kyanseru",
+      "meaning": "cancel",
+      "level": "N3",
+      "tags": ["loanword", "action"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "クリック",
+      "romaji": "kurikku",
+      "meaning": "click",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カスタマー",
+      "romaji": "kasutamaa",
+      "meaning": "customer",
+      "level": "N2",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コンセプト",
+      "romaji": "konseputo",
+      "meaning": "concept",
+      "level": "N2",
+      "tags": ["loanword", "abstract"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ダウンロード",
+      "romaji": "daunroodo",
+      "meaning": "download",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アップロード",
+      "romaji": "appuroodo",
+      "meaning": "upload",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フィードバック",
+      "romaji": "fiidobakku",
+      "meaning": "feedback",
+      "level": "N2",
+      "tags": ["loanword", "communication"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フリーランス",
+      "romaji": "furiransu",
+      "meaning": "freelance",
+      "level": "N2",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "グローバル",
+      "romaji": "gurooobaru",
+      "meaning": "global",
+      "level": "N2",
+      "tags": ["loanword", "scale"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ヒント",
+      "romaji": "hinto",
+      "meaning": "hint",
+      "level": "N3",
+      "tags": ["loanword", "help"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インストール",
+      "romaji": "insutooru",
+      "meaning": "install",
+      "level": "N3",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ジャンル",
+      "romaji": "janru",
+      "meaning": "genre",
+      "level": "N2",
+      "tags": ["loanword", "category"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コンテンツ",
+      "romaji": "kontentsu",
+      "meaning": "content",
+      "level": "N2",
+      "tags": ["loanword", "media"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ランキング",
+      "romaji": "rankingu",
+      "meaning": "ranking",
+      "level": "N3",
+      "tags": ["loanword", "order"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "メンテナンス",
+      "romaji": "mentenansu",
+      "meaning": "maintenance",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ミーティング",
+      "romaji": "miitingu",
+      "meaning": "meeting",
+      "level": "N3",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ニーズ",
+      "romaji": "niiizu",
+      "meaning": "needs",
+      "level": "N2",
+      "tags": ["loanword", "requirement"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ポイント",
+      "romaji": "pointo",
+      "meaning": "point",
+      "level": "N3",
+      "tags": ["loanword", "score"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プライベート",
+      "romaji": "puraibeto",
+      "meaning": "private",
+      "level": "N3",
+      "tags": ["loanword", "personal"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プライオリティ",
+      "romaji": "puraioriti",
+      "meaning": "priority",
+      "level": "N2",
+      "tags": ["loanword", "importance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "リスク",
+      "romaji": "risuku",
+      "meaning": "risk",
+      "level": "N2",
+      "tags": ["loanword", "danger"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "セキュリティ",
+      "romaji": "sekyuriti",
+      "meaning": "security",
+      "level": "N2",
+      "tags": ["loanword", "safety"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スタンダード",
+      "romaji": "sutandaado",
+      "meaning": "standard",
+      "level": "N2",
+      "tags": ["loanword", "norm"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テクニック",
+      "romaji": "tekunikku",
+      "meaning": "technique",
+      "level": "N3",
+      "tags": ["loanword", "skill"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "テクノロジー",
+      "romaji": "tekunorojii",
+      "meaning": "technology",
+      "level": "N2",
+      "tags": ["loanword", "science"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ユニーク",
+      "romaji": "yuuniiku",
+      "meaning": "unique",
+      "level": "N2",
+      "tags": ["loanword", "special"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バックアップ",
+      "romaji": "bakkuappu",
+      "meaning": "backup",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "クライアント",
+      "romaji": "kuraianto",
+      "meaning": "client",
+      "level": "N2",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "データベース",
+      "romaji": "deetabeesu",
+      "meaning": "database",
+      "level": "N2",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フォーマット",
+      "romaji": "foomatto",
+      "meaning": "format",
+      "level": "N2",
+      "tags": ["loanword", "structure"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インデックス",
+      "romaji": "indekkusu",
+      "meaning": "index",
+      "level": "N2",
+      "tags": ["loanword", "reference"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "メディア",
+      "romaji": "media",
+      "meaning": "media",
+      "level": "N2",
+      "tags": ["loanword", "communication"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プロトタイプ",
+      "romaji": "purototaipu",
+      "meaning": "prototype",
+      "level": "N1",
+      "tags": ["loanword", "development"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "リソース",
+      "romaji": "risoosu",
+      "meaning": "resource",
+      "level": "N2",
+      "tags": ["loanword", "material"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "セッション",
+      "romaji": "sesshon",
+      "meaning": "session",
+      "level": "N2",
+      "tags": ["loanword", "period"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スタートアップ",
+      "romaji": "sutaatoappua",
+      "meaning": "startup",
+      "level": "N1",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アルゴリズム",
+      "romaji": "arugorizumu",
+      "meaning": "algorithm",
+      "level": "N1",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アーカイブ",
+      "romaji": "aakaibu",
+      "meaning": "archive",
+      "level": "N1",
+      "tags": ["loanword", "storage"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "イノベーション",
+      "romaji": "inobeeshon",
+      "meaning": "innovation",
+      "level": "N1",
+      "tags": ["loanword", "progress"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オートメーション",
+      "romaji": "ootomaeshon",
+      "meaning": "automation",
+      "level": "N1",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プラットフォーム",
+      "romaji": "purattofoomu",
+      "meaning": "platform",
+      "level": "N1",
+      "tags": ["loanword", "tech"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アナリスト",
+      "romaji": "anarisuto",
+      "meaning": "analyst",
+      "level": "N1",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コンサルタント",
+      "romaji": "konsarutanto",
+      "meaning": "consultant",
+      "level": "N1",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "マーケット",
+      "romaji": "maaketto",
+      "meaning": "market",
+      "level": "N2",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スペシャリスト",
+      "romaji": "supeshiarisuto",
+      "meaning": "specialist",
+      "level": "N1",
+      "tags": ["loanword", "profession"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インフラ",
+      "romaji": "infura",
+      "meaning": "infrastructure",
+      "level": "N1",
+      "tags": ["loanword", "system"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コンパクト",
+      "romaji": "konpakuto",
+      "meaning": "compact",
+      "level": "N3",
+      "tags": ["loanword", "size"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フレキシブル",
+      "romaji": "furekishiburu",
+      "meaning": "flexible",
+      "level": "N2",
+      "tags": ["loanword", "adaptable"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オリジナル",
+      "romaji": "orijinaru",
+      "meaning": "original",
+      "level": "N3",
+      "tags": ["loanword", "unique"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "クリエイティブ",
+      "romaji": "kurieitibu",
+      "meaning": "creative",
+      "level": "N2",
+      "tags": ["loanword", "artistic"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パッケージ",
+      "romaji": "pakkeji",
+      "meaning": "package",
+      "level": "N3",
+      "tags": ["loanword", "container"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ライフスタイル",
+      "romaji": "raifusutairu",
+      "meaning": "lifestyle",
+      "level": "N2",
+      "tags": ["loanword", "living"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "トレンド",
+      "romaji": "torendo",
+      "meaning": "trend",
+      "level": "N2",
+      "tags": ["loanword", "fashion"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "キャンパス",
+      "romaji": "kyanpasu",
+      "meaning": "campus",
+      "level": "N3",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "セミナー",
+      "romaji": "seminaa",
+      "meaning": "seminar",
+      "level": "N3",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ワークショップ",
+      "romaji": "waakushoppu",
+      "meaning": "workshop",
+      "level": "N2",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レクチャー",
+      "romaji": "rekuchaa",
+      "meaning": "lecture",
+      "level": "N3",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プレゼンテーション",
+      "romaji": "purezentaeshon",
+      "meaning": "presentation",
+      "level": "N2",
+      "tags": ["loanword", "communication"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ディスカッション",
+      "romaji": "disukashshon",
+      "meaning": "discussion",
+      "level": "N2",
+      "tags": ["loanword", "communication"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ソリューション",
+      "romaji": "soryuushon",
+      "meaning": "solution",
+      "level": "N2",
+      "tags": ["loanword", "answer"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ストラテジー",
+      "romaji": "sutorateji",
+      "meaning": "strategy",
+      "level": "N2",
+      "tags": ["loanword", "planning"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パートナー",
+      "romaji": "paatonaa",
+      "meaning": "partner",
+      "level": "N3",
+      "tags": ["loanword", "relationship"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コラボレーション",
+      "romaji": "koraboreeshon",
+      "meaning": "collaboration",
+      "level": "N2",
+      "tags": ["loanword", "cooperation"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インフォメーション",
+      "romaji": "infomeeshon",
+      "meaning": "information",
+      "level": "N3",
+      "tags": ["loanword", "data"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ドキュメンテーション",
+      "romaji": "dokyumentaeshon",
+      "meaning": "documentation",
+      "level": "N1",
+      "tags": ["loanword", "record"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "モチベーション",
+      "romaji": "mochibeeshon",
+      "meaning": "motivation",
+      "level": "N2",
+      "tags": ["loanword", "psychology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インスピレーション",
+      "romaji": "insupireeshon",
+      "meaning": "inspiration",
+      "level": "N2",
+      "tags": ["loanword", "creativity"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エンターテインメント",
+      "romaji": "entaateinmento",
+      "meaning": "entertainment",
+      "level": "N2",
+      "tags": ["loanword", "fun"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アドベンチャー",
+      "romaji": "adobenchaa",
+      "meaning": "adventure",
+      "level": "N3",
+      "tags": ["loanword", "experience"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エクスペリエンス",
+      "romaji": "ekusuperiensu",
+      "meaning": "experience",
+      "level": "N2",
+      "tags": ["loanword", "knowledge"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "チャレンジ",
+      "romaji": "charenji",
+      "meaning": "challenge",
+      "level": "N3",
+      "tags": ["loanword", "difficulty"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オポチュニティ",
+      "romaji": "opochuniti",
+      "meaning": "opportunity",
+      "level": "N2",
+      "tags": ["loanword", "chance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アチーブメント",
+      "romaji": "achiibumento",
+      "meaning": "achievement",
+      "level": "N2",
+      "tags": ["loanword", "success"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パフォーマー",
+      "romaji": "pafooomaa",
+      "meaning": "performer",
+      "level": "N3",
+      "tags": ["loanword", "entertainment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オーディエンス",
+      "romaji": "oodiensu",
+      "meaning": "audience",
+      "level": "N2",
+      "tags": ["loanword", "people"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スポンサー",
+      "romaji": "suponsaa",
+      "meaning": "sponsor",
+      "level": "N2",
+      "tags": ["loanword", "business"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ボランティア",
+      "romaji": "borantia",
+      "meaning": "volunteer",
+      "level": "N3",
+      "tags": ["loanword", "service"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コミュニティ",
+      "romaji": "komyuniti",
+      "meaning": "community",
+      "level": "N2",
+      "tags": ["loanword", "society"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オーガナイザー",
+      "romaji": "ooganaizaa",
+      "meaning": "organizer",
+      "level": "N2",
+      "tags": ["loanword", "management"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ファシリテーター",
+      "romaji": "fashiriteeta",
+      "meaning": "facilitator",
+      "level": "N1",
+      "tags": ["loanword", "leadership"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コーディネーター",
+      "romaji": "koodineetaa",
+      "meaning": "coordinator",
+      "level": "N2",
+      "tags": ["loanword", "management"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アドミニストレーター",
+      "romaji": "adominisutoreetaa",
+      "meaning": "administrator",
+      "level": "N1",
+      "tags": ["loanword", "management"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スーパーバイザー",
+      "romaji": "suupaabaisaa",
+      "meaning": "supervisor",
+      "level": "N2",
+      "tags": ["loanword", "management"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インターン",
+      "romaji": "intaan",
+      "meaning": "intern",
+      "level": "N3",
+      "tags": ["loanword", "work"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "トレーニー",
+      "romaji": "toreenii",
+      "meaning": "trainee",
+      "level": "N3",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "メンター",
+      "romaji": "mentaa",
+      "meaning": "mentor",
+      "level": "N2",
+      "tags": ["loanword", "guidance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "コーチ",
+      "romaji": "koochi",
+      "meaning": "coach",
+      "level": "N3",
+      "tags": ["loanword", "guidance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インストラクター",
+      "romaji": "insutorakutaa",
+      "meaning": "instructor",
+      "level": "N3",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "チューター",
+      "romaji": "chuutaa",
+      "meaning": "tutor",
+      "level": "N3",
+      "tags": ["loanword", "education"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カウンセラー",
+      "romaji": "kaunseraa",
+      "meaning": "counselor",
+      "level": "N2",
+      "tags": ["loanword", "guidance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "セラピスト",
+      "romaji": "serapisuto",
+      "meaning": "therapist",
+      "level": "N2",
+      "tags": ["loanword", "medical"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スペシャル",
+      "romaji": "supesharu",
+      "meaning": "special",
+      "level": "N3",
+      "tags": ["loanword", "unique"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ナチュラル",
+      "romaji": "nachuraru",
+      "meaning": "natural",
+      "level": "N3",
+      "tags": ["loanword", "nature"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オーガニック",
+      "romaji": "ooganikku",
+      "meaning": "organic",
+      "level": "N2",
+      "tags": ["loanword", "natural"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エコロジー",
+      "romaji": "ekorojii",
+      "meaning": "ecology",
+      "level": "N2",
+      "tags": ["loanword", "environment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "サステナブル",
+      "romaji": "sasutenaburu",
+      "meaning": "sustainable",
+      "level": "N1",
+      "tags": ["loanword", "environment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "リニューアブル",
+      "romaji": "rinyuuaburu",
+      "meaning": "renewable",
+      "level": "N1",
+      "tags": ["loanword", "environment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エネルギー効率",
+      "romaji": "enerugii kōritsu",
+      "meaning": "energy efficiency",
+      "level": "N1",
+      "tags": ["loanword", "environment"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "バイオテクノロジー",
+      "romaji": "baiotekuronoroji",
+      "meaning": "biotechnology",
+      "level": "N1",
+      "tags": ["loanword", "science"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ナノテクノロジー",
+      "romaji": "nanotekuronoroji",
+      "meaning": "nanotechnology",
+      "level": "N1",
+      "tags": ["loanword", "science"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ロボティクス",
+      "romaji": "robotikusu",
+      "meaning": "robotics",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "人工知能",
+      "romaji": "jinkō chino",
+      "meaning": "artificial intelligence",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "マシンラーニング",
+      "romaji": "mashin raaningu",
+      "meaning": "machine learning",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ビッグデータ",
+      "romaji": "biggu deeta",
+      "meaning": "big data",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "クラウドコンピューティング",
+      "romaji": "kuraudo konpyuutingu",
+      "meaning": "cloud computing",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "サイバーセキュリティ",
+      "romaji": "saibaa sekyuriti",
+      "meaning": "cybersecurity",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ブロックチェーン",
+      "romaji": "burokkucheen",
+      "meaning": "blockchain",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "仮想現実",
+      "romaji": "kasō genjitsu",
+      "meaning": "virtual reality",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "拡張現実",
+      "romaji": "kakuchō genjitsu",
+      "meaning": "augmented reality",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インターフェース",
+      "romaji": "intaafesu",
+      "meaning": "interface",
+      "level": "N1",
+      "tags": ["loanword", "technology"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ユーザビリティ",
+      "romaji": "yuuzabiriti",
+      "meaning": "usability",
+      "level": "N1",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アクセシビリティ",
+      "romaji": "akuseshibiriti",
+      "meaning": "accessibility",
+      "level": "N1",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レスポンシブ",
+      "romaji": "resuponsibu",
+      "meaning": "responsive",
+      "level": "N1",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "モバイルファースト",
+      "romaji": "mobairu faasuto",
+      "meaning": "mobile first",
+      "level": "N1",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "ミニマリズム",
+      "romaji": "minrimarizumu",
+      "meaning": "minimalism",
+      "level": "N1",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エステティック",
+      "romaji": "esutetikku",
+      "meaning": "aesthetic",
+      "level": "N2",
+      "tags": ["loanword", "beauty"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "パラダイム",
+      "romaji": "paradaimu",
+      "meaning": "paradigm",
+      "level": "N1",
+      "tags": ["loanword", "concept"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "メソドロジー",
+      "romaji": "mesodorojii",
+      "meaning": "methodology",
+      "level": "N1",
+      "tags": ["loanword", "approach"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フレームワーク",
+      "romaji": "fureimuwaaku",
+      "meaning": "framework",
+      "level": "N1",
+      "tags": ["loanword", "structure"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "アーキテクチャ",
+      "romaji": "aakitekucha",
+      "meaning": "architecture",
+      "level": "N1",
+      "tags": ["loanword", "structure"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "インフラストラクチャ",
+      "romaji": "infurasutorakucha",
+      "meaning": "infrastructure",
+      "level": "N1",
+      "tags": ["loanword", "foundation"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "オプティマイゼーション",
+      "romaji": "oputimaijeeshon",
+      "meaning": "optimization",
+      "level": "N1",
+      "tags": ["loanword", "improvement"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "エフィシエンシー",
+      "romaji": "efishenshii",
+      "meaning": "efficiency",
+      "level": "N1",
+      "tags": ["loanword", "performance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "プロダクティビティ",
+      "romaji": "purodakutibiti",
+      "meaning": "productivity",
+      "level": "N1",
+      "tags": ["loanword", "performance"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "スケーラビリティ",
+      "romaji": "sukeerabiriti",
+      "meaning": "scalability",
+      "level": "N1",
+      "tags": ["loanword", "growth"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "フレキシビリティ",
+      "romaji": "furekishibiriti",
+      "meaning": "flexibility",
+      "level": "N1",
+      "tags": ["loanword", "adaptability"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "レイアウト",
+      "romaji": "reiauto",
+      "meaning": "layout",
+      "level": "N2",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "タイポグラフィ",
+      "romaji": "taipogurafi",
+      "meaning": "typography",
+      "level": "N1",
+      "tags": ["loanword", "design"]
+    },
+    {
+      "type": "KATAKANA",
+      "japanese": "カラーパレット",
+      "romaji": "karaa paretto",
+      "meaning": "color palette",
+      "level": "N1",
+      "tags": ["loanword", "design"]
+    }
+  ]
+}
+      
