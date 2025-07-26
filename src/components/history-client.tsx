@@ -39,6 +39,8 @@ export default function HistoryClient() {
       try {
         const data = await getAllHistory();
         setHistories(data);
+                console.log(data);
+
       } catch (error) {
         console.error("Failed to load history:", error);
       } finally {
@@ -86,7 +88,7 @@ export default function HistoryClient() {
   if (loading) {
     return (
       <div className="p-6">
-        <h1 className="text-2xl font-bold mb-6">Session History</h1>
+        {/* <h1 className="text-2xl font-bold mb-6">Session History</h1> */}
         <p className="text-muted-foreground">Loading...</p>
       </div>
     );
@@ -95,7 +97,7 @@ export default function HistoryClient() {
   return (
     <div className="p-6 space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">Session History</h1>
+        {/* <h1 className="text-2xl font-bold">Session History</h1> */}
         <span className="text-sm text-muted-foreground">
           {filteredAndSortedHistories.length} session
           {filteredAndSortedHistories.length !== 1 ? "s" : ""}
