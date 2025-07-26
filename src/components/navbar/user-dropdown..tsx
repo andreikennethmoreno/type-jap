@@ -54,7 +54,7 @@ export default function UserDropdown() {
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end" className="w-56">
+      <DropdownMenuContent align="start" className="w-56">
         <DropdownMenuItem
           onClick={() => router.push("/profile")}
           className="flex items-center gap-2"

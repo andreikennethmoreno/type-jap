@@ -155,23 +155,28 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
     selectedTypes.size > 0 || scoreFilter !== "all" || dateFilter !== "all";
 
   return (
-    <Card className="col-span-4">
-      <CardHeader>
-        <CardTitle>Session History</CardTitle>
-        <CardDescription>
+    <Card className="col-span-4 w-full">
+      <CardHeader className="pb-4">
+        <CardTitle className="text-lg sm:text-xl">Session History</CardTitle>
+        <CardDescription className="text-sm">
           Detailed breakdown of your recent practice sessions
         </CardDescription>
 
         {/* Filters Section */}
         <div className="flex flex-col gap-4 pt-4">
-          <div className="flex flex-wrap items-center gap-4">
+          {/* Mobile-first filter layout */}
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             {/* Type Filter */}
             <div className="flex items-center gap-2">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full sm:w-auto"
+                  >
                     <Filter className="h-4 w-4" />
-                    Type
+                    <span className="hidden xs:inline">Type</span>
                     {selectedTypes.size > 0 && (
                       <Badge variant="secondary" className="ml-1 px-1 text-xs">
                         {selectedTypes.size}
@@ -205,12 +210,22 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
             <div className="flex items-center gap-2">
               <Label
                 htmlFor="score-filter"
-                className="text-sm font-medium whitespace-nowrap"
+                className="text-sm font-medium whitespace-nowrap hidden sm:block"
               >
                 Min Score:
               </Label>
+              <Label
+                htmlFor="score-filter"
+                className="text-sm font-medium sm:hidden"
+              >
+                Score:
+              </Label>
               <Select value={scoreFilter} onValueChange={setScoreFilter}>
-                <SelectTrigger className="w-24" size="sm" id="score-filter">
+                <SelectTrigger
+                  className="w-20 sm:w-24"
+                  size="sm"
+                  id="score-filter"
+                >
                   <SelectValue placeholder="All" />
                 </SelectTrigger>
                 <SelectContent>
@@ -232,7 +247,11 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                 Last:
               </Label>
               <Select value={dateFilter} onValueChange={setDateFilter}>
-                <SelectTrigger className="w-32" size="sm" id="date-filter">
+                <SelectTrigger
+                  className="w-24 sm:w-32"
+                  size="sm"
+                  id="date-filter"
+                >
                   <SelectValue placeholder="All time" />
                 </SelectTrigger>
                 <SelectContent>
@@ -247,14 +266,19 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
 
             {/* Clear Filters */}
             {hasActiveFilters && (
-              <Button variant="ghost" size="sm" onClick={clearFilters}>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={clearFilters}
+                className="w-full sm:w-auto"
+              >
                 Clear filters
               </Button>
             )}
           </div>
 
           {/* Results Summary */}
-          <div className="text-sm text-muted-foreground">
+          <div className="text-xs sm:text-sm text-muted-foreground">
             Showing {Math.min(pageSize, filteredHistory.length - startIndex)} of{" "}
             {filteredHistory.length} sessions
             {hasActiveFilters && ` (filtered from ${history.length} total)`}
@@ -262,13 +286,13 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
         </div>
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="px-3 sm:px-6">
         <div className="space-y-4">
           {/* Sessions List */}
           <div className="space-y-2">
             {currentPageData.length === 0 ? (
               <div className="text-center py-8">
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   No sessions found matching your filters.
                 </p>
                 {hasActiveFilters && (
@@ -296,13 +320,61 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                         className="w-full p-0 h-auto hover:bg-muted/50"
                         onClick={() => toggleSession(session.id)}
                       >
-                        <div className="w-full p-4 border rounded-lg">
-                          <div className="flex items-center justify-between">
+                        <div className="w-full p-3 sm:p-4 border rounded-lg">
+                          {/* Mobile layout (< sm) */}
+                          <div className="sm:hidden">
+                            <div className="flex items-center justify-between mb-3">
+                              <div className="flex items-center space-x-2">
+                                {isExpanded ? (
+                                  <ChevronDown className="h-4 w-4 flex-shrink-0" />
+                                ) : (
+                                  <ChevronRight className="h-4 w-4 flex-shrink-0" />
+                                )}
+                                <Badge
+                                  variant="outline"
+                                  className={`${
+                                    SESSION_TYPE_COLORS[session.session.type]
+                                  } text-xs`}
+                                >
+                                  {session.session.type}
+                                </Badge>
+                              </div>
+                              <div
+                                className={`text-lg font-bold ${getScoreColor(
+                                  session.score
+                                )}`}
+                              >
+                                {session.score}%
+                              </div>
+                            </div>
+                            <div className="flex items-center justify-between text-xs text-muted-foreground">
+                              <div className="flex items-center space-x-1">
+                                <Calendar className="h-3 w-3" />
+                                <span>
+                                  {new Date(
+                                    session.createdAt
+                                  ).toLocaleDateString("en-US", {
+                                    month: "short",
+                                    day: "numeric",
+                                  })}
+                                </span>
+                              </div>
+                              <div className="flex items-center space-x-1">
+                                <Target className="h-3 w-3" />
+                                <span>
+                                  {session.correct}/{session.total}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/* Desktop layout (>= sm) */}
+                          <div className="hidden sm:flex items-center justify-between">
                             <div className="flex items-center space-x-4">
                               {isExpanded ? (
-                                <ChevronDown className="h-4 w-4" />
+                                <ChevronDown className="h-4 w-4 flex-shrink-0" />
                               ) : (
-                                <ChevronRight className="h-4 w-4" />
+                                <ChevronRight className="h-4 w-4 flex-shrink-0" />
                               )}
 
                               <div className="flex items-center space-x-3">
@@ -335,7 +407,7 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
 
                             <div className="flex items-center space-x-3">
                               <div
-                                className={`text-2xl font-bold ${getScoreColor(
+                                className={`text-xl lg:text-2xl font-bold ${getScoreColor(
                                   session.score
                                 )}`}
                               >
@@ -348,13 +420,16 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                     </CollapsibleTrigger>
 
                     <CollapsibleContent className="mt-2">
-                      <div className="border rounded-lg p-4 bg-muted/20">
-                        <div className="grid gap-4 md:grid-cols-2">
+                      <div className="border rounded-lg p-3 sm:p-4 bg-muted/20">
+                        <div className="grid gap-4 lg:grid-cols-2">
                           {/* Correct Answers */}
                           <div>
-                            <h4 className="font-medium text-green-700 mb-2 flex items-center gap-2">
+                            <h4 className="font-medium text-green-700 mb-2 flex items-center gap-2 text-sm sm:text-base">
                               <CheckCircle2 className="h-4 w-4" />
-                              Correct Answers (
+                              <span className="hidden sm:inline">
+                                Correct Answers
+                              </span>
+                              <span className="sm:hidden">Correct</span>(
                               {
                                 session.answers.filter((a) => a.isCorrect)
                                   .length
@@ -368,24 +443,24 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                                 .map((answer) => (
                                   <div
                                     key={answer.id}
-                                    className="flex items-center justify-between text-sm p-2 rounded"
+                                    className="text-sm p-2 rounded"
                                   >
                                     {answer.prompt ? (
-                                      <>
-                                        <div className="font-mono font-bold text-lg">
+                                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-2">
+                                        <div className="font-mono font-bold text-base sm:text-lg">
                                           {answer.prompt.japanese}
                                         </div>
-                                        <div className="text-right">
-                                          <div className="font-medium">
+                                        <div className="text-left sm:text-right">
+                                          <div className="font-medium text-sm">
                                             {answer.prompt.romaji}
                                           </div>
                                           <div className="text-xs text-muted-foreground">
                                             {answer.prompt.meaning}
                                           </div>
                                         </div>
-                                      </>
+                                      </div>
                                     ) : (
-                                      <div className="italic text-muted-foreground">
+                                      <div className="italic text-muted-foreground text-xs">
                                         Prompt missing
                                       </div>
                                     )}
@@ -405,9 +480,13 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
 
                           {/* Incorrect Answers */}
                           <div>
-                            <h4 className="font-medium text-red-700 mb-2 flex items-center gap-2">
+                            <h4 className="font-medium text-red-700 mb-2 flex items-center gap-2 text-sm sm:text-base">
                               <XCircle className="h-4 w-4" />
-                              Incorrect Answers ({incorrectAnswers.length})
+                              <span className="hidden sm:inline">
+                                Incorrect Answers
+                              </span>
+                              <span className="sm:hidden">Incorrect</span>(
+                              {incorrectAnswers.length})
                             </h4>
                             <div className="space-y-2 max-h-40 overflow-y-auto">
                               {incorrectAnswers.length === 0 ? (
@@ -421,12 +500,12 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                                     className="space-y-1 text-sm p-2 rounded"
                                   >
                                     {answer.prompt ? (
-                                      <div className="flex items-center justify-between">
-                                        <div className="font-mono font-bold text-lg">
+                                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-2">
+                                        <div className="font-mono font-bold text-base sm:text-lg">
                                           {answer.prompt.japanese}
                                         </div>
-                                        <div className="text-right">
-                                          <div className="font-medium">
+                                        <div className="text-left sm:text-right">
+                                          <div className="font-medium text-sm">
                                             {answer.prompt.romaji}
                                           </div>
                                           <div className="text-xs text-muted-foreground">
@@ -435,17 +514,17 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                                         </div>
                                       </div>
                                     ) : (
-                                      <div className="italic ">
+                                      <div className="italic text-xs">
                                         Prompt data unavailable
                                       </div>
                                     )}
-                                    <div className="flex items-center gap-2">
-                                      <span className="text-xs ">
+                                    <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                                      <span className="text-xs">
                                         Your answer:
                                       </span>
                                       <Badge
                                         variant="destructive"
-                                        className="text-xs"
+                                        className="text-xs w-fit"
                                       >
                                         {answer.userAnswer}
                                       </Badge>
@@ -466,15 +545,17 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
 
           {/* Pagination */}
           {filteredHistory.length > 0 && (
-            <div className="flex items-center justify-between px-4">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-1 sm:px-4">
               <div className="text-muted-foreground hidden flex-1 text-sm lg:flex">
                 0 of {filteredHistory.length} row(s) selected.
               </div>
-              <div className="flex w-full items-center gap-8 lg:w-fit">
-                <div className="hidden items-center gap-2 lg:flex">
+
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8 w-full sm:w-fit">
+                {/* Rows per page selector */}
+                <div className="flex items-center justify-between sm:justify-start gap-2">
                   <Label
                     htmlFor="rows-per-page"
-                    className="text-sm font-medium"
+                    className="text-sm font-medium whitespace-nowrap"
                   >
                     Rows per page
                   </Label>
@@ -487,7 +568,7 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                   >
                     <SelectTrigger
                       size="sm"
-                      className="w-20"
+                      className="w-16 sm:w-20"
                       id="rows-per-page"
                     >
                       <SelectValue placeholder={pageSize} />
@@ -501,49 +582,51 @@ export function SessionHistoryTable({ history }: SessionHistoryTableProps) {
                     </SelectContent>
                   </Select>
                 </div>
-                <div className="flex w-fit items-center justify-center text-sm font-medium">
-                  Page {currentPage} of {Math.max(1, totalPages)}
-                </div>
-                <div className="ml-auto flex items-center gap-2 lg:ml-0">
-                  <Button
-                    variant="outline"
-                    className="hidden h-8 w-8 p-0 lg:flex"
-                    onClick={() => setCurrentPage(1)}
-                    disabled={currentPage === 1}
-                  >
-                    <span className="sr-only">Go to first page</span>
-                    <ChevronsLeft className="h-4 w-4" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="size-8"
-                    size="icon"
-                    onClick={() => setCurrentPage(currentPage - 1)}
-                    disabled={currentPage === 1}
-                  >
-                    <span className="sr-only">Go to previous page</span>
-                    <ChevronLeft className="h-4 w-4" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="size-8"
-                    size="icon"
-                    onClick={() => setCurrentPage(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                  >
-                    <span className="sr-only">Go to next page</span>
-                    <ChevronRight className="h-4 w-4" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="hidden size-8 lg:flex"
-                    size="icon"
-                    onClick={() => setCurrentPage(totalPages)}
-                    disabled={currentPage === totalPages}
-                  >
-                    <span className="sr-only">Go to last page</span>
-                    <ChevronsRight className="h-4 w-4" />
-                  </Button>
+
+                {/* Page info and navigation */}
+                <div className="flex items-center justify-between sm:justify-center gap-4">
+                  <div className="flex items-center justify-center text-sm font-medium whitespace-nowrap">
+                    Page {currentPage} of {Math.max(1, totalPages)}
+                  </div>
+
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Button
+                      variant="outline"
+                      className="hidden sm:flex h-8 w-8 p-0"
+                      onClick={() => setCurrentPage(1)}
+                      disabled={currentPage === 1}
+                    >
+                      <span className="sr-only">Go to first page</span>
+                      <ChevronsLeft className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="h-8 w-8 p-0"
+                      onClick={() => setCurrentPage(currentPage - 1)}
+                      disabled={currentPage === 1}
+                    >
+                      <span className="sr-only">Go to previous page</span>
+                      <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="h-8 w-8 p-0"
+                      onClick={() => setCurrentPage(currentPage + 1)}
+                      disabled={currentPage === totalPages}
+                    >
+                      <span className="sr-only">Go to next page</span>
+                      <ChevronRight className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="hidden sm:flex h-8 w-8 p-0"
+                      onClick={() => setCurrentPage(totalPages)}
+                      disabled={currentPage === totalPages}
+                    >
+                      <span className="sr-only">Go to last page</span>
+                      <ChevronsRight className="h-4 w-4" />
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>

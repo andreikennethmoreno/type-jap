@@ -30,7 +30,7 @@ export default function AnalyticsPage() {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 max-w-7xl">
         {/* Header */}
-        <div className="mb-6 sm:mb-8">
+        {/* <div className="mb-6 sm:mb-8">
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3 sm:mb-2">
             <div className="p-2 bg-primary/10 rounded-lg w-fit">
               <BarChart3 className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
@@ -45,7 +45,7 @@ export default function AnalyticsPage() {
             Track your progress and identify areas for improvement in your
             Japanese language journey
           </p>
-        </div>
+        </div> */}
 
         {/* Summary Cards */}
         <div className="mb-6 sm:mb-8">

@@ -3,6 +3,8 @@
 import { toPromptType } from "@/lib/helpers/prompt";
 import { prisma } from "../../lib";
 
+//TODO : Use json files instead of db data for faster prompting
+
 export async function getRandomPrompts(type: string, count = 10) {
   const normalizedType = toPromptType(type);
 

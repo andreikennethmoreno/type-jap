@@ -7,8 +7,6 @@ import { getDbUserId } from "./user.actions";
 import { getRandomPrompts } from "./prompt.actions";
 import { toPromptType } from "@/lib/helpers/prompt";
 
-
-
 export async function startOrResumeSession(type: string) {
   const userId = await getDbUserId();
   if (!userId) throw new Error("User not found");
