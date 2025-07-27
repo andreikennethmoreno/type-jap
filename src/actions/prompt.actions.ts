@@ -1,46 +1,43 @@
 "use server";
 
 import { toPromptType } from "@/lib/helpers/prompt";
-import { prisma } from "../../lib";
+import { loadJLPTLevels } from "@/actions/jlpt-config.actions";
 
+// ✅ Import vocabulary JSON data
+import hiragana from "../../prisma/data/json/hiragana-words.json";
+import katakana from "../../prisma/data/json/katakana-words.json";
+import kanji from "../../prisma/data/json/kanji-words.json";
+
+// ✅ Merge all vocab arrays
+const vocabulary = [
+  ...hiragana.vocabulary,
+  ...katakana.vocabulary,
+  ...kanji.vocabulary,
+];
+
+// ✅ Get random prompts based on type AND JLPT level config
 export async function getRandomPrompts(type: string, count = 10) {
   const normalizedType = toPromptType(type);
+  const userLevels = await loadJLPTLevels();
 
-  const total = await prisma.prompt.count({
-    where: { type: normalizedType },
-  });
-
-  if (total === 0) return [];
-
-  const offsets = new Set<number>();
-  while (offsets.size < Math.min(count, total)) {
-    offsets.add(Math.floor(Math.random() * total));
-  }
-
-  const prompts = await Promise.all(
-    [...offsets].map((offset) =>
-      prisma.prompt.findFirst({
-        where: { type: normalizedType },
-        skip: offset,
-      })
-    )
+  const filtered = vocabulary.filter(
+    (word) =>
+      word.type === normalizedType &&
+      userLevels.includes(word.level?.toUpperCase?.())
   );
 
-  // 🔥 Fix TS error with type guard
-  return prompts.filter((p): p is NonNullable<typeof p> => p !== null);
+  if (filtered.length === 0) return [];
+
+  const shuffled = [...filtered].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
 }
 
-
+// ✅ Get a single prompt by ID
 export async function getPromptById(id: string) {
-  return prisma.prompt.findUnique({
-    where: { id },
-  });
+  return vocabulary.find((word) => word.id === id) ?? null;
 }
 
+// ✅ Get multiple prompts by ID array
 export async function getPromptsByIds(ids: string[]) {
-  return prisma.prompt.findMany({
-    where: {
-      id: { in: ids },
-    },
-  });
+  return vocabulary.filter((word) => ids.includes(word.id));
 }

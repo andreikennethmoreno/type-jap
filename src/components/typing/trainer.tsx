@@ -12,13 +12,18 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { TestFormSchema } from "@/lib/form-schema";
 import { useTrainer } from "@/hooks/use-trainer";
-import History from "@/components/history-server";
+import History from "@/components/typing/history-server";
 import ToggleRevealEng from "./toggle-reveal-eng";
 import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
+import CombinedTrainerLoading from "./loading-state";
+import InfoDialog from "./info-dialog";
+import FilterDialog from "./filter-dialog";
 
 interface Props {
   script: string;
 }
+
+
 
 export default function Trainer({ script }: Props) {
   const {
@@ -42,13 +47,11 @@ export default function Trainer({ script }: Props) {
   const accuracy =
     totalAttempts > 0 ? Math.round((correctCount / totalAttempts) * 100) : 0;
 
-  if (loading) {
-    return <div className="text-center mt-10 text-lg">Loading session...</div>;
-  }
-
-  if (!current) {
-    return <div className="text-center mt-10 text-lg">Loading prompt...</div>;
-  }
+    if (loading || !current) {
+      return (
+        <CombinedTrainerLoading/>
+      );
+    }
 
   if (sessionComplete) {
     return (
@@ -61,9 +64,10 @@ export default function Trainer({ script }: Props) {
   }
 
   return (
-    <div className="max-w-4xl mx-auto mt-6 p-4 space-y-6">
+    <div className="w-full max-w-4xl mx-auto mt-6 space-y-6">
       {/* Stats Header */}
       <div className="flex justify-center gap-4">
+        <InfoDialog />
         <Badge variant="outline" className="text-sm">
           <Brain className="w-4 h-4 mr-1" />
           {correctCount} Correct
@@ -72,10 +76,11 @@ export default function Trainer({ script }: Props) {
           <Zap className="w-4 h-4 mr-1" />
           {accuracy}% Accuracy
         </Badge>
+        <FilterDialog />
       </div>
 
       {/* Main Trainer Card */}
-      <Card className="mx-auto max-w-lg">
+      <Card className="mx-auto max-w-lg ">
         <CardHeader className="text-center pb-2">
           <CardTitle className="text-6xl font-bold mb-2 tracking-wider">
             {current.japanese}
