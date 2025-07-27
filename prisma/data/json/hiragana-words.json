@@ -190,7 +190,7 @@
     },
     {
       "id": "hiragana-18",
-      "type": "KATAKANA",
+      "type": "HIRAGANA",
       "japanese": "てれび",
       "romaji": "terebi",
       "meaning": "television (TV)",
@@ -449,7 +449,7 @@
     },
     {
       "id": "hiragana-40",
-      "type": "KATAKANA",
+      "type": "HIRAGANA",
       "japanese": "バス",
       "romaji": "basu",
       "meaning": "bus",
@@ -582,7 +582,7 @@
     },
     {
       "id": "hiragana-52",
-      "type": "KATAKANA",
+      "type": "HIRAGANA",
       "japanese": "スープ",
       "romaji": "suupu",
       "meaning": "soup",
@@ -594,7 +594,7 @@
     },
     {
       "id": "hiragana-53",
-      "type": "KATAKANA",
+      "type": "HIRAGANA",
       "japanese": "さらだ",
       "romaji": "sarada",
       "meaning": "salad",
@@ -628,7 +628,7 @@
     },
     {
       "id": "hiragana-56",
-      "type": "KATAKANA",
+      "type": "HIRAGANA",
       "japanese": "ラーメン",
       "romaji": "raamen",
       "meaning": "ramen",
