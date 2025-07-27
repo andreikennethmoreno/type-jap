@@ -64,10 +64,10 @@ export function MistakeTrackerTable({ history }: MistakeTrackerTableProps) {
   // Sort by mistake count
   const sortedMistakes = Array.from(mistakeMap.entries())
     .sort(([, a], [, b]) => b.count - a.count)
-    .slice(0, 10); // Top 10 mistakes
+    .slice(0, 5); // Top 5 mistakes
 
   return (
-    <Card className="col-span-2">
+    <Card className="col-span-2  pb-10">
       <CardHeader>
         <CardTitle>Most Common Mistakes</CardTitle>
         <CardDescription>

@@ -155,74 +155,7 @@ export function PerformanceByTypeChart({
           </div>
         )}
 
-        {/* Study Recommendations */}
-        {history.length > 0 && (
-          <div className="mt-8 p-6  border rounded-xl">
-            <div className="flex items-start gap-3">
-              <div className="p-2  rounded-lg">
-                <Brain className="h-5 w-5 " />
-              </div>
-              <div>
-                <h3 className="font-semibold  mb-2">
-                  Personalized Study Recommendations
-                </h3>
-                <div className="space-y-2 text-sm ">
-                  {(() => {
-                    const averageScore = Math.round(
-                      history.reduce((acc, session) => acc + session.score, 0) /
-                        history.length
-                    );
-                    const recentSessions = history.slice(0, 3);
-                    const recentAverage =
-                      recentSessions.length > 0
-                        ? Math.round(
-                            recentSessions.reduce(
-                              (acc, session) => acc + session.score,
-                              0
-                            ) / recentSessions.length
-                          )
-                        : 0;
-
-                    return (
-                      <>
-                        <p>
-                          • Your current average score is{" "}
-                          <strong>{averageScore}%</strong>
-                        </p>
-                        <p>
-                          • You&apos;ve completed{" "}
-                          <strong>{history.length}</strong> practice sessions
-                        </p>
-                        <p>
-                          • Recent performance:{" "}
-                          <strong>{recentAverage}%</strong> average in last 3
-                          sessions
-                        </p>
-                        {averageScore < 70 && (
-                          <p>
-                            • Consider reviewing fundamentals to improve your
-                            overall performance
-                          </p>
-                        )}
-                        {averageScore >= 80 && (
-                          <p>
-                            • Excellent progress! Keep up the great work! 🎉
-                          </p>
-                        )}
-                      </>
-                    );
-                  })()}
-                </div>
-                <div className="mt-3 flex items-center gap-2 text-xs ">
-                  <TrendingUp className="h-4 w-4" />
-                  <span>
-                    Keep practicing regularly to maintain your progress!
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        
       </CardContent>
     </Card>
   );
