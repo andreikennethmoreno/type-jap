@@ -5,6 +5,10 @@ import { getDbUserId } from "./user.actions";
 
 const DEFAULT_LEVELS = ["N5", "N4", "N3", "N2", "N1"];
 
+type JLPTConfigValue = {
+  levels: string[];
+};
+
 // 🧠 Core DB logic
 export async function createDefaultJLPTConfig() {
   const userId = await getDbUserId();
@@ -68,9 +72,9 @@ export async function loadJLPTLevels() {
     value &&
     typeof value === "object" &&
     "levels" in value &&
-    Array.isArray((value as any).levels)
+    Array.isArray((value as JLPTConfigValue).levels)
   ) {
-    return (value as any).levels as string[];
+    return (value as JLPTConfigValue).levels as string[];
   }
 
   return DEFAULT_LEVELS;

@@ -48,6 +48,7 @@ export default function FilterDialog() {
       updateJLPTConfig(selectedLevels);
     });
     setOpen(false);
+    window.location.reload();
   };
 
   const handleReset = () => {
