@@ -1,6 +1,7 @@
 "use server";
 
 import { toPromptType } from "@/lib/helpers/prompt";
+import { loadJLPTLevels } from "@/actions/jlpt-config.actions";
 
 // ✅ Import vocabulary JSON data
 import hiragana from "../../prisma/data/json/hiragana-words.json";
@@ -14,10 +15,16 @@ const vocabulary = [
   ...kanji.vocabulary,
 ];
 
-// ✅ Get random prompts based on type
+// ✅ Get random prompts based on type AND JLPT level config
 export async function getRandomPrompts(type: string, count = 10) {
   const normalizedType = toPromptType(type);
-  const filtered = vocabulary.filter((word) => word.type === normalizedType);
+  const userLevels = await loadJLPTLevels();
+
+  const filtered = vocabulary.filter(
+    (word) =>
+      word.type === normalizedType &&
+      userLevels.includes(word.level?.toUpperCase?.())
+  );
 
   if (filtered.length === 0) return [];
 

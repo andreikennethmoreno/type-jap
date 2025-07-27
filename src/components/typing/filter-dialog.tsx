@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState, startTransition } from "react";
 import {
   Dialog,
   DialogContent,
@@ -12,12 +12,26 @@ import {
 import { Button } from "@/components/ui/button";
 import { Filter } from "lucide-react";
 
-const JLPT_LEVELS = ["N1", "N2", "N3", "N4", "N5"];
+import {
+  loadJLPTLevels,
+  updateJLPTConfig,
+  resetJLPTConfig,
+} from "@/actions/jlpt-config.actions";
+
+const DEFAULT_LEVELS = ["N5", "N4", "N3", "N2", "N1"];
 
 export default function FilterDialog() {
   const [open, setOpen] = useState(false);
   const [selectedLevels, setSelectedLevels] = useState<string[]>([]);
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (open) {
+      startTransition(async () => {
+        const levels = await loadJLPTLevels();
+        setSelectedLevels(levels);
+      });
+    }
+  }, [open]);
 
   const toggleLevel = (level: string) => {
     setSelectedLevels((prev) =>
@@ -27,13 +41,21 @@ export default function FilterDialog() {
 
   const clearAllFilters = () => {
     setSelectedLevels([]);
-    setSelectedTags([]);
   };
 
   const handleSave = () => {
-    console.log("Selected JLPT Levels:", selectedLevels);
-    console.log("Selected Tags:", selectedTags);
-    setOpen(false); // optional: close the dialog after saving
+    startTransition(() => {
+      updateJLPTConfig(selectedLevels);
+    });
+    setOpen(false);
+  };
+
+  const handleReset = () => {
+    startTransition(async () => {
+      await resetJLPTConfig();
+      setSelectedLevels(DEFAULT_LEVELS);
+    });
+    setOpen(false);
   };
 
   return (
@@ -49,7 +71,7 @@ export default function FilterDialog() {
         <DialogHeader>
           <div className="flex items-center justify-between">
             <DialogTitle className="text-lg font-semibold">Filters</DialogTitle>
-            {(selectedLevels.length > 0 || selectedTags.length > 0) && (
+            {selectedLevels.length > 0 && (
               <Button
                 variant="ghost"
                 size="sm"
@@ -62,11 +84,11 @@ export default function FilterDialog() {
           </div>
         </DialogHeader>
 
-        {/* JLPT Level */}
+        {/* JLPT Level Section */}
         <div className="space-y-3 pt-2">
           <h4 className="text-sm font-medium">JLPT Level</h4>
           <div className="flex flex-wrap gap-2">
-            {JLPT_LEVELS.map((level) => (
+            {DEFAULT_LEVELS.map((level) => (
               <Button
                 key={level}
                 variant={selectedLevels.includes(level) ? "default" : "outline"}
@@ -80,9 +102,15 @@ export default function FilterDialog() {
           </div>
         </div>
 
-        {/* Save Button */}
-        <DialogFooter className="pt-6">
-          <Button onClick={handleSave} className="w-full">
+        <DialogFooter className="pt-6 flex flex-col gap-2 sm:flex-row sm:justify-end">
+          <Button
+            variant="secondary"
+            onClick={handleReset}
+            className="w-full sm:w-auto"
+          >
+            Reset
+          </Button>
+          <Button onClick={handleSave} className="w-full sm:w-auto">
             Save
           </Button>
         </DialogFooter>
