@@ -1,128 +1,240 @@
 {
 
-    "vocabulary": [
-    { "id": "katakana-a", "japanese": "ア", "romaji": "a", "meaning": "vowel sound 'ah'", "level": "N5", "mnemonic": "ア has a deformed capital letter A in it. You have to turn your head to the side and connect some lines, but it's there.", "pronunciation": "like 'ah!' when you come to a realization, or the 'a' in 'car'" },
-    { "id": "katakana-i", "japanese": "イ", "romaji": "i", "meaning": "vowel sound 'ee'", "level": "N5", "mnemonic": "イ looks like an eagle, standing on the ground, or on a branch, or wherever. You see its legs and its back, curved down like an eagle's?", "pronunciation": "like the 'ee' in 'see' or 'tree'" },
-    { "id": "katakana-u", "japanese": "ウ", "romaji": "u", "meaning": "vowel sound 'oo'", "level": "N5", "mnemonic": "This katakana character looks a lot like its hiragana counterpart: う. It should be similar enough to use as a mnemonic to remember what it is.", "pronunciation": "like the 'oo' in 'book' or 'look'" },
-    { "id": "katakana-e", "japanese": "エ", "romaji": "e", "meaning": "vowel sound 'eh'", "level": "N5", "mnemonic": "Imagine this is a girder an engineer would use to build buildings. This character is in the shape of the end of a girder, and its made up of them too. Or, you can think of it like an elevator, with its doors closed.", "pronunciation": "like the 'e' in 'bet' or 'red'" },
-    { "id": "katakana-o", "japanese": "オ", "romaji": "o", "meaning": "vowel sound 'oh'", "level": "N5", "mnemonic": "This kana looks like an opera singer. His mouth is shaped like an o and he's singing 'Ohhhh!'", "pronunciation": "like the 'o' in 'go' or 'so'" },
+    "characters": [
+    { "id": "katakana-a", "japanese": "ア", "romaji": "a", "meaning": "vowel sound 'ah'",  "mnemonic": "ア has a deformed capital letter A in it. You have to turn your head to the side and connect some lines, but it's there.", "pronunciation": "like 'ah!' when you come to a realization, or the 'a' in 'car'" , "type": "KATAKANA",   "mnemonic_img": ""}, 
+    { "id": "katakana-i", "japanese": "イ", "romaji": "i", "meaning": "vowel sound 'ee'",  "mnemonic": "イ looks like an eagle, standing on the ground, or on a branch, or wherever. You see its legs and its back, curved down like an eagle's?", "pronunciation": "like the 'ee' in 'see' or 'tree'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-u", "japanese": "ウ", "romaji": "u", "meaning": "vowel sound 'oo'",  "mnemonic": "This katakana character looks a lot like its hiragana counterpart: う. It should be similar enough to use as a mnemonic to remember what it is.", "pronunciation": "like the 'oo' in 'book' or 'look'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-e", "japanese": "エ", "romaji": "e", "meaning": "vowel sound 'eh'",  "mnemonic": "Imagine this is a girder an engineer would use to build buildings. This character is in the shape of the end of a girder, and its made up of them too. Or, you can think of it like an elevator, with its doors closed.", "pronunciation": "like the 'e' in 'bet' or 'red'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-o", "japanese": "オ", "romaji": "o", "meaning": "vowel sound 'oh'",  "mnemonic": "This kana looks like an opera singer. His mouth is shaped like an o and he's singing 'Ohhhh!'", "pronunciation": "like the 'o' in 'go' or 'so'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ka", "japanese": "カ", "romaji": "ka", "meaning": "consonant + vowel sound 'ka'", "level": "N5", "mnemonic": "It looks just like its hiragana counterpart: か, though it's missing that little extra line. Close enough to make it easy to remember, though.", "pronunciation": "like 'ka' in 'car'" },
-    { "id": "katakana-ki", "japanese": "キ", "romaji": "ki", "meaning": "consonant + vowel sound 'key'", "level": "N5", "mnemonic": "It looks like the hiragana き (the top part at least) and also looks like part of a weird key.", "pronunciation": "like 'key' or 'kee'" },
-    { "id": "katakana-ku", "japanese": "ク", "romaji": "ku", "meaning": "consonant + vowel sound 'koo'", "level": "N5", "mnemonic": "This looks like a long cook's hat.", "pronunciation": "like 'coo' in 'cool'" },
-    { "id": "katakana-ke", "japanese": "ケ", "romaji": "ke", "meaning": "consonant + vowel sound 'keh'", "level": "N5", "mnemonic": "It looks like the letter K!", "pronunciation": "like 'ke' in 'keg'" },
-    { "id": "katakana-ko", "japanese": "コ", "romaji": "ko", "meaning": "consonant + vowel sound 'koh'", "level": "N5", "mnemonic": "See the two 90 degree corners? The two corners are what help you to remember that this is 'ko.'", "pronunciation": "like 'co' in 'coat'" },
+    { "id": "katakana-ka", "japanese": "カ", "romaji": "ka", "meaning": "consonant + vowel sound 'ka'",  "mnemonic": "It looks just like its hiragana counterpart: か, though it's missing that little extra line. Close enough to make it easy to remember, though.", "pronunciation": "like 'ka' in 'car'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ki", "japanese": "キ", "romaji": "ki", "meaning": "consonant + vowel sound 'key'",  "mnemonic": "It looks like the hiragana き (the top part at least) and also looks like part of a weird key.", "pronunciation": "like 'key' or 'kee'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ku", "japanese": "ク", "romaji": "ku", "meaning": "consonant + vowel sound 'koo'",  "mnemonic": "This looks like a long cook's hat.", "pronunciation": "like 'coo' in 'cool'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ke", "japanese": "ケ", "romaji": "ke", "meaning": "consonant + vowel sound 'keh'",  "mnemonic": "It looks like the letter K!", "pronunciation": "like 'ke' in 'keg'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ko", "japanese": "コ", "romaji": "ko", "meaning": "consonant + vowel sound 'koh'",  "mnemonic": "See the two 90 degree corners? The two corners are what help you to remember that this is 'ko.'", "pronunciation": "like 'co' in 'coat'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-sa", "japanese": "サ", "romaji": "sa", "meaning": "consonant + vowel sound 'sa'", "level": "N5", "mnemonic": "Look at these two fish that are hanging on a skewer. The small one is a sardine and the bigger one is a salmon. You can tell that by the size difference. You can also remember this is 'sa' because fish are called さかな (sakana) in Japanese.", "pronunciation": "like 'sa' in 'scar'" },
-    { "id": "katakana-shi", "japanese": "シ", "romaji": "shi", "meaning": "consonant + vowel sound 'shee'", "level": "N5", "mnemonic": "This kana looks like a smiley face, but something is wrong with it. Both eyes are sideways and stacked on top of each other like some deep sea fish. She has a very weird face.", "pronunciation": "like 'she' or 'shee'" },
-    { "id": "katakana-su", "japanese": "ス", "romaji": "su", "meaning": "consonant + vowel sound 'soo'", "level": "N5", "mnemonic": "What's that up there? It's Superman walking in the sky! Wait — upon closer inspection, it's just his disembodied supersuit. …W-Where the heck did he go naked?", "pronunciation": "like 'sue' or 'soo'" },
-    { "id": "katakana-se", "japanese": "セ", "romaji": "se", "meaning": "consonant + vowel sound 'seh'", "level": "N5", "mnemonic": "It looks really similar to the hiragana せ, so you should be able to use that to remember this kana.", "pronunciation": "like 'se' in 'set'" },
-    { "id": "katakana-so", "japanese": "ソ", "romaji": "so", "meaning": "consonant + vowel sound 'soh'", "level": "N5", "mnemonic": "It is one needle and a long thread, which you use to sew. Remember, needles are always vertical like this needle, because you need to stab it through something, straight down. This will help you to differentiate this one and the very similar ン, the katakana for 'n.'", "pronunciation": "like 'so' in 'soap'" },
+    { "id": "katakana-sa", "japanese": "サ", "romaji": "sa", "meaning": "consonant + vowel sound 'sa'",  "mnemonic": "Look at these two fish that are hanging on a skewer. The small one is a sardine and the bigger one is a salmon. You can tell that by the size difference. You can also remember this is 'sa' because fish are called さかな (sakana) in Japanese.", "pronunciation": "like 'sa' in 'scar'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-shi", "japanese": "シ", "romaji": "shi", "meaning": "consonant + vowel sound 'shee'",  "mnemonic": "This kana looks like a smiley face, but something is wrong with it. Both eyes are sideways and stacked on top of each other like some deep sea fish. She has a very weird face.", "pronunciation": "like 'she' or 'shee'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-su", "japanese": "ス", "romaji": "su", "meaning": "consonant + vowel sound 'soo'",  "mnemonic": "What's that up there? It's Superman walking in the sky! Wait — upon closer inspection, it's just his disembodied supersuit. …W-Where the heck did he go naked?", "pronunciation": "like 'sue' or 'soo'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-se", "japanese": "セ", "romaji": "se", "meaning": "consonant + vowel sound 'seh'",  "mnemonic": "It looks really similar to the hiragana せ, so you should be able to use that to remember this kana.", "pronunciation": "like 'se' in 'set'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-so", "japanese": "ソ", "romaji": "so", "meaning": "consonant + vowel sound 'soh'",  "mnemonic": "It is one needle and a long thread, which you use to sew. Remember, needles are always vertical like this needle, because you need to stab it through something, straight down. This will help you to differentiate this one and the very similar ン, the katakana for 'n.'", "pronunciation": "like 'so' in 'soap'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ta", "japanese": "タ", "romaji": "ta", "meaning": "consonant + vowel sound 'ta'", "level": "N5", "mnemonic": "タ looks like a kite. Kites are called たこ (tako) in Japanese. This is actually a taco kite, too. It looks exactly like a giant taco flying high in the sky. Tacos are all the rage these days!", "pronunciation": "like 'ta' in 'tar'" },
-    { "id": "katakana-chi", "japanese": "チ", "romaji": "chi", "meaning": "consonant + vowel sound 'chee'", "level": "N5", "mnemonic": "Doesn't this look like a cheerleader, doing a cheer?", "pronunciation": "like 'chee' in 'cheese'" },
-    { "id": "katakana-tsu", "japanese": "ツ", "romaji": "tsu", "meaning": "consonant + vowel sound 'tsoo'", "level": "N5", "mnemonic": "While ソ (so) had one needle and thread, ツ has two needles and thread. Remember, needles are vertical because you use them to stab into cloth, straight down. This will help you to differentiate this one from シ (shi), which has more horizontal lines. Horizontal lines means it's a face, vertical means it's needles. So this one has two needles.", "pronunciation": "like 'tsu' in 'tsunami'" },
-    { "id": "katakana-te", "japanese": "テ", "romaji": "te", "meaning": "consonant + vowel sound 'teh'", "level": "N5", "mnemonic": "This kana looks like a telephone pole.", "pronunciation": "like 'te' in 'ten'" },
-    { "id": "katakana-to", "japanese": "ト", "romaji": "to", "meaning": "consonant + vowel sound 'toh'", "level": "N5", "mnemonic": "It looks just like a totem pole.", "pronunciation": "like 'to' in 'toe'" },
+    { "id": "katakana-ta", "japanese": "タ", "romaji": "ta", "meaning": "consonant + vowel sound 'ta'",  "mnemonic": "タ looks like a kite. Kites are called たこ (tako) in Japanese. This is actually a taco kite, too. It looks exactly like a giant taco flying high in the sky. Tacos are all the rage these days!", "pronunciation": "like 'ta' in 'tar'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-chi", "japanese": "チ", "romaji": "chi", "meaning": "consonant + vowel sound 'chee'",  "mnemonic": "Doesn't this look like a cheerleader, doing a cheer?", "pronunciation": "like 'chee' in 'cheese'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-tsu", "japanese": "ツ", "romaji": "tsu", "meaning": "consonant + vowel sound 'tsoo'",  "mnemonic": "While ソ (so) had one needle and thread, ツ has two needles and thread. Remember, needles are vertical because you use them to stab into cloth, straight down. This will help you to differentiate this one from シ (shi), which has more horizontal lines. Horizontal lines means it's a face, vertical means it's needles. So this one has two needles.", "pronunciation": "like 'tsu' in 'tsunami'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-te", "japanese": "テ", "romaji": "te", "meaning": "consonant + vowel sound 'teh'",  "mnemonic": "This kana looks like a telephone pole.", "pronunciation": "like 'te' in 'ten'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-to", "japanese": "ト", "romaji": "to", "meaning": "consonant + vowel sound 'toh'",  "mnemonic": "It looks just like a totem pole.", "pronunciation": "like 'to' in 'toe'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-na", "japanese": "ナ", "romaji": "na", "meaning": "consonant + vowel sound 'na'", "level": "N5", "mnemonic": "See the majestic narwhal, swimming up to the surface? What a beautiful creature.", "pronunciation": "like 'na' in 'nah'" },
-    { "id": "katakana-ni", "japanese": "ニ", "romaji": "ni", "meaning": "consonant + vowel sound 'nee'", "level": "N5", "mnemonic": "This is two needles, laying on their side. Now, don't get confused about how I said that needles are always vertical… that's only with the katakana that have the slope in them (ソ and ツ). When they're on their own, resting, and not being used to sew anything (no thread) they're just two needles laying on their side.", "pronunciation": "like 'nee' in 'knee'" },
-    { "id": "katakana-nu", "japanese": "ヌ", "romaji": "nu", "meaning": "consonant + vowel sound 'noo'", "level": "N5", "mnemonic": "The chopsticks are grabbing onto some noodles and pulling them out of a bowl.", "pronunciation": "like 'new' or 'noo'" },
-    { "id": "katakana-ne", "japanese": "ネ", "romaji": "ne", "meaning": "consonant + vowel sound 'neh'", "level": "N5", "mnemonic": "Look, this kana looks like a horse jumping over a hurdle saying 'Neigh!' Don't gamble, kids!", "pronunciation": "like 'ne' in 'net'" },
-    { "id": "katakana-no", "japanese": "ノ", "romaji": "no", "meaning": "consonant + vowel sound 'noh'", "level": "N5", "mnemonic": "It looks like a really long nose.", "pronunciation": "like 'no' in 'note'" },
+    { "id": "katakana-na", "japanese": "ナ", "romaji": "na", "meaning": "consonant + vowel sound 'na'",  "mnemonic": "See the majestic narwhal, swimming up to the surface? What a beautiful creature.", "pronunciation": "like 'na' in 'nah'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ni", "japanese": "ニ", "romaji": "ni", "meaning": "consonant + vowel sound 'nee'",  "mnemonic": "This is two needles, laying on their side. Now, don't get confused about how I said that needles are always vertical… that's only with the katakana that have the slope in them (ソ and ツ). When they're on their own, resting, and not being used to sew anything (no thread) they're just two needles laying on their side.", "pronunciation": "like 'nee' in 'knee'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-nu", "japanese": "ヌ", "romaji": "nu", "meaning": "consonant + vowel sound 'noo'",  "mnemonic": "The chopsticks are grabbing onto some noodles and pulling them out of a bowl.", "pronunciation": "like 'new' or 'noo'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ne", "japanese": "ネ", "romaji": "ne", "meaning": "consonant + vowel sound 'neh'",  "mnemonic": "Look, this kana looks like a horse jumping over a hurdle saying 'Neigh!' Don't gamble, kids!", "pronunciation": "like 'ne' in 'net'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-no", "japanese": "ノ", "romaji": "no", "meaning": "consonant + vowel sound 'noh'",  "mnemonic": "It looks like a really long nose.", "pronunciation": "like 'no' in 'note'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ha", "japanese": "ハ", "romaji": "ha", "meaning": "consonant + vowel sound 'ha'", "level": "N5", "mnemonic": "This is shaped like one of those rice paddy hats. You'll have to connect the pieces, but you can see it, right?", "pronunciation": "like 'ha' in 'heart'" },
-    { "id": "katakana-hi", "japanese": "ヒ", "romaji": "hi", "meaning": "consonant + vowel sound 'hee'", "level": "N5", "mnemonic": "He is saying 'heehee.' Can you see his cheeky grin?", "pronunciation": "like 'hee' in 'heel'" },
-    { "id": "katakana-fu", "japanese": "フ", "romaji": "fu", "meaning": "consonant + vowel sound 'foo'", "level": "N5", "mnemonic": "フ looks like a flag that's triangle-shaped. Hooray for the triangle flag! You'll need to use your imagination to add the stick/flagpole, but you'll know フ is a flag waving in the wind when you see that triangle shape.", "pronunciation": "like 'foo' in 'food'" },
-    { "id": "katakana-he", "japanese": "ヘ", "romaji": "he", "meaning": "consonant + vowel sound 'heh'", "level": "N5", "mnemonic": "This katakana looks just like the hiragana へ. If you know one you know them both!", "pronunciation": "like 'he' in 'hen'" },
-    { "id": "katakana-ho", "japanese": "ホ", "romaji": "ho", "meaning": "consonant + vowel sound 'hoh'", "level": "N5", "mnemonic": "This is a holy cross. You can even see holy light coming off of it. So holy.", "pronunciation": "like 'ho' in 'home'" },
+    { "id": "katakana-ha", "japanese": "ハ", "romaji": "ha", "meaning": "consonant + vowel sound 'ha'",  "mnemonic": "This is shaped like one of those rice paddy hats. You'll have to connect the pieces, but you can see it, right?", "pronunciation": "like 'ha' in 'heart'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-hi", "japanese": "ヒ", "romaji": "hi", "meaning": "consonant + vowel sound 'hee'",  "mnemonic": "He is saying 'heehee.' Can you see his cheeky grin?", "pronunciation": "like 'hee' in 'heel'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-fu", "japanese": "フ", "romaji": "fu", "meaning": "consonant + vowel sound 'foo'",  "mnemonic": "フ looks like a flag that's triangle-shaped. Hooray for the triangle flag! You'll need to use your imagination to add the stick/flagpole, but you'll know フ is a flag waving in the wind when you see that triangle shape.", "pronunciation": "like 'foo' in 'food'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-he", "japanese": "ヘ", "romaji": "he", "meaning": "consonant + vowel sound 'heh'",  "mnemonic": "This katakana looks just like the hiragana へ. If you know one you know them both!", "pronunciation": "like 'he' in 'hen'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ho", "japanese": "ホ", "romaji": "ho", "meaning": "consonant + vowel sound 'hoh'",  "mnemonic": "This is a holy cross. You can even see holy light coming off of it. So holy.", "pronunciation": "like 'ho' in 'home'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ma", "japanese": "マ", "romaji": "ma", "meaning": "consonant + vowel sound 'ma'", "level": "N5", "mnemonic": "Look at all those angles! Those lengths! Those measurements! All that math!", "pronunciation": "like 'ma' in 'mark'" },
-    { "id": "katakana-mi", "japanese": "ミ", "romaji": "mi", "meaning": "consonant + vowel sound 'mee'", "level": "N5", "mnemonic": "Three missiles, flying towards you. Be careful!", "pronunciation": "like 'mee' in 'meet'" },
-    { "id": "katakana-mu", "japanese": "ム", "romaji": "mu", "meaning": "consonant + vowel sound 'moo'", "level": "N5", "mnemonic": "It is shaped like a cow's friendly face. Look at that snout! Moo.", "pronunciation": "like 'moo' from a cow" },
-    { "id": "katakana-me", "japanese": "メ", "romaji": "me", "meaning": "consonant + vowel sound 'meh'", "level": "N5", "mnemonic": "This looks like an 'X' which is over someone's 目め (me), which is 'eye' in Japanese. Meh, I guess they're dead now.", "pronunciation": "like 'me' in 'men'" },
-    { "id": "katakana-mo", "japanese": "モ", "romaji": "mo", "meaning": "consonant + vowel sound 'moh'", "level": "N5", "mnemonic": "This looks very similar to the hiragana も, so you should be able to make that connection and remember both of these.", "pronunciation": "like 'mo' in 'mole'" },
+    { "id": "katakana-ma", "japanese": "マ", "romaji": "ma", "meaning": "consonant + vowel sound 'ma'",  "mnemonic": "Look at all those angles! Those lengths! Those measurements! All that math!", "pronunciation": "like 'ma' in 'mark'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-mi", "japanese": "ミ", "romaji": "mi", "meaning": "consonant + vowel sound 'mee'",  "mnemonic": "Three missiles, flying towards you. Be careful!", "pronunciation": "like 'mee' in 'meet'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-mu", "japanese": "ム", "romaji": "mu", "meaning": "consonant + vowel sound 'moo'",  "mnemonic": "It is shaped like a cow's friendly face. Look at that snout! Moo.", "pronunciation": "like 'moo' from a cow" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-me", "japanese": "メ", "romaji": "me", "meaning": "consonant + vowel sound 'meh'",  "mnemonic": "This looks like an 'X' which is over someone's 目め (me), which is 'eye' in Japanese. Meh, I guess they're dead now.", "pronunciation": "like 'me' in 'men'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-mo", "japanese": "モ", "romaji": "mo", "meaning": "consonant + vowel sound 'moh'",  "mnemonic": "This looks very similar to the hiragana も, so you should be able to make that connection and remember both of these.", "pronunciation": "like 'mo' in 'mole'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ya", "japanese": "ヤ", "romaji": "ya", "meaning": "consonant + vowel sound 'ya'", "level": "N5", "mnemonic": "This looks just like the hiragana や, minus a little line.", "pronunciation": "like 'ya' in 'yard'" },
-    { "id": "katakana-yu", "japanese": "ユ", "romaji": "yu", "meaning": "consonant + vowel sound 'yoo'", "level": "N5", "mnemonic": "You have a hook for a hand. What are you, a pirate?", "pronunciation": "like 'you' or 'yoo'" },
-    { "id": "katakana-yo", "japanese": "ヨ", "romaji": "yo", "meaning": "consonant + vowel sound 'yoh'", "level": "N5", "mnemonic": "See how this kana looks like someone doing yoga? Only a yogi could bend into such a boxy position.", "pronunciation": "like 'yo' in 'yoke'" },
+    { "id": "katakana-ya", "japanese": "ヤ", "romaji": "ya", "meaning": "consonant + vowel sound 'ya'",  "mnemonic": "This looks just like the hiragana や, minus a little line.", "pronunciation": "like 'ya' in 'yard'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-yu", "japanese": "ユ", "romaji": "yu", "meaning": "consonant + vowel sound 'yoo'",  "mnemonic": "You have a hook for a hand. What are you, a pirate?", "pronunciation": "like 'you' or 'yoo'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-yo", "japanese": "ヨ", "romaji": "yo", "meaning": "consonant + vowel sound 'yoh'",  "mnemonic": "See how this kana looks like someone doing yoga? Only a yogi could bend into such a boxy position.", "pronunciation": "like 'yo' in 'yoke'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ra", "japanese": "ラ", "romaji": "ra", "meaning": "consonant + vowel sound 'ra'", "level": "N5", "mnemonic": "It is a raptor wearing some sweet sunglasses like a rapper.", "pronunciation": "like 'ra' in 'raw'" },
-    { "id": "katakana-ri", "japanese": "リ", "romaji": "ri", "meaning": "consonant + vowel sound 'ree'", "level": "N5", "mnemonic": "It looks just like the hiragana り, or at least very, very similar.", "pronunciation": "like 'ree' in 'reef'" },
-    { "id": "katakana-ru", "japanese": "ル", "romaji": "ru", "meaning": "consonant + vowel sound 'roo'", "level": "N5", "mnemonic": "There are two routes you can take. Route one and Route two.", "pronunciation": "like 'roo' in 'roof'" },
-    { "id": "katakana-re", "japanese": "レ", "romaji": "re", "meaning": "consonant + vowel sound 'reh'", "level": "N5", "mnemonic": "Look at that beautiful red hair that Rei has! It's so flowy!", "pronunciation": "like 're' in 'red'" },
-    { "id": "katakana-ro", "japanese": "ロ", "romaji": "ro", "meaning": "consonant + vowel sound 'roh'", "level": "N5", "mnemonic": "This road goes around in a square, never ending. What a terrible road this is. What are you, a 12 year old playing Sim City?", "pronunciation": "like 'ro' in 'row'" },
+    { "id": "katakana-ra", "japanese": "ラ", "romaji": "ra", "meaning": "consonant + vowel sound 'ra'",  "mnemonic": "It is a raptor wearing some sweet sunglasses like a rapper.", "pronunciation": "like 'ra' in 'raw'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ri", "japanese": "リ", "romaji": "ri", "meaning": "consonant + vowel sound 'ree'",  "mnemonic": "It looks just like the hiragana り, or at least very, very similar.", "pronunciation": "like 'ree' in 'reef'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ru", "japanese": "ル", "romaji": "ru", "meaning": "consonant + vowel sound 'roo'",  "mnemonic": "There are two routes you can take. Route one and Route two.", "pronunciation": "like 'roo' in 'roof'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-re", "japanese": "レ", "romaji": "re", "meaning": "consonant + vowel sound 'reh'",  "mnemonic": "Look at that beautiful red hair that Rei has! It's so flowy!", "pronunciation": "like 're' in 'red'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ro", "japanese": "ロ", "romaji": "ro", "meaning": "consonant + vowel sound 'roh'",  "mnemonic": "This road goes around in a square, never ending. What a terrible road this is. What are you, a 12 year old playing Sim City?", "pronunciation": "like 'ro' in 'row'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-wa", "japanese": "ワ", "romaji": "wa", "meaning": "consonant + vowel sound 'wa'", "level": "N5", "mnemonic": "When you ask a question (that's why this is a question mark) you often begin your question with the word what. What are you doing? What are you wearing? What are you not wearing?", "pronunciation": "like 'wa' in 'wax'" },
-    { "id": "katakana-wo", "japanese": "ヲ", "romaji": "wo", "meaning": "particle sound 'wo'", "level": "N5", "mnemonic": "To remember ヲ is 'wo,' think of a dog woofing so hard its tongue is flying out. 'Oh!' you exclaim, taken aback by this dog's tongue.", "pronunciation": "like 'wo' in 'woof' (but sounds like 'o')" },
-    { "id": "katakana-n", "japanese": "ン", "romaji": "n", "meaning": "consonant sound 'n'", "level": "N5", "mnemonic": "Do you remember how シ (shi) is a lady with a weird face? The two little dashes are more horizontal than vertical, which helps us to know it's a face. So, what about ン? It's a man who has only one eye. Mmnnnnn, but why only one eye, you ask? Don't ask, I don't know.", "pronunciation": "like 'n' or 'm' depending on what follows" },
+    { "id": "katakana-wa", "japanese": "ワ", "romaji": "wa", "meaning": "consonant + vowel sound 'wa'",  "mnemonic": "When you ask a question (that's why this is a question mark) you often begin your question with the word what. What are you doing? What are you wearing? What are you not wearing?", "pronunciation": "like 'wa' in 'wax'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-wo", "japanese": "ヲ", "romaji": "wo", "meaning": "particle sound 'wo'",  "mnemonic": "To remember ヲ is 'wo,' think of a dog woofing so hard its tongue is flying out. 'Oh!' you exclaim, taken aback by this dog's tongue.", "pronunciation": "like 'wo' in 'woof' (but sounds like 'o')" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-n", "japanese": "ン", "romaji": "n", "meaning": "consonant sound 'n'",  "mnemonic": "Do you remember how シ (shi) is a lady with a weird face? The two little dashes are more horizontal than vertical, which helps us to know it's a face. So, what about ン? It's a man who has only one eye. Mmnnnnn, but why only one eye, you ask? Don't ask, I don't know.", "pronunciation": "like 'n' or 'm' depending on what follows" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ga", "japanese": "ガ", "romaji": "ga", "meaning": "consonant + vowel sound 'ga'", "level": "N5", "mnemonic": "カ with dakuten (゛) becomes ガ", "pronunciation": "like 'ga' in 'garden'" },
-    { "id": "katakana-gi", "japanese": "ギ", "romaji": "gi", "meaning": "consonant + vowel sound 'gee'", "level": "N5", "mnemonic": "キ with dakuten (゛) becomes ギ", "pronunciation": "like 'gee' in 'geese'" },
-    { "id": "katakana-gu", "japanese": "グ", "romaji": "gu", "meaning": "consonant + vowel sound 'goo'", "level": "N5", "mnemonic": "ク with dakuten (゛) becomes グ", "pronunciation": "like 'goo' in 'good'" },
-    { "id": "katakana-ge", "japanese": "ゲ", "romaji": "ge", "meaning": "consonant + vowel sound 'geh'", "level": "N5", "mnemonic": "ケ with dakuten (゛) becomes ゲ", "pronunciation": "like 'ge' in 'get'" },
-    { "id": "katakana-go", "japanese": "ゴ", "romaji": "go", "meaning": "consonant + vowel sound 'goh'", "level": "N5", "mnemonic": "コ with dakuten (゛) becomes ゴ", "pronunciation": "like 'go' in 'goal'" },
+    { "id": "katakana-ga", "japanese": "ガ", "romaji": "ga", "meaning": "consonant + vowel sound 'ga'",  "mnemonic": "カ with dakuten (゛) becomes ガ", "pronunciation": "like 'ga' in 'garden'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-gi", "japanese": "ギ", "romaji": "gi", "meaning": "consonant + vowel sound 'gee'",  "mnemonic": "キ with dakuten (゛) becomes ギ", "pronunciation": "like 'gee' in 'geese'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-gu", "japanese": "グ", "romaji": "gu", "meaning": "consonant + vowel sound 'goo'",  "mnemonic": "ク with dakuten (゛) becomes グ", "pronunciation": "like 'goo' in 'good'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ge", "japanese": "ゲ", "romaji": "ge", "meaning": "consonant + vowel sound 'geh'",  "mnemonic": "ケ with dakuten (゛) becomes ゲ", "pronunciation": "like 'ge' in 'get'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-go", "japanese": "ゴ", "romaji": "go", "meaning": "consonant + vowel sound 'goh'",  "mnemonic": "コ with dakuten (゛) becomes ゴ", "pronunciation": "like 'go' in 'goal'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-za", "japanese": "ザ", "romaji": "za", "meaning": "consonant + vowel sound 'za'", "level": "N5", "mnemonic": "サ with dakuten (゛) becomes ザ", "pronunciation": "like 'za' in 'zap'" },
-    { "id": "katakana-ji", "japanese": "ジ", "romaji": "ji", "meaning": "consonant + vowel sound 'jee'", "level": "N5", "mnemonic": "シ with dakuten (゛) becomes ジ", "pronunciation": "like 'jee' in 'jeep'" },
-    { "id": "katakana-zu", "japanese": "ズ", "romaji": "zu", "meaning": "consonant + vowel sound 'zoo'", "level": "N5", "mnemonic": "ス with dakuten (゛) becomes ズ", "pronunciation": "like 'zoo'" },
-    { "id": "katakana-ze", "japanese": "ゼ", "romaji": "ze", "meaning": "consonant + vowel sound 'zeh'", "level": "N5", "mnemonic": "セ with dakuten (゛) becomes ゼ", "pronunciation": "like 'ze' in 'zero'" },
-    { "id": "katakana-zo", "japanese": "ゾ", "romaji": "zo", "meaning": "consonant + vowel sound 'zoh'", "level": "N5", "mnemonic": "ソ with dakuten (゛) becomes ゾ", "pronunciation": "like 'zo' in 'zone'" },
+    { "id": "katakana-za", "japanese": "ザ", "romaji": "za", "meaning": "consonant + vowel sound 'za'",  "mnemonic": "サ with dakuten (゛) becomes ザ", "pronunciation": "like 'za' in 'zap'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ji", "japanese": "ジ", "romaji": "ji", "meaning": "consonant + vowel sound 'jee'",  "mnemonic": "シ with dakuten (゛) becomes ジ", "pronunciation": "like 'jee' in 'jeep'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-zu", "japanese": "ズ", "romaji": "zu", "meaning": "consonant + vowel sound 'zoo'",  "mnemonic": "ス with dakuten (゛) becomes ズ", "pronunciation": "like 'zoo'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ze", "japanese": "ゼ", "romaji": "ze", "meaning": "consonant + vowel sound 'zeh'",  "mnemonic": "セ with dakuten (゛) becomes ゼ", "pronunciation": "like 'ze' in 'zero'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-zo", "japanese": "ゾ", "romaji": "zo", "meaning": "consonant + vowel sound 'zoh'",  "mnemonic": "ソ with dakuten (゛) becomes ゾ", "pronunciation": "like 'zo' in 'zone'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-da", "japanese": "ダ", "romaji": "da", "meaning": "consonant + vowel sound 'da'", "level": "N5", "mnemonic": "タ with dakuten (゛) becomes ダ", "pronunciation": "like 'da' in 'dark'" },
-    { "id": "katakana-di", "japanese": "ヂ", "romaji": "ji", "meaning": "consonant + vowel sound 'jee' (type DI)", "level": "N5", "mnemonic": "チ with dakuten (゛) becomes ヂ", "pronunciation": "like 'jee' in 'jeep' (same as ジ)" },
-    { "id": "katakana-du", "japanese": "ヅ", "romaji": "zu", "meaning": "consonant + vowel sound 'zoo' (type DU)", "level": "N5", "mnemonic": "ツ with dakuten (゛) becomes ヅ", "pronunciation": "like 'zoo' (same as ズ)" },
-    { "id": "katakana-de", "japanese": "デ", "romaji": "de", "meaning": "consonant + vowel sound 'deh'", "level": "N5", "mnemonic": "テ with dakuten (゛) becomes デ", "pronunciation": "like 'de' in 'desk'" },
-    { "id": "katakana-do", "japanese": "ド", "romaji": "do", "meaning": "consonant + vowel sound 'doh'", "level": "N5", "mnemonic": "ト with dakuten (゛) becomes ド", "pronunciation": "like 'do' in 'door'" },
+    { "id": "katakana-da", "japanese": "ダ", "romaji": "da", "meaning": "consonant + vowel sound 'da'",  "mnemonic": "タ with dakuten (゛) becomes ダ", "pronunciation": "like 'da' in 'dark'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-di", "japanese": "ヂ", "romaji": "ji", "meaning": "consonant + vowel sound 'jee' (type DI)",  "mnemonic": "チ with dakuten (゛) becomes ヂ", "pronunciation": "like 'jee' in 'jeep' (same as ジ)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-du", "japanese": "ヅ", "romaji": "zu", "meaning": "consonant + vowel sound 'zoo' (type DU)",  "mnemonic": "ツ with dakuten (゛) becomes ヅ", "pronunciation": "like 'zoo' (same as ズ)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-de", "japanese": "デ", "romaji": "de", "meaning": "consonant + vowel sound 'deh'",  "mnemonic": "テ with dakuten (゛) becomes デ", "pronunciation": "like 'de' in 'desk'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-do", "japanese": "ド", "romaji": "do", "meaning": "consonant + vowel sound 'doh'",  "mnemonic": "ト with dakuten (゛) becomes ド", "pronunciation": "like 'do' in 'door'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-ba", "japanese": "バ", "romaji": "ba", "meaning": "consonant + vowel sound 'ba'", "level": "N5", "mnemonic": "ハ with dakuten (゛) becomes バ", "pronunciation": "like 'ba' in 'bar'" },
-    { "id": "katakana-bi", "japanese": "ビ", "romaji": "bi", "meaning": "consonant + vowel sound 'bee'", "level": "N5", "mnemonic": "ヒ with dakuten (゛) becomes ビ", "pronunciation": "like 'bee'" },
-    { "id": "katakana-bu", "japanese": "ブ", "romaji": "bu", "meaning": "consonant + vowel sound 'boo'", "level": "N5", "mnemonic": "フ with dakuten (゛) becomes ブ", "pronunciation": "like 'boo' in 'book'" },
-    { "id": "katakana-be", "japanese": "ベ", "romaji": "be", "meaning": "consonant + vowel sound 'beh'", "level": "N5", "mnemonic": "ヘ with dakuten (゛) becomes ベ", "pronunciation": "like 'be' in 'bed'" },
-    { "id": "katakana-bo", "japanese": "ボ", "romaji": "bo", "meaning": "consonant + vowel sound 'boh'", "level": "N5", "mnemonic": "ホ with dakuten (゛) becomes ボ", "pronunciation": "like 'bo' in 'boat'" },
+    { "id": "katakana-ba", "japanese": "バ", "romaji": "ba", "meaning": "consonant + vowel sound 'ba'",  "mnemonic": "ハ with dakuten (゛) becomes バ", "pronunciation": "like 'ba' in 'bar'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-bi", "japanese": "ビ", "romaji": "bi", "meaning": "consonant + vowel sound 'bee'",  "mnemonic": "ヒ with dakuten (゛) becomes ビ", "pronunciation": "like 'bee'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-bu", "japanese": "ブ", "romaji": "bu", "meaning": "consonant + vowel sound 'boo'",  "mnemonic": "フ with dakuten (゛) becomes ブ", "pronunciation": "like 'boo' in 'book'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-be", "japanese": "ベ", "romaji": "be", "meaning": "consonant + vowel sound 'beh'",  "mnemonic": "ヘ with dakuten (゛) becomes ベ", "pronunciation": "like 'be' in 'bed'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-bo", "japanese": "ボ", "romaji": "bo", "meaning": "consonant + vowel sound 'boh'",  "mnemonic": "ホ with dakuten (゛) becomes ボ", "pronunciation": "like 'bo' in 'boat'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-pa", "japanese": "パ", "romaji": "pa", "meaning": "consonant + vowel sound 'pa'", "level": "N5", "mnemonic": "ハ with han-dakuten (゜) becomes パ", "pronunciation": "like 'pa' in 'park'" },
-    { "id": "katakana-pi", "japanese": "ピ", "romaji": "pi", "meaning": "consonant + vowel sound 'pee'", "level": "N5", "mnemonic": "ヒ with han-dakuten (゜) becomes ピ", "pronunciation": "like 'pee' in 'peek'" },
-    { "id": "katakana-pu", "japanese": "プ", "romaji": "pu", "meaning": "consonant + vowel sound 'poo'", "level": "N5", "mnemonic": "フ with han-dakuten (゜) becomes プ", "pronunciation": "like 'poo' in 'pool'" },
-    { "id": "katakana-pe", "japanese": "ペ", "romaji": "pe", "meaning": "consonant + vowel sound 'peh'", "level": "N5", "mnemonic": "ヘ with han-dakuten (゜) becomes ペ", "pronunciation": "like 'pe' in 'pen'" },
-    { "id": "katakana-po", "japanese": "ポ", "romaji": "po", "meaning": "consonant + vowel sound 'poh'", "level": "N5", "mnemonic": "ホ with han-dakuten (゜) becomes ポ", "pronunciation": "like 'po' in 'post'" },
+    { "id": "katakana-pa", "japanese": "パ", "romaji": "pa", "meaning": "consonant + vowel sound 'pa'",  "mnemonic": "ハ with han-dakuten (゜) becomes パ", "pronunciation": "like 'pa' in 'park'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-pi", "japanese": "ピ", "romaji": "pi", "meaning": "consonant + vowel sound 'pee'",  "mnemonic": "ヒ with han-dakuten (゜) becomes ピ", "pronunciation": "like 'pee' in 'peek'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-pu", "japanese": "プ", "romaji": "pu", "meaning": "consonant + vowel sound 'poo'",  "mnemonic": "フ with han-dakuten (゜) becomes プ", "pronunciation": "like 'poo' in 'pool'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-pe", "japanese": "ペ", "romaji": "pe", "meaning": "consonant + vowel sound 'peh'",  "mnemonic": "ヘ with han-dakuten (゜) becomes ペ", "pronunciation": "like 'pe' in 'pen'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-po", "japanese": "ポ", "romaji": "po", "meaning": "consonant + vowel sound 'poh'",  "mnemonic": "ホ with han-dakuten (゜) becomes ポ", "pronunciation": "like 'po' in 'post'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-vu", "japanese": "ヴ", "romaji": "vu", "meaning": "consonant + vowel sound 'vu/bu'", "level": "N5", "mnemonic": "ウ with dakuten (゛) becomes ヴ", "pronunciation": "like 'vu' but often sounds like 'bu'" },
+    { "id": "katakana-vu", "japanese": "ヴ", "romaji": "vu", "meaning": "consonant + vowel sound 'vu/bu'",  "mnemonic": "ウ with dakuten (゛) becomes ヴ", "pronunciation": "like 'vu' but often sounds like 'bu'" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-kya", "japanese": "キャ", "romaji": "kya", "meaning": "kya sound", "level": "N5", "mnemonic": "Combination of キ + small ャ", "pronunciation": "ki + ya = kya (drop the 'i' sound)" },
-    { "id": "katakana-kyu", "japanese": "キュ", "romaji": "kyu", "meaning": "kyu sound", "level": "N5", "mnemonic": "Combination of キ + small ュ", "pronunciation": "ki + yu = kyu (drop the 'i' sound)" },
-    { "id": "katakana-kyo", "japanese": "キョ", "romaji": "kyo", "meaning": "kyo sound", "level": "N5", "mnemonic": "Combination of キ + small ョ", "pronunciation": "ki + yo = kyo (drop the 'i' sound)" },
-    { "id": "katakana-sha", "japanese": "シャ", "romaji": "sha", "meaning": "sha sound", "level": "N5", "mnemonic": "Combination of シ + small ャ", "pronunciation": "shi + ya = sha (drop the 'i' sound)" },
-    { "id": "katakana-shu", "japanese": "シュ", "romaji": "shu", "meaning": "shu sound", "level": "N5", "mnemonic": "Combination of シ + small ュ", "pronunciation": "shi + yu = shu (drop the 'i' sound)" },
-    { "id": "katakana-sho", "japanese": "ショ", "romaji": "sho", "meaning": "sho sound", "level": "N5", "mnemonic": "Combination of シ + small ョ", "pronunciation": "shi + yo = sho (drop the 'i' sound)" },
-    { "id": "katakana-cha", "japanese": "チャ", "romaji": "cha", "meaning": "cha sound", "level": "N5", "mnemonic": "Combination of チ + small ャ", "pronunciation": "chi + ya = cha (drop the 'i' sound)" },
-    { "id": "katakana-chu", "japanese": "チュ", "romaji": "chu", "meaning": "chu sound", "level": "N5", "mnemonic": "Combination of チ + small ュ", "pronunciation": "chi + yu = chu (drop the 'i' sound)" },
-    { "id": "katakana-cho", "japanese": "チョ", "romaji": "cho", "meaning": "cho sound", "level": "N5", "mnemonic": "Combination of チ + small ョ", "pronunciation": "chi + yo = cho (drop the 'i' sound)" },
-    { "id": "katakana-nya", "japanese": "ニャ", "romaji": "nya", "meaning": "nya sound", "level": "N5", "mnemonic": "Combination of ニ + small ャ", "pronunciation": "ni + ya = nya (drop the 'i' sound)" },
-    { "id": "katakana-nyu", "japanese": "ニュ", "romaji": "nyu", "meaning": "nyu sound", "level": "N5", "mnemonic": "Combination of ニ + small ュ", "pronunciation": "ni + yu = nyu (drop the 'i' sound)" },
-    { "id": "katakana-nyo", "japanese": "ニョ", "romaji": "nyo", "meaning": "nyo sound", "level": "N5", "mnemonic": "Combination of ニ + small ョ", "pronunciation": "ni + yo = nyo (drop the 'i' sound)" },
-    { "id": "katakana-hya", "japanese": "ヒャ", "romaji": "hya", "meaning": "hya sound", "level": "N5", "mnemonic": "Combination of ヒ + small ャ", "pronunciation": "hi + ya = hya (drop the 'i' sound)" },
-    { "id": "katakana-hyu", "japanese": "ヒュ", "romaji": "hyu", "meaning": "hyu sound", "level": "N5", "mnemonic": "Combination of ヒ + small ュ", "pronunciation": "hi + yu = hyu (drop the 'i' sound)" },
-    { "id": "katakana-hyo", "japanese": "ヒョ", "romaji": "hyo", "meaning": "hyo sound", "level": "N5", "mnemonic": "Combination of ヒ + small ョ", "pronunciation": "hi + yo = hyo (drop the 'i' sound)" },
-    { "id": "katakana-mya", "japanese": "ミャ", "romaji": "mya", "meaning": "mya sound", "level": "N5", "mnemonic": "Combination of ミ + small ャ", "pronunciation": "mi + ya = mya (drop the 'i' sound)" },
-    { "id": "katakana-myu", "japanese": "ミュ", "romaji": "myu", "meaning": "myu sound", "level": "N5", "mnemonic": "Combination of ミ + small ュ", "pronunciation": "mi + yu = myu (drop the 'i' sound)" },
-    { "id": "katakana-myo", "japanese": "ミョ", "romaji": "myo", "meaning": "myo sound", "level": "N5", "mnemonic": "Combination of ミ + small ョ", "pronunciation": "mi + yo = myo (drop the 'i' sound)" },
-    { "id": "katakana-rya", "japanese": "リャ", "romaji": "rya", "meaning": "rya sound", "level": "N5", "mnemonic": "Combination of リ + small ャ", "pronunciation": "ri + ya = rya (drop the 'i' sound)" },
-    { "id": "katakana-ryu", "japanese": "リュ", "romaji": "ryu", "meaning": "ryu sound", "level": "N5", "mnemonic": "Combination of リ + small ュ", "pronunciation": "ri + yu = ryu (drop the 'i' sound)" },
-    { "id": "katakana-ryo", "japanese": "リョ", "romaji": "ryo", "meaning": "ryo sound", "level": "N5", "mnemonic": "Combination of リ + small ョ", "pronunciation": "ri + yo = ryo (drop the 'i' sound)" },
+    { "id": "katakana-kya", "japanese": "キャ", "romaji": "kya", "meaning": "kya sound",  "mnemonic": "Combination of キ + small ャ", "pronunciation": "ki + ya = kya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-kyu", "japanese": "キュ", "romaji": "kyu", "meaning": "kyu sound",  "mnemonic": "Combination of キ + small ュ", "pronunciation": "ki + yu = kyu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-kyo", "japanese": "キョ", "romaji": "kyo", "meaning": "kyo sound",  "mnemonic": "Combination of キ + small ョ", "pronunciation": "ki + yo = kyo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-sha", "japanese": "シャ", "romaji": "sha", "meaning": "sha sound",  "mnemonic": "Combination of シ + small ャ", "pronunciation": "shi + ya = sha (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-shu", "japanese": "シュ", "romaji": "shu", "meaning": "shu sound",  "mnemonic": "Combination of シ + small ュ", "pronunciation": "shi + yu = shu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-sho", "japanese": "ショ", "romaji": "sho", "meaning": "sho sound",  "mnemonic": "Combination of シ + small ョ", "pronunciation": "shi + yo = sho (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-cha", "japanese": "チャ", "romaji": "cha", "meaning": "cha sound",  "mnemonic": "Combination of チ + small ャ", "pronunciation": "chi + ya = cha (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-chu", "japanese": "チュ", "romaji": "chu", "meaning": "chu sound",  "mnemonic": "Combination of チ + small ュ", "pronunciation": "chi + yu = chu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-cho", "japanese": "チョ", "romaji": "cho", "meaning": "cho sound",  "mnemonic": "Combination of チ + small ョ", "pronunciation": "chi + yo = cho (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-nya", "japanese": "ニャ", "romaji": "nya", "meaning": "nya sound",  "mnemonic": "Combination of ニ + small ャ", "pronunciation": "ni + ya = nya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-nyu", "japanese": "ニュ", "romaji": "nyu", "meaning": "nyu sound",  "mnemonic": "Combination of ニ + small ュ", "pronunciation": "ni + yu = nyu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-nyo", "japanese": "ニョ", "romaji": "nyo", "meaning": "nyo sound",  "mnemonic": "Combination of ニ + small ョ", "pronunciation": "ni + yo = nyo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-hya", "japanese": "ヒャ", "romaji": "hya", "meaning": "hya sound",  "mnemonic": "Combination of ヒ + small ャ", "pronunciation": "hi + ya = hya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-hyu", "japanese": "ヒュ", "romaji": "hyu", "meaning": "hyu sound",  "mnemonic": "Combination of ヒ + small ュ", "pronunciation": "hi + yu = hyu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-hyo", "japanese": "ヒョ", "romaji": "hyo", "meaning": "hyo sound",  "mnemonic": "Combination of ヒ + small ョ", "pronunciation": "hi + yo = hyo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-mya", "japanese": "ミャ", "romaji": "mya", "meaning": "mya sound",  "mnemonic": "Combination of ミ + small ャ", "pronunciation": "mi + ya = mya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-myu", "japanese": "ミュ", "romaji": "myu", "meaning": "myu sound",  "mnemonic": "Combination of ミ + small ュ", "pronunciation": "mi + yu = myu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-myo", "japanese": "ミョ", "romaji": "myo", "meaning": "myo sound",  "mnemonic": "Combination of ミ + small ョ", "pronunciation": "mi + yo = myo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-rya", "japanese": "リャ", "romaji": "rya", "meaning": "rya sound",  "mnemonic": "Combination of リ + small ャ", "pronunciation": "ri + ya = rya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ryu", "japanese": "リュ", "romaji": "ryu", "meaning": "ryu sound",  "mnemonic": "Combination of リ + small ュ", "pronunciation": "ri + yu = ryu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ryo", "japanese": "リョ", "romaji": "ryo", "meaning": "ryo sound",  "mnemonic": "Combination of リ + small ョ", "pronunciation": "ri + yo = ryo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
     
-    { "id": "katakana-gya", "japanese": "ギャ", "romaji": "gya", "meaning": "gya sound", "level": "N5", "mnemonic": "Combination of ギ + small ャ", "pronunciation": "gi + ya = gya (drop the 'i' sound)" },
-    { "id": "katakana-gyu", "japanese": "ギュ", "romaji": "gyu", "meaning": "gyu sound", "level": "N5", "mnemonic": "Combination of ギ + small ュ", "pronunciation": "gi + yu = gyu (drop the 'i' sound)" },
-    { "id": "katakana-gyo", "japanese": "ギョ", "romaji": "gyo", "meaning": "gyo sound", "level": "N5", "mnemonic": "Combination of ギ + small ョ", "pronunciation": "gi + yo = gyo (drop the 'i' sound)" },
-    { "id": "katakana-ja", "japanese": "ジャ", "romaji": "ja", "meaning": "ja sound", "level": "N5", "mnemonic": "Combination of ジ + small ャ", "pronunciation": "ji + ya = ja (drop the 'i' sound)" },
-    { "id": "katakana-ju", "japanese": "ジュ", "romaji": "ju", "meaning": "ju sound", "level": "N5", "mnemonic": "Combination of ジ + small ュ", "pronunciation": "ji + yu = ju (drop the 'i' sound)" },
-    { "id": "katakana-jo", "japanese": "ジョ", "romaji": "jo", "meaning": "jo sound", "level": "N5", "mnemonic": "Combination of ジ + small ョ", "pronunciation": "ji + yo = jo (drop the 'i' sound)" },
-    { "id": "katakana-bya", "japanese": "ビャ", "romaji": "bya", "meaning": "bya sound", "level": "N5", "mnemonic": "Combination of ビ + small ャ", "pronunciation": "bi + ya = bya (drop the 'i' sound)" },
-    { "id": "katakana-byu", "japanese": "ビュ", "romaji": "byu", "meaning": "byu sound", "level": "N5", "mnemonic": "Combination of ビ + small ュ", "pronunciation": "bi + yu = byu (drop the 'i' sound)" },
-    { "id": "katakana-byo", "japanese": "ビョ", "romaji": "byo", "meaning": "byo sound", "level": "N5", "mnemonic": "Combination of ビ + small ョ", "pronunciation": "bi + yo = byo (drop the 'i' sound)" },
-    { "id": "katakana-pya", "japanese": "ピャ", "romaji": "pya", "meaning": "pya sound", "level": "N5", "mnemonic": "Combination of ピ + small ャ", "pronunciation": "pi + ya = pya (drop the 'i' sound)" },
-    { "id": "katakana-pyu", "japanese": "ピュ", "romaji": "pyu", "meaning": "pyu sound", "level": "N5", "mnemonic": "Combination of ピ + small ュ", "pronunciation": "pi + yu = pyu (drop the 'i' sound)" },
-    { "id": "katakana-pyo", "japanese": "ピョ", "romaji": "pyo", "meaning": "pyo sound", "level": "N5", "mnemonic": "Combination of ピ + small ョ", "pronunciation": "pi + yo = pyo (drop the 'i' sound)" }
+    { "id": "katakana-gya", "japanese": "ギャ", "romaji": "gya", "meaning": "gya sound",  "mnemonic": "Combination of ギ + small ャ", "pronunciation": "gi + ya = gya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-gyu", "japanese": "ギュ", "romaji": "gyu", "meaning": "gyu sound",  "mnemonic": "Combination of ギ + small ュ", "pronunciation": "gi + yu = gyu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-gyo", "japanese": "ギョ", "romaji": "gyo", "meaning": "gyo sound",  "mnemonic": "Combination of ギ + small ョ", "pronunciation": "gi + yo = gyo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ja", "japanese": "ジャ", "romaji": "ja", "meaning": "ja sound",  "mnemonic": "Combination of ジ + small ャ", "pronunciation": "ji + ya = ja (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-ju", "japanese": "ジュ", "romaji": "ju", "meaning": "ju sound",  "mnemonic": "Combination of ジ + small ュ", "pronunciation": "ji + yu = ju (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-jo", "japanese": "ジョ", "romaji": "jo", "meaning": "jo sound",  "mnemonic": "Combination of ジ + small ョ", "pronunciation": "ji + yo = jo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-bya", "japanese": "ビャ", "romaji": "bya", "meaning": "bya sound",  "mnemonic": "Combination of ビ + small ャ", "pronunciation": "bi + ya = bya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-byu", "japanese": "ビュ", "romaji": "byu", "meaning": "byu sound",  "mnemonic": "Combination of ビ + small ュ", "pronunciation": "bi + yu = byu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-byo", "japanese": "ビョ", "romaji": "byo", "meaning": "byo sound",  "mnemonic": "Combination of ビ + small ョ", "pronunciation": "bi + yo = byo (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-pya", "japanese": "ピャ", "romaji": "pya", "meaning": "pya sound",  "mnemonic": "Combination of ピ + small ャ", "pronunciation": "pi + ya = pya (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    { "id": "katakana-pyu", "japanese": "ピュ", "romaji": "pyu", "meaning": "pyu sound",  "mnemonic": "Combination of ピ + small ュ", "pronunciation": "pi + yu = pyu (drop the 'i' sound)" , "type": "KATAKANA",   "mnemonic_img": "" 
+}, 
+    {
+      "id": "katakana-pyo",
+      "japanese": "ピョ",
+      "romaji": "pyo",
+      "meaning": "pyo sound",
+      "mnemonic": "Combination of ピ + small ョ",
+      "pronunciation": "pi + yo = pyo (drop the 'i' sound)",
+      "type": "KATAKANA",
+      "mnemonic_img": ""
+    }
 
     ]
 }

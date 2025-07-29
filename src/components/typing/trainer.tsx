@@ -14,10 +14,11 @@ import { TestFormSchema } from "@/lib/form-schema";
 import { useTrainer } from "@/hooks/use-trainer";
 import History from "@/components/typing/history-server";
 import ToggleRevealEng from "./toggle-reveal-eng";
-import { CheckCircle, XCircle, Brain, Zap } from "lucide-react";
+import { CheckCircle, XCircle, Brain, Zap, Info } from "lucide-react";
 import CombinedTrainerLoading from "./loading-state";
 import InfoDialog from "./info-dialog";
 import FilterDialog from "./filter-dialog";
+import { tokenizeKana } from "@/lib/helpers/tokenize-char";
 
 interface Props {
   script: string;
@@ -62,12 +63,12 @@ export default function Trainer({ script }: Props) {
       </div>
     );
   }
+            const tokenized = tokenizeKana(current.japanese);
 
   return (
     <div className="w-full max-w-4xl mx-auto mt-6 space-y-6">
       {/* Stats Header */}
       <div className="flex justify-center gap-4">
-        <InfoDialog />
         <Badge variant="outline" className="text-sm">
           <Brain className="w-4 h-4 mr-1" />
           {correctCount} Correct
@@ -82,9 +83,22 @@ export default function Trainer({ script }: Props) {
       {/* Main Trainer Card */}
       <Card className="mx-auto max-w-lg ">
         <CardHeader className="text-center pb-2">
-          <CardTitle className="text-6xl font-bold mb-2 tracking-wider">
-            {current.japanese}
+          <CardTitle className="flex justify-center flex-wrap gap-2 text-6xl font-bold mb-2 tracking-wider">
+            {tokenized.map((char, idx) => (
+              <span key={idx} className="relative group">
+                <span>{char}</span>
+                <InfoDialog
+                  char={char}
+                  trigger={
+                    <button className="absolute -top-2 -right-2 text-muted-foreground opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
+                      <Info className="w-4 h-4" />
+                    </button>
+                  }
+                />
+              </span>
+            ))}
           </CardTitle>
+
           <CardDescription className="text-base">
             Type the <strong>romaji</strong> for this character
           </CardDescription>
