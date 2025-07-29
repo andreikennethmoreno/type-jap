@@ -13,6 +13,8 @@ import { SessionHistoryTable } from "@/components/analytics/session-history-tabl
 export default function AnalyticsPage() {
   const { history, loading, error } = useSessionHistory();
 
+  console.log(history)
+
   if (loading) {
     return <LoadingState />;
   }

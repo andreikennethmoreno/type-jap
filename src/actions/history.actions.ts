@@ -17,6 +17,27 @@ interface Prompt {
   meaning: string;
 }
 
+interface SessionHistory {
+  id: string;
+  score: number;
+  correct: number;
+  total: number;
+  createdAt: Date; // ISO Date
+   metadata: any;
+  session: {
+    id: string;
+    type: "HIRAGANA" | "KATAKANA" | "KANJI" | "VOCAB";
+    promptIds: string[];
+  };
+  answers: {
+    id: string;
+    isCorrect: boolean;
+    userAnswer: string;
+    prompt?: Prompt;
+  }[];
+}
+
+
 export async function getAllHistory() {
   const userId = await getDbUserId();
   if (!userId) throw new Error("User not found");
@@ -47,22 +68,22 @@ export async function getAllHistory() {
     },
   });
 
-  const allPromptIds = histories.flatMap((history) => {
+  const allPromptIds: string[] = histories.flatMap((history : SessionHistory) => {
     const metadata = history.metadata as { answers?: Answer[] } | null;
     return metadata?.answers?.map((a) => a.promptId) ?? [];
   });
 
-  const uniquePromptIds = [...new Set(allPromptIds)];
+  const uniquePromptIds: string[] = [...new Set(allPromptIds)];
 
   const prompts = await getPromptsByIds(uniquePromptIds);
 
   const promptMap = new Map(prompts.map((p: Prompt) => [p.id, p]));
 
-  return histories.map((history) => {
+  return histories.map((history : SessionHistory) => {
     const metadata = history.metadata as { answers?: Answer[] } | null;
 
     const answers = (metadata?.answers ?? []).map((answer) => ({
-      id: answer.promptId, // ✅ explicitly add id
+      id: answer.promptId,
       isCorrect: answer.isCorrect,
       userAnswer: answer.userAnswer,
       prompt: promptMap.get(answer.promptId) ?? undefined,
@@ -73,7 +94,7 @@ export async function getAllHistory() {
       score: history.score,
       total: history.total,
       correct: history.correct,
-      createdAt: history.createdAt.toISOString(), // keep serialized
+      createdAt: history.createdAt.toISOString(),
       session: {
         id: history.session.id,
         type: history.session.type,
