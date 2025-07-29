@@ -23,7 +23,7 @@ interface SessionHistory {
   correct: number;
   total: number;
   createdAt: Date; // ISO Date
-   metadata: any;
+   metadata: string;
   session: {
     id: string;
     type: "HIRAGANA" | "KATAKANA" | "KANJI" | "VOCAB";
