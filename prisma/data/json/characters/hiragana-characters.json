@@ -1,0 +1,1159 @@
+{
+  "characters": [
+    {
+      "id": "hiragana-a",
+      "type": "HIRAGANA",
+      "japanese": "あ",
+      "romaji": "a",
+      "meaning": "vowel sound 'ah'",
+
+      "mnemonic_img": "",
+      "mnemonic": "Find the capital A inside of it. This 'A' tells you that this kana is also 'a'",
+      "pronunciation": "like 'ah!' when you come to a realization, or the 'a' in 'car'"
+    },
+    {
+      "id": "hiragana-i",
+      "type": "HIRAGANA",
+      "japanese": "い",
+      "romaji": "i",
+      "meaning": "vowel sound 'ee'",
+
+      "mnemonic_img": "",
+      "mnemonic": "Think of a couple of eels hanging out. They're upright because they're trying to mimic the letter 'i'",
+      "pronunciation": "like the 'ee' in 'eel'"
+    },
+    {
+      "id": "hiragana-u",
+      "type": "HIRAGANA",
+      "japanese": "う",
+      "romaji": "u",
+      "meaning": "vowel sound 'oo'",
+
+      "mnemonic_img": "",
+      "mnemonic": "Notice the U shape right in it! It's sideways but it's there, telling you what this kana is",
+      "pronunciation": "like the 'oo' in 'ooh... ahhh!' or 'u' in 'UNO'"
+    },
+    {
+      "id": "hiragana-e",
+      "type": "HIRAGANA",
+      "japanese": "え",
+      "romaji": "e",
+      "meaning": "vowel sound 'eh'",
+
+      "mnemonic_img": "",
+      "mnemonic": "Think of it like an exotic bird. The feathery thing on its head gives it away that it's exotic and lays exotic eggs",
+      "pronunciation": "like the 'e' in 'egg'"
+    },
+    {
+      "id": "hiragana-o",
+      "type": "HIRAGANA",
+      "japanese": "お",
+      "romaji": "o",
+      "meaning": "vowel sound 'oh'",
+
+      "mnemonic_img": "",
+      "mnemonic": "Can you see the letter 'o' in here, two times? There are two letter 'o' symbols visible",
+      "pronunciation": "like you're saying 'oh' or the 'o' in 'origami'"
+    },
+    {
+      "id": "hiragana-ka",
+      "type": "HIRAGANA",
+      "japanese": "か",
+      "romaji": "ka",
+      "meaning": "ka sound",
+
+      "tags": ["k-column", "basic"],
+      "mnemonic": "This kana looks like a mosquito. Mosquitos are called 'ka' in Japanese. You say 'cut it out, darn mosquito!'",
+      "pronunciation": "like 'ka' in 'karma'"
+    },
+    {
+      "id": "hiragana-ki",
+      "type": "HIRAGANA",
+      "japanese": "き",
+      "romaji": "ki",
+      "meaning": "ki sound",
+
+      "tags": ["k-column", "basic"],
+      "mnemonic": "Notice how much it resembles a key",
+      "pronunciation": "like the word 'key'"
+    },
+    {
+      "id": "hiragana-ku",
+      "type": "HIRAGANA",
+      "japanese": "く",
+      "romaji": "ku",
+      "meaning": "ku sound",
+
+      "tags": ["k-column", "basic"],
+      "mnemonic": "Think of this kana being the mouth of a coo-coo / cuckoo bird popping out saying 'ku ku, ku ku!'",
+      "pronunciation": "like 'coo' in 'cuckoo'"
+    },
+    {
+      "id": "hiragana-ke",
+      "type": "HIRAGANA",
+      "japanese": "け",
+      "romaji": "ke",
+      "meaning": "ke sound",
+
+      "tags": ["k-column", "basic"],
+      "mnemonic": "See how this kana resembles some wiggly kelp?",
+      "pronunciation": "like 'ke' in 'kelp'"
+    },
+    {
+      "id": "hiragana-ko",
+      "type": "HIRAGANA",
+      "japanese": "こ",
+      "romaji": "ko",
+      "meaning": "ko sound",
+
+      "tags": ["k-column", "basic"],
+      "mnemonic": "This is a couple of co-habitation worms. They're so happy together, co-habitating the same area!",
+      "pronunciation": "like 'co' in 'cohabitating'"
+    },
+    {
+      "id": "hiragana-sa",
+      "type": "HIRAGANA",
+      "japanese": "さ",
+      "romaji": "sa",
+      "meaning": "sa sound",
+
+      "tags": ["s-column", "basic"],
+      "mnemonic": "This kana looks like two hands stirring a bowl of salsa. This salsa is so chunky and thick, you need two hands just to stir it!",
+      "pronunciation": "like 'sa' in 'salsa'"
+    },
+    {
+      "id": "hiragana-shi",
+      "type": "HIRAGANA",
+      "japanese": "し",
+      "romaji": "shi",
+      "meaning": "shi sound",
+
+      "tags": ["s-column", "basic", "exception"],
+      "mnemonic": "This kana looks like a giant shepherd's crook used to herd sheep. Baaaa... get in that corral, sheep!",
+      "pronunciation": "like 'shee' in 'sheep'"
+    },
+    {
+      "id": "hiragana-su",
+      "type": "HIRAGANA",
+      "japanese": "す",
+      "romaji": "su",
+      "meaning": "su sound",
+
+      "tags": ["s-column", "basic"],
+      "mnemonic": "See the swing doing a loop-dee-loop throwing that poor kid off of it? Imagine him screaming 'I'M GONNA SUE SOMEBODY FOR THIIIIIiiiissss'",
+      "pronunciation": "like the word 'sue'"
+    },
+    {
+      "id": "hiragana-se",
+      "type": "HIRAGANA",
+      "japanese": "せ",
+      "romaji": "se",
+      "meaning": "se sound",
+
+      "tags": ["s-column", "basic"],
+      "mnemonic": "This kana looks like a mouth with a big vampire fang in it. Someone's trying to sell you a set of vampire teeth because they are just so sexy!",
+      "pronunciation": "like 'se' in 'sell'"
+    },
+    {
+      "id": "hiragana-so",
+      "type": "HIRAGANA",
+      "japanese": "そ",
+      "romaji": "so",
+      "meaning": "so sound",
+
+      "tags": ["s-column", "basic"],
+      "mnemonic": "See how this kana looks like a mouth slurping soda?",
+      "pronunciation": "like 'so' in 'soda'"
+    },
+    {
+      "id": "hiragana-ta",
+      "type": "HIRAGANA",
+      "japanese": "た",
+      "romaji": "ta",
+      "meaning": "ta sound",
+
+      "tags": ["t-column", "basic"],
+      "mnemonic": "Use your imagination and see this kana as a fork, taco, and lime garnish for your taco",
+      "pronunciation": "like 'ta' in 'taco'"
+    },
+    {
+      "id": "hiragana-chi",
+      "type": "HIRAGANA",
+      "japanese": "ち",
+      "romaji": "chi",
+      "meaning": "chi sound",
+
+      "tags": ["t-column", "basic", "exception"],
+      "mnemonic": "This kana looks like that forced smile you have to make every time someone tells you to say 'cheese' in a group photo",
+      "pronunciation": "like 'chee' in 'cheese'"
+    },
+    {
+      "id": "hiragana-tsu",
+      "type": "HIRAGANA",
+      "japanese": "つ",
+      "romaji": "tsu",
+      "meaning": "tsu sound",
+
+      "tags": ["t-column", "basic", "exception"],
+      "mnemonic": "Look at the swoosh of this hiragana. Doesn't it look like a big wave, or tsunami?",
+      "pronunciation": "like 'tsu' in 'tsunami'"
+    },
+    {
+      "id": "hiragana-te",
+      "type": "HIRAGANA",
+      "japanese": "て",
+      "romaji": "te",
+      "meaning": "te sound",
+
+      "tags": ["t-column", "basic"],
+      "mnemonic": "Can you see a good ol' telescope? It's a hand-held one! In Japanese, 'hand' is 'te'",
+      "pronunciation": "like 'te' in 'telescope'"
+    },
+    {
+      "id": "hiragana-to",
+      "type": "HIRAGANA",
+      "japanese": "と",
+      "romaji": "to",
+      "meaning": "to sound",
+
+      "tags": ["t-column", "basic"],
+      "mnemonic": "This kana looks just like someone's toe with a little nail or splinter in it",
+      "pronunciation": "like 'to' in 'toe'"
+    },
+    {
+      "id": "hiragana-na",
+      "type": "HIRAGANA",
+      "japanese": "な",
+      "romaji": "na",
+      "meaning": "na sound",
+
+      "tags": ["n-column", "basic"],
+      "mnemonic": "The nun is praying in front of the cross asking for nachos, because she's craving a delicious snack",
+      "pronunciation": "like 'na' in 'nachos'"
+    },
+    {
+      "id": "hiragana-ni",
+      "type": "HIRAGANA",
+      "japanese": "に",
+      "romaji": "ni",
+      "meaning": "ni sound",
+
+      "tags": ["n-column", "basic"],
+      "mnemonic": "Do you see the needle pulling the thread?",
+      "pronunciation": "like 'nee' in 'needle'"
+    },
+    {
+      "id": "hiragana-nu",
+      "type": "HIRAGANA",
+      "japanese": "ぬ",
+      "romaji": "nu",
+      "meaning": "nu sound",
+
+      "tags": ["n-column", "basic"],
+      "mnemonic": "This kana looks like some noodles. You know this one is noodles because there are no sharp angles in it. It's 100% smooth and bendable, like noodles!",
+      "pronunciation": "like 'noo' in 'noodle'"
+    },
+    {
+      "id": "hiragana-ne",
+      "type": "HIRAGANA",
+      "japanese": "ね",
+      "romaji": "ne",
+      "meaning": "ne sound",
+
+      "tags": ["n-column", "basic"],
+      "mnemonic": "This is Nelly the cat. It has a loop at the end for the tail, and it's not super bendable like noodles. Nelly is a necromancer",
+      "pronunciation": "like 'ne' in 'Nelly'"
+    },
+    {
+      "id": "hiragana-no",
+      "type": "HIRAGANA",
+      "japanese": "の",
+      "romaji": "no",
+      "meaning": "no sound",
+
+      "tags": ["n-column", "basic"],
+      "mnemonic": "See the big pig nose there? You can also think of this as a 'No Smoking' sign",
+      "pronunciation": "like 'no' in 'nose'"
+    },
+    {
+      "id": "hiragana-ha",
+      "type": "HIRAGANA",
+      "japanese": "は",
+      "romaji": "ha",
+      "meaning": "ha sound",
+
+      "tags": ["h-column", "basic"],
+      "mnemonic": "This kana looks like an uppercase letter H plus a lowercase letter a. What does that spell? 'Ha!' Why are you laughing?",
+      "pronunciation": "like 'ha' in 'haha' (laughing)"
+    },
+    {
+      "id": "hiragana-hi",
+      "type": "HIRAGANA",
+      "japanese": "ひ",
+      "romaji": "hi",
+      "meaning": "hi sound",
+
+      "tags": ["h-column", "basic"],
+      "mnemonic": "He has a big nose. See that big nose? Now say it out loud. 'He has a big nose.'",
+      "pronunciation": "like the pronoun 'he'"
+    },
+    {
+      "id": "hiragana-fu",
+      "type": "HIRAGANA",
+      "japanese": "ふ",
+      "romaji": "fu",
+      "meaning": "fu sound",
+
+      "tags": ["h-column", "basic"],
+      "mnemonic": "Someone is over there dancing like a fool. What's that around their neck? ...Oh, that's a hula hoop!",
+      "pronunciation": "like a softly blown-out version of 'foo' in 'fool'"
+    },
+    {
+      "id": "hiragana-he",
+      "type": "HIRAGANA",
+      "japanese": "へ",
+      "romaji": "he",
+      "meaning": "he sound",
+
+      "tags": ["h-column", "basic"],
+      "mnemonic": "Do you know the famous mountain Mt. Saint Helens? This kana isn't totally flat like Helens is, but it's pretty squat looking",
+      "pronunciation": "like 'he' in 'help'"
+    },
+    {
+      "id": "hiragana-ho",
+      "type": "HIRAGANA",
+      "japanese": "ほ",
+      "romaji": "ho",
+      "meaning": "ho sound",
+
+      "tags": ["h-column", "basic"],
+      "mnemonic": "The line on the left is a chimney. The right side is a mutated Santa Claus with four arms, a snake tail, and no head, uttering 'ho ho ho...'",
+      "pronunciation": "like 'ho' in 'hoe' or 'ho ho ho!'"
+    },
+    {
+      "id": "hiragana-ma",
+      "type": "HIRAGANA",
+      "japanese": "ま",
+      "romaji": "ma",
+      "meaning": "ma sound",
+
+      "tags": ["m-column", "basic"],
+      "mnemonic": "Removing your head? Doubling your hands and arms? What sort of evil magic is this? Your mama is the one doing this magic!",
+      "pronunciation": "like the English word 'ma' (meaning 'mother')"
+    },
+    {
+      "id": "hiragana-mi",
+      "type": "HIRAGANA",
+      "japanese": "み",
+      "romaji": "mi",
+      "meaning": "mi sound",
+
+      "tags": ["m-column", "basic"],
+      "mnemonic": "Looks like lucky number 21. Who just hit the blackjack? Me! Who just turned 21 as well? Me!!",
+      "pronunciation": "like the English word 'me'"
+    },
+    {
+      "id": "hiragana-mu",
+      "type": "HIRAGANA",
+      "japanese": "む",
+      "romaji": "mu",
+      "meaning": "mu sound",
+
+      "tags": ["m-column", "basic"],
+      "mnemonic": "'Moooooo', says the cow. 'MOOOOOOO.'",
+      "pronunciation": "like what cows say in English: 'moo'"
+    },
+    {
+      "id": "hiragana-me",
+      "type": "HIRAGANA",
+      "japanese": "め",
+      "romaji": "me",
+      "meaning": "me sound",
+
+      "tags": ["m-column", "basic"],
+      "mnemonic": "Look at that beautiful eye! It's so beautiful because of the makeup on it. The word for 'eye' in Japanese is 'me'",
+      "pronunciation": "like 'me' in 'mess'"
+    },
+    {
+      "id": "hiragana-mo",
+      "type": "HIRAGANA",
+      "japanese": "も",
+      "romaji": "mo",
+      "meaning": "mo sound",
+
+      "tags": ["m-column", "basic"],
+      "mnemonic": "You want to catch more so you add more worms to your hook",
+      "pronunciation": "like 'mo' in 'more'"
+    },
+    {
+      "id": "hiragana-ya",
+      "type": "HIRAGANA",
+      "japanese": "や",
+      "romaji": "ya",
+      "meaning": "ya sound",
+
+      "tags": ["y-column", "basic"],
+      "mnemonic": "See how this kana looks like a yacht with an anchor going down? It's even got a little flag on the rear",
+      "pronunciation": "like 'ya' in 'yacht'"
+    },
+    {
+      "id": "hiragana-yu",
+      "type": "HIRAGANA",
+      "japanese": "ゆ",
+      "romaji": "yu",
+      "meaning": "yu sound",
+
+      "tags": ["y-column", "basic"],
+      "mnemonic": "This kana is a very unique looking fish! It looks like a big eyeball swimming in the water. What's it looking at? You, you big goofball!",
+      "pronunciation": "like the English word 'you'"
+    },
+    {
+      "id": "hiragana-yo",
+      "type": "HIRAGANA",
+      "japanese": "よ",
+      "romaji": "yo",
+      "meaning": "yo sound",
+
+      "tags": ["y-column", "basic"],
+      "mnemonic": "Yo, this kana looks like the letters Y & O! And look, you can even play yo-yo with it",
+      "pronunciation": "like 'yo' in 'yo-yo'"
+    },
+    {
+      "id": "hiragana-ra",
+      "type": "HIRAGANA",
+      "japanese": "ら",
+      "romaji": "ra",
+      "meaning": "ra sound",
+
+      "tags": ["r-column", "basic"],
+      "mnemonic": "This looks like a rabbit that's standing and facing left. Look at its big droopy ears. So cute!",
+      "pronunciation": "like a combination of 'rah rah' (cheering) and 'la la la' (singing)"
+    },
+    {
+      "id": "hiragana-ri",
+      "type": "HIRAGANA",
+      "japanese": "り",
+      "romaji": "ri",
+      "meaning": "ri sound",
+
+      "tags": ["r-column", "basic"],
+      "mnemonic": "The reeds are swaying in the wind",
+      "pronunciation": "like a combination of 'ree' in 'reed' and 'lee' in 'leek'"
+    },
+    {
+      "id": "hiragana-ru",
+      "type": "HIRAGANA",
+      "japanese": "る",
+      "romaji": "ru",
+      "meaning": "ru sound",
+
+      "tags": ["r-column", "basic"],
+      "mnemonic": "This is like ろ except it has a loop at the end. This is a crazier route. There is a loop at the end. Are there no rules on this road?",
+      "pronunciation": "like a combination of 'ru' in 'rule' and 'loo' in 'loop'"
+    },
+    {
+      "id": "hiragana-re",
+      "type": "HIRAGANA",
+      "japanese": "れ",
+      "romaji": "re",
+      "meaning": "re sound",
+
+      "tags": ["r-column", "basic"],
+      "mnemonic": "This looks like a guy kneeling on the ground, retching up his dinner. You can identify this as the guy's knees bending",
+      "pronunciation": "like a combination of 're' in 'retch' and 'le' in 'led'"
+    },
+    {
+      "id": "hiragana-ro",
+      "type": "HIRAGANA",
+      "japanese": "ろ",
+      "romaji": "ro",
+      "meaning": "ro sound",
+
+      "tags": ["r-column", "basic"],
+      "mnemonic": "This is the counterpart to る, except this one doesn't have a loop at the end. So this kana is just a plain old road",
+      "pronunciation": "like a combination of 'ro' in 'road' and 'lo' in 'load'"
+    },
+    {
+      "id": "hiragana-wa",
+      "type": "HIRAGANA",
+      "japanese": "わ",
+      "romaji": "wa",
+      "meaning": "wa sound",
+
+      "tags": ["w-column", "basic"],
+      "mnemonic": "This kana looks like a wasp flying straight up. Its butt is a straight, sharp line. This is its stinger!",
+      "pronunciation": "like 'wa' in 'wasabi'"
+    },
+    {
+      "id": "hiragana-wo",
+      "type": "HIRAGANA",
+      "japanese": "を",
+      "romaji": "wo",
+      "meaning": "wo sound (particle)",
+
+      "tags": ["w-column", "basic", "particle"],
+      "mnemonic": "'Whoa!' yells the guy with no chin. Someone threw a boomerang into his mouth! That's pretty 'whoa'-worthy",
+      "pronunciation": "pronounced like 'o' in 'origami' - just like お"
+    },
+    {
+      "id": "hiragana-n",
+      "type": "HIRAGANA",
+      "japanese": "ん",
+      "romaji": "n",
+      "meaning": "n sound",
+
+      "tags": ["consonant", "basic"],
+      "mnemonic": "This kana looks just like the lowercase n in English. They happen to be the same sounds, as well. How convenient!",
+      "pronunciation": "like the ending 'n' sound in 'pen'"
+    },
+    {
+      "id": "hiragana-ga",
+      "type": "HIRAGANA",
+      "japanese": "が",
+      "romaji": "ga",
+      "meaning": "ga sound",
+
+      "tags": ["k-column", "dakuten", "voiced"],
+      "mnemonic": "The car (か) runs into the guard (が) rail",
+      "pronunciation": "voiced version of か"
+    },
+    {
+      "id": "hiragana-gi",
+      "type": "HIRAGANA",
+      "japanese": "ぎ",
+      "romaji": "gi",
+      "meaning": "gi sound",
+
+      "tags": ["k-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of き (key)",
+      "pronunciation": "voiced version of き"
+    },
+    {
+      "id": "hiragana-gu",
+      "type": "HIRAGANA",
+      "japanese": "ぐ",
+      "romaji": "gu",
+      "meaning": "gu sound",
+
+      "tags": ["k-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of く (cuckoo)",
+      "pronunciation": "voiced version of く"
+    },
+    {
+      "id": "hiragana-ge",
+      "type": "HIRAGANA",
+      "japanese": "げ",
+      "romaji": "ge",
+      "meaning": "ge sound",
+
+      "tags": ["k-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of け (kelp)",
+      "pronunciation": "voiced version of け"
+    },
+    {
+      "id": "hiragana-go",
+      "type": "HIRAGANA",
+      "japanese": "ご",
+      "romaji": "go",
+      "meaning": "go sound",
+
+      "tags": ["k-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of こ (co-habitation worms)",
+      "pronunciation": "voiced version of こ"
+    },
+    {
+      "id": "hiragana-za",
+      "type": "HIRAGANA",
+      "japanese": "ざ",
+      "romaji": "za",
+      "meaning": "za sound",
+
+      "tags": ["s-column", "dakuten", "voiced"],
+      "mnemonic": "My saw (さ) just zapped (ざ) me when I tried to use it",
+      "pronunciation": "voiced version of さ"
+    },
+    {
+      "id": "hiragana-ji",
+      "type": "HIRAGANA",
+      "japanese": "じ",
+      "romaji": "ji",
+      "meaning": "ji sound",
+
+      "tags": ["s-column", "dakuten", "voiced", "exception"],
+      "mnemonic": "Voiced version of し (shepherd's crook)",
+      "pronunciation": "voiced version of し, sounds like 'JI' not 'ZI'"
+    },
+    {
+      "id": "hiragana-zu",
+      "type": "HIRAGANA",
+      "japanese": "ず",
+      "romaji": "zu",
+      "meaning": "zu sound",
+
+      "tags": ["s-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of す (swing/sue)",
+      "pronunciation": "voiced version of す"
+    },
+    {
+      "id": "hiragana-ze",
+      "type": "HIRAGANA",
+      "japanese": "ぜ",
+      "romaji": "ze",
+      "meaning": "ze sound",
+
+      "tags": ["s-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of せ (vampire fang/sell)",
+      "pronunciation": "voiced version of せ"
+    },
+    {
+      "id": "hiragana-zo",
+      "type": "HIRAGANA",
+      "japanese": "ぞ",
+      "romaji": "zo",
+      "meaning": "zo sound",
+
+      "tags": ["s-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of そ (slurping soda)",
+      "pronunciation": "voiced version of そ"
+    },
+    {
+      "id": "hiragana-da",
+      "type": "HIRAGANA",
+      "japanese": "だ",
+      "romaji": "da",
+      "meaning": "da sound",
+
+      "tags": ["t-column", "dakuten", "voiced"],
+      "mnemonic": "Changing these kana to the dakuten versions is a bit like magic... 'TADA!' (た & だ)",
+      "pronunciation": "voiced version of た"
+    },
+    {
+      "id": "hiragana-di",
+      "type": "HIRAGANA",
+      "japanese": "ぢ",
+      "romaji": "ji",
+      "meaning": "ji sound (from di)",
+
+      "tags": ["t-column", "dakuten", "voiced", "exception"],
+      "mnemonic": "Voiced version of ち (cheese smile), but pronounced like じ",
+      "pronunciation": "pronounced exactly like じ nowadays"
+    },
+    {
+      "id": "hiragana-du",
+      "type": "HIRAGANA",
+      "japanese": "づ",
+      "romaji": "zu",
+      "meaning": "zu sound (from du)",
+
+      "tags": ["t-column", "dakuten", "voiced", "exception"],
+      "mnemonic": "Voiced version of つ (tsunami), but pronounced like ず",
+      "pronunciation": "pronounced exactly like ず nowadays"
+    },
+    {
+      "id": "hiragana-de",
+      "type": "HIRAGANA",
+      "japanese": "で",
+      "romaji": "de",
+      "meaning": "de sound",
+
+      "tags": ["t-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of て (telescope/hand)",
+      "pronunciation": "voiced version of て"
+    },
+    {
+      "id": "hiragana-do",
+      "type": "HIRAGANA",
+      "japanese": "ど",
+      "romaji": "do",
+      "meaning": "do sound",
+
+      "tags": ["t-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of と (toe with splinter)",
+      "pronunciation": "voiced version of と"
+    },
+    {
+      "id": "hiragana-ba",
+      "type": "HIRAGANA",
+      "japanese": "ば",
+      "romaji": "ba",
+      "meaning": "ba sound",
+
+      "tags": ["h-column", "dakuten", "voiced"],
+      "mnemonic": "You're saying 'hahaha (は)' at the bar (ば), because you've been drinking too much",
+      "pronunciation": "voiced version of は"
+    },
+    {
+      "id": "hiragana-bi",
+      "type": "HIRAGANA",
+      "japanese": "び",
+      "romaji": "bi",
+      "meaning": "bi sound",
+
+      "tags": ["h-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of ひ (he has a big nose)",
+      "pronunciation": "voiced version of ひ"
+    },
+    {
+      "id": "hiragana-bu",
+      "type": "HIRAGANA",
+      "japanese": "ぶ",
+      "romaji": "bu",
+      "meaning": "bu sound",
+
+      "tags": ["h-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of ふ (fool with hula hoop)",
+      "pronunciation": "voiced version of ふ"
+    },
+    {
+      "id": "hiragana-be",
+      "type": "HIRAGANA",
+      "japanese": "べ",
+      "romaji": "be",
+      "meaning": "be sound",
+
+      "tags": ["h-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of へ (Mt. Saint Helens)",
+      "pronunciation": "voiced version of へ"
+    },
+    {
+      "id": "hiragana-bo",
+      "type": "HIRAGANA",
+      "japanese": "ぼ",
+      "romaji": "bo",
+      "meaning": "bo sound",
+
+      "tags": ["h-column", "dakuten", "voiced"],
+      "mnemonic": "Voiced version of ほ (mutated Santa Claus)",
+      "pronunciation": "voiced version of ほ"
+    },
+    {
+      "id": "hiragana-pa",
+      "type": "HIRAGANA",
+      "japanese": "ぱ",
+      "romaji": "pa",
+      "meaning": "pa sound",
+
+      "tags": ["h-column", "han-dakuten", "voiceless"],
+      "mnemonic": "You say 'hahaha (は)' so much at the bar that somebody punches (ぱ) you. The little circle is like a little fist that's about to punch you",
+      "pronunciation": "p-sound version of は"
+    },
+    {
+      "id": "hiragana-pi",
+      "type": "HIRAGANA",
+      "japanese": "ぴ",
+      "romaji": "pi",
+      "meaning": "pi sound",
+
+      "tags": ["h-column", "han-dakuten", "voiceless"],
+      "mnemonic": "P-sound version of ひ (he has a big nose), with the little circle like a fist",
+      "pronunciation": "p-sound version of ひ"
+    },
+    {
+      "id": "hiragana-pu",
+      "type": "HIRAGANA",
+      "japanese": "ぷ",
+      "romaji": "pu",
+      "meaning": "pu sound",
+
+      "tags": ["h-column", "han-dakuten", "voiceless"],
+      "mnemonic": "P-sound version of ふ (fool with hula hoop), with the little circle like a fist",
+      "pronunciation": "p-sound version of ふ"
+    },
+    {
+      "id": "hiragana-pe",
+      "type": "HIRAGANA",
+      "japanese": "ぺ",
+      "romaji": "pe",
+      "meaning": "pe sound",
+
+      "tags": ["h-column", "han-dakuten", "voiceless"],
+      "mnemonic": "P-sound version of へ (Mt. Saint Helens), with the little circle like a fist",
+      "pronunciation": "p-sound version of へ"
+    },
+    {
+      "id": "hiragana-po",
+      "type": "HIRAGANA",
+      "japanese": "ぽ",
+      "romaji": "po",
+      "meaning": "po sound",
+
+      "tags": ["h-column", "han-dakuten", "voiceless"],
+      "mnemonic": "P-sound version of ほ (mutated Santa Claus), with the little circle like a fist",
+      "pronunciation": "p-sound version of ほ"
+    },
+    {
+      "id": "hiragana-kya",
+      "type": "HIRAGANA",
+      "japanese": "きゃ",
+      "romaji": "kya",
+      "meaning": "kya sound",
+
+      "tags": ["k-column", "combination", "ya-combination"],
+      "mnemonic": "Combination of き + small ゃ",
+      "pronunciation": "ki + ya = kya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-kyu",
+      "type": "HIRAGANA",
+      "japanese": "きゅ",
+      "romaji": "kyu",
+      "meaning": "kyu sound",
+
+      "tags": ["k-column", "combination", "yu-combination"],
+      "mnemonic": "Combination of き + small ゅ",
+      "pronunciation": "ki + yu = kyu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-kyo",
+      "type": "HIRAGANA",
+      "japanese": "きょ",
+      "romaji": "kyo",
+      "meaning": "kyo sound",
+
+      "tags": ["k-column", "combination", "yo-combination"],
+      "mnemonic": "Combination of き + small ょ",
+      "pronunciation": "ki + yo = kyo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-gya",
+      "type": "HIRAGANA",
+      "japanese": "ぎゃ",
+      "romaji": "gya",
+      "meaning": "gya sound",
+
+      "tags": ["k-column", "combination", "ya-combination", "dakuten"],
+      "mnemonic": "Combination of ぎ + small ゃ",
+      "pronunciation": "gi + ya = gya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-gyu",
+      "type": "HIRAGANA",
+      "japanese": "ぎゅ",
+      "romaji": "gyu",
+      "meaning": "gyu sound",
+
+      "tags": ["k-column", "combination", "yu-combination", "dakuten"],
+      "mnemonic": "Combination of ぎ + small ゅ",
+      "pronunciation": "gi + yu = gyu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-gyo",
+      "type": "HIRAGANA",
+      "japanese": "ぎょ",
+      "romaji": "gyo",
+      "meaning": "gyo sound",
+
+      "tags": ["k-column", "combination", "yo-combination", "dakuten"],
+      "mnemonic": "Combination of ぎ + small ょ",
+      "pronunciation": "gi + yo = gyo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-sha",
+      "type": "HIRAGANA",
+      "japanese": "しゃ",
+      "romaji": "sha",
+      "meaning": "sha sound",
+
+      "tags": ["s-column", "combination", "ya-combination"],
+      "mnemonic": "Combination of し + small ゃ",
+      "pronunciation": "shi + ya = sha (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-shu",
+      "type": "HIRAGANA",
+      "japanese": "しゅ",
+      "romaji": "shu",
+      "meaning": "shu sound",
+
+      "tags": ["s-column", "combination", "yu-combination"],
+      "mnemonic": "Combination of し + small ゅ",
+      "pronunciation": "shi + yu = shu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-sho",
+      "type": "HIRAGANA",
+      "japanese": "しょ",
+      "romaji": "sho",
+      "meaning": "sho sound",
+
+      "tags": ["s-column", "combination", "yo-combination"],
+      "mnemonic": "Combination of し + small ょ",
+      "pronunciation": "shi + yo = sho (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-ja",
+      "type": "HIRAGANA",
+      "japanese": "じゃ",
+      "romaji": "ja",
+      "meaning": "ja sound",
+
+      "tags": ["s-column", "combination", "ya-combination", "dakuten"],
+      "mnemonic": "Combination of じ + small ゃ",
+      "pronunciation": "ji + ya = ja (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-ju",
+      "type": "HIRAGANA",
+      "japanese": "じゅ",
+      "romaji": "ju",
+      "meaning": "ju sound",
+
+      "tags": ["s-column", "combination", "yu-combination", "dakuten"],
+      "mnemonic": "Combination of じ + small ゅ",
+      "pronunciation": "ji + yu = ju (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-jo",
+      "type": "HIRAGANA",
+      "japanese": "じょ",
+      "romaji": "jo",
+      "meaning": "jo sound",
+
+      "tags": ["s-column", "combination", "yo-combination", "dakuten"],
+      "mnemonic": "Combination of じ + small ょ",
+      "pronunciation": "ji + yo = jo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-cha",
+      "type": "HIRAGANA",
+      "japanese": "ちゃ",
+      "romaji": "cha",
+      "meaning": "cha sound",
+
+      "tags": ["t-column", "combination", "ya-combination"],
+      "mnemonic": "Combination of ち + small ゃ",
+      "pronunciation": "chi + ya = cha (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-chu",
+      "type": "HIRAGANA",
+      "japanese": "ちゅ",
+      "romaji": "chu",
+      "meaning": "chu sound",
+
+      "tags": ["t-column", "combination", "yu-combination"],
+      "mnemonic": "Combination of ち + small ゅ",
+      "pronunciation": "chi + yu = chu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-cho",
+      "type": "HIRAGANA",
+      "japanese": "ちょ",
+      "romaji": "cho",
+      "meaning": "cho sound",
+
+      "tags": ["t-column", "combination", "yo-combination"],
+      "mnemonic": "Combination of ち + small ょ",
+      "pronunciation": "chi + yo = cho (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-nya",
+      "type": "HIRAGANA",
+      "japanese": "にゃ",
+      "romaji": "nya",
+      "meaning": "nya sound",
+
+      "tags": ["n-column", "combination", "ya-combination"],
+      "mnemonic": "Combination of に + small ゃ",
+      "pronunciation": "ni + ya = nya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-nyu",
+      "type": "HIRAGANA",
+      "japanese": "にゅ",
+      "romaji": "nyu",
+      "meaning": "nyu sound",
+
+      "tags": ["n-column", "combination", "yu-combination"],
+      "mnemonic": "Combination of に + small ゅ",
+      "pronunciation": "ni + yu = nyu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-nyo",
+      "type": "HIRAGANA",
+      "japanese": "にょ",
+      "romaji": "nyo",
+      "meaning": "nyo sound",
+
+      "tags": ["n-column", "combination", "yo-combination"],
+      "mnemonic": "Combination of に + small ょ",
+      "pronunciation": "ni + yo = nyo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-hya",
+      "type": "HIRAGANA",
+      "japanese": "ひゃ",
+      "romaji": "hya",
+      "meaning": "hya sound",
+
+      "tags": ["h-column", "combination", "ya-combination"],
+      "mnemonic": "Combination of ひ + small ゃ",
+      "pronunciation": "hi + ya = hya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-hyu",
+      "type": "HIRAGANA",
+      "japanese": "ひゅ",
+      "romaji": "hyu",
+      "meaning": "hyu sound",
+
+      "tags": ["h-column", "combination", "yu-combination"],
+      "mnemonic": "Combination of ひ + small ゅ",
+      "pronunciation": "hi + yu = hyu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-hyo",
+      "type": "HIRAGANA",
+      "japanese": "ひょ",
+      "romaji": "hyo",
+      "meaning": "hyo sound",
+
+      "tags": ["h-column", "combination", "yo-combination"],
+      "mnemonic": "Combination of ひ + small ょ",
+      "pronunciation": "hi + yo = hyo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-bya",
+      "type": "HIRAGANA",
+      "japanese": "びゃ",
+      "romaji": "bya",
+      "meaning": "bya sound",
+
+      "tags": ["h-column", "combination", "ya-combination", "dakuten"],
+      "mnemonic": "Combination of び + small ゃ",
+      "pronunciation": "bi + ya = bya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-byu",
+      "type": "HIRAGANA",
+      "japanese": "びゅ",
+      "romaji": "byu",
+      "meaning": "byu sound",
+
+      "tags": ["h-column", "combination", "yu-combination", "dakuten"],
+      "mnemonic": "Combination of び + small ゅ",
+      "pronunciation": "bi + yu = byu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-byo",
+      "type": "HIRAGANA",
+      "japanese": "びょ",
+      "romaji": "byo",
+      "meaning": "byo sound",
+
+      "tags": ["h-column", "combination", "yo-combination", "dakuten"],
+      "mnemonic": "Combination of び + small ょ",
+      "pronunciation": "bi + yo = byo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-pya",
+      "type": "HIRAGANA",
+      "japanese": "ぴゃ",
+      "romaji": "pya",
+      "meaning": "pya sound",
+
+      "tags": ["h-column", "combination", "ya-combination", "han-dakuten"],
+      "mnemonic": "Combination of ぴ + small ゃ",
+      "pronunciation": "pi + ya = pya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-pyu",
+      "type": "HIRAGANA",
+      "japanese": "ぴゅ",
+      "romaji": "pyu",
+      "meaning": "pyu sound",
+
+      "tags": ["h-column", "combination", "yu-combination", "han-dakuten"],
+      "mnemonic": "Combination of ぴ + small ゅ",
+      "pronunciation": "pi + yu = pyu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-pyo",
+      "type": "HIRAGANA",
+      "japanese": "ぴょ",
+      "romaji": "pyo",
+      "meaning": "pyo sound",
+
+      "tags": ["h-column", "combination", "yo-combination", "han-dakuten"],
+      "mnemonic": "Combination of ぴ + small ょ",
+      "pronunciation": "pi + yo = pyo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-mya",
+      "type": "HIRAGANA",
+      "japanese": "みゃ",
+      "romaji": "mya",
+      "meaning": "mya sound",
+
+      "tags": ["m-column", "combination", "ya-combination"],
+      "mnemonic": "Combination of み + small ゃ",
+      "pronunciation": "mi + ya = mya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-myu",
+      "type": "HIRAGANA",
+      "japanese": "みゅ",
+      "romaji": "myu",
+      "meaning": "myu sound",
+
+      "tags": ["m-column", "combination", "yu-combination"],
+      "mnemonic": "Combination of み + small ゅ",
+      "pronunciation": "mi + yu = myu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-myo",
+      "type": "HIRAGANA",
+      "japanese": "みょ",
+      "romaji": "myo",
+      "meaning": "myo sound",
+
+      "tags": ["m-column", "combination", "yo-combination"],
+      "mnemonic": "Combination of み + small ょ",
+      "pronunciation": "mi + yo = myo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-rya",
+      "type": "HIRAGANA",
+      "japanese": "りゃ",
+      "romaji": "rya",
+      "meaning": "rya sound",
+
+      "tags": ["r-column", "combination", "ya-combination"],
+      "mnemonic": "Combination of り + small ゃ",
+      "pronunciation": "ri + ya = rya (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-ryu",
+      "type": "HIRAGANA",
+      "japanese": "りゅ",
+      "romaji": "ryu",
+      "meaning": "ryu sound",
+
+      "tags": ["r-column", "combination", "yu-combination"],
+      "mnemonic": "Combination of り + small ゅ",
+      "pronunciation": "ri + yu = ryu (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-ryo",
+      "type": "HIRAGANA",
+      "japanese": "りょ",
+      "romaji": "ryo",
+      "meaning": "ryo sound",
+
+      "tags": ["r-column", "combination", "yo-combination"],
+      "mnemonic": "Combination of り + small ょ",
+      "pronunciation": "ri + yo = ryo (drop the 'i' sound)"
+    },
+    {
+      "id": "hiragana-small-tsu",
+      "type": "HIRAGANA",
+      "japanese": "っ",
+      "romaji": "sokuon",
+      "meaning": "double consonant pause",
+
+      "tags": ["special", "pause", "double-consonant"],
+      "mnemonic": "Small tsu adds a quick little pause before a consonant sound - like a double consonant",
+      "pronunciation": "creates a pause and doubles the following consonant"
+    }
+  ]
+}
