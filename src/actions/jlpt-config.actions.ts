@@ -29,14 +29,33 @@ export async function createDefaultJLPTConfig() {
   });
 }
 
+
 export async function getJLPTConfig() {
   const userId = await getDbUserId();
-  if (!userId) throw new Error("User not authenticated");
 
-  return await prisma.userConfig.findFirst({
+  // If user is not logged in, return default config
+  if (!userId) {
+    return {
+      key: "jlptLevels",
+      value: DEFAULT_LEVELS,
+      userId: null,
+    };
+  }
+
+  const config = await prisma.userConfig.findFirst({
     where: { userId, key: "jlptLevels" },
   });
+
+  // If user is logged in but no config yet, fallback to default
+  return (
+    config ?? {
+      key: "jlptLevels",
+      value: DEFAULT_LEVELS,
+      userId,
+    }
+  );
 }
+
 
 export async function updateJLPTConfig(levels: string[]) {
   const userId = await getDbUserId();

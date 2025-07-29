@@ -10,6 +10,7 @@ export type Answer = {
   };
 };
 
+
 export type SessionHistory = {
   id: string;
   score: number;
