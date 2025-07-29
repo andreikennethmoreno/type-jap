@@ -18,13 +18,28 @@ interface Prompt {
   meaning: string;
 }
 
+// Interface for what Prisma actually returns
+interface PrismaHistoryResult {
+  id: string;
+  score: number;
+  correct: number;
+  total: number;
+  createdAt: Date;
+  metadata: JsonValue;
+  session: {
+    id: string;
+    type: "HIRAGANA" | "KATAKANA" | "KANJI" | "VOCAB";
+    promptIds: string[];
+  };
+}
+
+// Interface for what the function returns
 interface SessionHistory {
   id: string;
   score: number;
   correct: number;
   total: number;
-  createdAt: Date; // ISO Date
-   metadata: JsonValue;
+  createdAt: string;
   session: {
     id: string;
     type: "HIRAGANA" | "KATAKANA" | "KANJI" | "VOCAB";
@@ -38,8 +53,7 @@ interface SessionHistory {
   }[];
 }
 
-
-export async function getAllHistory() {
+export async function getAllHistory(): Promise<SessionHistory[]> {
   const userId = await getDbUserId();
   if (!userId) throw new Error("User not found");
 
@@ -69,7 +83,7 @@ export async function getAllHistory() {
     },
   });
 
-  const allPromptIds: string[] = histories.flatMap((history : SessionHistory) => {
+  const allPromptIds: string[] = histories.flatMap((history: PrismaHistoryResult) => {
     const metadata = history.metadata as { answers?: Answer[] } | null;
     return metadata?.answers?.map((a) => a.promptId) ?? [];
   });
@@ -80,7 +94,7 @@ export async function getAllHistory() {
 
   const promptMap = new Map(prompts.map((p: Prompt) => [p.id, p]));
 
-  return histories.map((history : SessionHistory) => {
+  return histories.map((history: PrismaHistoryResult): SessionHistory => {
     const metadata = history.metadata as { answers?: Answer[] } | null;
 
     const answers = (metadata?.answers ?? []).map((answer) => ({
