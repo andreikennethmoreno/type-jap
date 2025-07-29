@@ -11,4 +11,18 @@ export type Answer = {
 };
 
 
+export type SessionHistory = {
+  id: string;
+  score: number;
+  correct: number;
+  total: number;
+  createdAt: string; // ISO Date
+  session: {
+    id: string;
+    type: "HIRAGANA" | "KATAKANA" | "KANJI" | "VOCAB";
+    promptIds: string[];
+  };
+  answers: Answer[];
+};
+
 export type SessionType = "HIRAGANA" | "KATAKANA" | "KANJI" | "VOCAB";
