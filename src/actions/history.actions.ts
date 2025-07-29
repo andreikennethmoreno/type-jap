@@ -3,6 +3,7 @@
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
 import { getPromptsByIds } from "./prompt.actions";
+import { JsonValue } from "@prisma/client/runtime/library";
 
 interface Answer {
   promptId: string;
@@ -23,7 +24,7 @@ interface SessionHistory {
   correct: number;
   total: number;
   createdAt: Date; // ISO Date
-   metadata: string;
+   metadata: JsonValue;
   session: {
     id: string;
     type: "HIRAGANA" | "KATAKANA" | "KANJI" | "VOCAB";
