@@ -20,6 +20,8 @@ export async function getRandomKanaPrompts(type: string, count = 10) {
   return shuffled.slice(0, count);
 }
 
+
+
 // ✅ Get a single kana character by ID
 export async function getKanaPromptById(id: string) {
   return characters.find((char) => char.id === id) ?? null;
@@ -79,3 +81,19 @@ export async function getKanaPromptByCharacter(japanese: string) {
   return null;
 }
 
+import imageListJson from "../../prisma/data/kana-image-manifest.json";
+
+type KanaType = "hiragana" | "katakana";
+
+const imageListRaw = imageListJson.imageListRaw as Record<KanaType, string[]>;
+
+export function getKanaImagesForCharacter(kana: string, type: KanaType): string[] {
+  if (!imageListRaw || !imageListRaw[type]) return [];
+
+  const matches = imageListRaw[type].filter((entry) =>
+    entry.includes(kana)
+  );
+
+  // For use with public folder, prefix with `/kana-images/{type}/`
+  return matches.map((filename) => `/${type}/${filename}`);
+}
