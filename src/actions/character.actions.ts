@@ -33,11 +33,18 @@ export async function getKanaPromptsByIds(ids: string[]) {
 }
 
 const smallKanaFallbacks: Record<string, string> = {
-  っ: "つ",
-  ゃ: "や",
-  ゅ: "ゆ",
-  ょ: "よ",
-  ゎ: "わ",
+  // Hiragana small forms
+  "っ": "つ",
+  "ゃ": "や",
+  "ゅ": "ゆ",
+  "ょ": "よ",
+  "ゎ": "わ",
+  // Katakana small forms
+  "ッ": "ツ",
+  "ャ": "ヤ",
+  "ュ": "ユ",
+  "ョ": "ヨ",
+  "ヮ": "ワ",
 };
 
 export async function getKanaPromptByCharacter(japanese: string) {
