@@ -2,62 +2,57 @@
   "characters": [
     {
       "id": "hiragana-a",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "あ",
       "romaji": "a",
       "meaning": "vowel sound 'ah'",
 
-      "mnemonic_img": "",
       "mnemonic": "Find the capital A inside of it. This 'A' tells you that this kana is also 'a'",
       "pronunciation": "like 'ah!' when you come to a realization, or the 'a' in 'car'"
     },
     {
       "id": "hiragana-i",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "い",
       "romaji": "i",
       "meaning": "vowel sound 'ee'",
 
-      "mnemonic_img": "",
       "mnemonic": "Think of a couple of eels hanging out. They're upright because they're trying to mimic the letter 'i'",
       "pronunciation": "like the 'ee' in 'eel'"
     },
     {
       "id": "hiragana-u",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "う",
       "romaji": "u",
       "meaning": "vowel sound 'oo'",
 
-      "mnemonic_img": "",
       "mnemonic": "Notice the U shape right in it! It's sideways but it's there, telling you what this kana is",
       "pronunciation": "like the 'oo' in 'ooh... ahhh!' or 'u' in 'UNO'"
     },
     {
       "id": "hiragana-e",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "え",
       "romaji": "e",
       "meaning": "vowel sound 'eh'",
 
-      "mnemonic_img": "",
       "mnemonic": "Think of it like an exotic bird. The feathery thing on its head gives it away that it's exotic and lays exotic eggs",
       "pronunciation": "like the 'e' in 'egg'"
     },
     {
       "id": "hiragana-o",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "お",
       "romaji": "o",
       "meaning": "vowel sound 'oh'",
 
-      "mnemonic_img": "",
       "mnemonic": "Can you see the letter 'o' in here, two times? There are two letter 'o' symbols visible",
       "pronunciation": "like you're saying 'oh' or the 'o' in 'origami'"
     },
     {
       "id": "hiragana-ka",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "か",
       "romaji": "ka",
       "meaning": "ka sound",
@@ -68,7 +63,7 @@
     },
     {
       "id": "hiragana-ki",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "き",
       "romaji": "ki",
       "meaning": "ki sound",
@@ -79,7 +74,7 @@
     },
     {
       "id": "hiragana-ku",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "く",
       "romaji": "ku",
       "meaning": "ku sound",
@@ -90,7 +85,7 @@
     },
     {
       "id": "hiragana-ke",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "け",
       "romaji": "ke",
       "meaning": "ke sound",
@@ -101,7 +96,7 @@
     },
     {
       "id": "hiragana-ko",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "こ",
       "romaji": "ko",
       "meaning": "ko sound",
@@ -112,7 +107,7 @@
     },
     {
       "id": "hiragana-sa",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "さ",
       "romaji": "sa",
       "meaning": "sa sound",
@@ -123,7 +118,7 @@
     },
     {
       "id": "hiragana-shi",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "し",
       "romaji": "shi",
       "meaning": "shi sound",
@@ -134,7 +129,7 @@
     },
     {
       "id": "hiragana-su",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "す",
       "romaji": "su",
       "meaning": "su sound",
@@ -145,7 +140,7 @@
     },
     {
       "id": "hiragana-se",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "せ",
       "romaji": "se",
       "meaning": "se sound",
@@ -156,7 +151,7 @@
     },
     {
       "id": "hiragana-so",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "そ",
       "romaji": "so",
       "meaning": "so sound",
@@ -167,7 +162,7 @@
     },
     {
       "id": "hiragana-ta",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "た",
       "romaji": "ta",
       "meaning": "ta sound",
@@ -178,7 +173,7 @@
     },
     {
       "id": "hiragana-chi",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ち",
       "romaji": "chi",
       "meaning": "chi sound",
@@ -189,7 +184,7 @@
     },
     {
       "id": "hiragana-tsu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "つ",
       "romaji": "tsu",
       "meaning": "tsu sound",
@@ -200,7 +195,7 @@
     },
     {
       "id": "hiragana-te",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "て",
       "romaji": "te",
       "meaning": "te sound",
@@ -211,7 +206,7 @@
     },
     {
       "id": "hiragana-to",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "と",
       "romaji": "to",
       "meaning": "to sound",
@@ -222,7 +217,7 @@
     },
     {
       "id": "hiragana-na",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "な",
       "romaji": "na",
       "meaning": "na sound",
@@ -233,7 +228,7 @@
     },
     {
       "id": "hiragana-ni",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "に",
       "romaji": "ni",
       "meaning": "ni sound",
@@ -244,7 +239,7 @@
     },
     {
       "id": "hiragana-nu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぬ",
       "romaji": "nu",
       "meaning": "nu sound",
@@ -255,7 +250,7 @@
     },
     {
       "id": "hiragana-ne",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ね",
       "romaji": "ne",
       "meaning": "ne sound",
@@ -266,7 +261,7 @@
     },
     {
       "id": "hiragana-no",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "の",
       "romaji": "no",
       "meaning": "no sound",
@@ -277,7 +272,7 @@
     },
     {
       "id": "hiragana-ha",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "は",
       "romaji": "ha",
       "meaning": "ha sound",
@@ -288,7 +283,7 @@
     },
     {
       "id": "hiragana-hi",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ひ",
       "romaji": "hi",
       "meaning": "hi sound",
@@ -299,7 +294,7 @@
     },
     {
       "id": "hiragana-fu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ふ",
       "romaji": "fu",
       "meaning": "fu sound",
@@ -310,7 +305,7 @@
     },
     {
       "id": "hiragana-he",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "へ",
       "romaji": "he",
       "meaning": "he sound",
@@ -321,7 +316,7 @@
     },
     {
       "id": "hiragana-ho",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ほ",
       "romaji": "ho",
       "meaning": "ho sound",
@@ -332,7 +327,7 @@
     },
     {
       "id": "hiragana-ma",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ま",
       "romaji": "ma",
       "meaning": "ma sound",
@@ -343,7 +338,7 @@
     },
     {
       "id": "hiragana-mi",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "み",
       "romaji": "mi",
       "meaning": "mi sound",
@@ -354,7 +349,7 @@
     },
     {
       "id": "hiragana-mu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "む",
       "romaji": "mu",
       "meaning": "mu sound",
@@ -365,7 +360,7 @@
     },
     {
       "id": "hiragana-me",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "め",
       "romaji": "me",
       "meaning": "me sound",
@@ -376,7 +371,7 @@
     },
     {
       "id": "hiragana-mo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "も",
       "romaji": "mo",
       "meaning": "mo sound",
@@ -387,7 +382,7 @@
     },
     {
       "id": "hiragana-ya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "や",
       "romaji": "ya",
       "meaning": "ya sound",
@@ -398,7 +393,7 @@
     },
     {
       "id": "hiragana-yu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ゆ",
       "romaji": "yu",
       "meaning": "yu sound",
@@ -409,7 +404,7 @@
     },
     {
       "id": "hiragana-yo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "よ",
       "romaji": "yo",
       "meaning": "yo sound",
@@ -420,7 +415,7 @@
     },
     {
       "id": "hiragana-ra",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ら",
       "romaji": "ra",
       "meaning": "ra sound",
@@ -431,7 +426,7 @@
     },
     {
       "id": "hiragana-ri",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "り",
       "romaji": "ri",
       "meaning": "ri sound",
@@ -442,7 +437,7 @@
     },
     {
       "id": "hiragana-ru",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "る",
       "romaji": "ru",
       "meaning": "ru sound",
@@ -453,7 +448,7 @@
     },
     {
       "id": "hiragana-re",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "れ",
       "romaji": "re",
       "meaning": "re sound",
@@ -464,7 +459,7 @@
     },
     {
       "id": "hiragana-ro",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ろ",
       "romaji": "ro",
       "meaning": "ro sound",
@@ -475,7 +470,7 @@
     },
     {
       "id": "hiragana-wa",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "わ",
       "romaji": "wa",
       "meaning": "wa sound",
@@ -486,7 +481,7 @@
     },
     {
       "id": "hiragana-wo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "を",
       "romaji": "wo",
       "meaning": "wo sound (particle)",
@@ -497,7 +492,7 @@
     },
     {
       "id": "hiragana-n",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ん",
       "romaji": "n",
       "meaning": "n sound",
@@ -508,7 +503,7 @@
     },
     {
       "id": "hiragana-ga",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "が",
       "romaji": "ga",
       "meaning": "ga sound",
@@ -519,7 +514,7 @@
     },
     {
       "id": "hiragana-gi",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぎ",
       "romaji": "gi",
       "meaning": "gi sound",
@@ -530,7 +525,7 @@
     },
     {
       "id": "hiragana-gu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぐ",
       "romaji": "gu",
       "meaning": "gu sound",
@@ -541,7 +536,7 @@
     },
     {
       "id": "hiragana-ge",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "げ",
       "romaji": "ge",
       "meaning": "ge sound",
@@ -552,7 +547,7 @@
     },
     {
       "id": "hiragana-go",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ご",
       "romaji": "go",
       "meaning": "go sound",
@@ -563,7 +558,7 @@
     },
     {
       "id": "hiragana-za",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ざ",
       "romaji": "za",
       "meaning": "za sound",
@@ -574,7 +569,7 @@
     },
     {
       "id": "hiragana-ji",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "じ",
       "romaji": "ji",
       "meaning": "ji sound",
@@ -585,7 +580,7 @@
     },
     {
       "id": "hiragana-zu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ず",
       "romaji": "zu",
       "meaning": "zu sound",
@@ -596,7 +591,7 @@
     },
     {
       "id": "hiragana-ze",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぜ",
       "romaji": "ze",
       "meaning": "ze sound",
@@ -607,7 +602,7 @@
     },
     {
       "id": "hiragana-zo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぞ",
       "romaji": "zo",
       "meaning": "zo sound",
@@ -618,7 +613,7 @@
     },
     {
       "id": "hiragana-da",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "だ",
       "romaji": "da",
       "meaning": "da sound",
@@ -629,7 +624,7 @@
     },
     {
       "id": "hiragana-di",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぢ",
       "romaji": "ji",
       "meaning": "ji sound (from di)",
@@ -640,7 +635,7 @@
     },
     {
       "id": "hiragana-du",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "づ",
       "romaji": "zu",
       "meaning": "zu sound (from du)",
@@ -651,7 +646,7 @@
     },
     {
       "id": "hiragana-de",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "で",
       "romaji": "de",
       "meaning": "de sound",
@@ -662,7 +657,7 @@
     },
     {
       "id": "hiragana-do",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ど",
       "romaji": "do",
       "meaning": "do sound",
@@ -673,7 +668,7 @@
     },
     {
       "id": "hiragana-ba",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ば",
       "romaji": "ba",
       "meaning": "ba sound",
@@ -684,7 +679,7 @@
     },
     {
       "id": "hiragana-bi",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "び",
       "romaji": "bi",
       "meaning": "bi sound",
@@ -695,7 +690,7 @@
     },
     {
       "id": "hiragana-bu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぶ",
       "romaji": "bu",
       "meaning": "bu sound",
@@ -706,7 +701,7 @@
     },
     {
       "id": "hiragana-be",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "べ",
       "romaji": "be",
       "meaning": "be sound",
@@ -717,7 +712,7 @@
     },
     {
       "id": "hiragana-bo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぼ",
       "romaji": "bo",
       "meaning": "bo sound",
@@ -728,7 +723,7 @@
     },
     {
       "id": "hiragana-pa",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぱ",
       "romaji": "pa",
       "meaning": "pa sound",
@@ -739,7 +734,7 @@
     },
     {
       "id": "hiragana-pi",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぴ",
       "romaji": "pi",
       "meaning": "pi sound",
@@ -750,7 +745,7 @@
     },
     {
       "id": "hiragana-pu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぷ",
       "romaji": "pu",
       "meaning": "pu sound",
@@ -761,7 +756,7 @@
     },
     {
       "id": "hiragana-pe",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぺ",
       "romaji": "pe",
       "meaning": "pe sound",
@@ -772,7 +767,7 @@
     },
     {
       "id": "hiragana-po",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぽ",
       "romaji": "po",
       "meaning": "po sound",
@@ -783,7 +778,7 @@
     },
     {
       "id": "hiragana-kya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "きゃ",
       "romaji": "kya",
       "meaning": "kya sound",
@@ -794,7 +789,7 @@
     },
     {
       "id": "hiragana-kyu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "きゅ",
       "romaji": "kyu",
       "meaning": "kyu sound",
@@ -805,7 +800,7 @@
     },
     {
       "id": "hiragana-kyo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "きょ",
       "romaji": "kyo",
       "meaning": "kyo sound",
@@ -816,7 +811,7 @@
     },
     {
       "id": "hiragana-gya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぎゃ",
       "romaji": "gya",
       "meaning": "gya sound",
@@ -827,7 +822,7 @@
     },
     {
       "id": "hiragana-gyu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぎゅ",
       "romaji": "gyu",
       "meaning": "gyu sound",
@@ -838,7 +833,7 @@
     },
     {
       "id": "hiragana-gyo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぎょ",
       "romaji": "gyo",
       "meaning": "gyo sound",
@@ -849,7 +844,7 @@
     },
     {
       "id": "hiragana-sha",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "しゃ",
       "romaji": "sha",
       "meaning": "sha sound",
@@ -860,7 +855,7 @@
     },
     {
       "id": "hiragana-shu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "しゅ",
       "romaji": "shu",
       "meaning": "shu sound",
@@ -871,7 +866,7 @@
     },
     {
       "id": "hiragana-sho",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "しょ",
       "romaji": "sho",
       "meaning": "sho sound",
@@ -882,7 +877,7 @@
     },
     {
       "id": "hiragana-ja",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "じゃ",
       "romaji": "ja",
       "meaning": "ja sound",
@@ -893,7 +888,7 @@
     },
     {
       "id": "hiragana-ju",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "じゅ",
       "romaji": "ju",
       "meaning": "ju sound",
@@ -904,7 +899,7 @@
     },
     {
       "id": "hiragana-jo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "じょ",
       "romaji": "jo",
       "meaning": "jo sound",
@@ -915,7 +910,7 @@
     },
     {
       "id": "hiragana-cha",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ちゃ",
       "romaji": "cha",
       "meaning": "cha sound",
@@ -926,7 +921,7 @@
     },
     {
       "id": "hiragana-chu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ちゅ",
       "romaji": "chu",
       "meaning": "chu sound",
@@ -937,7 +932,7 @@
     },
     {
       "id": "hiragana-cho",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ちょ",
       "romaji": "cho",
       "meaning": "cho sound",
@@ -948,7 +943,7 @@
     },
     {
       "id": "hiragana-nya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "にゃ",
       "romaji": "nya",
       "meaning": "nya sound",
@@ -959,7 +954,7 @@
     },
     {
       "id": "hiragana-nyu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "にゅ",
       "romaji": "nyu",
       "meaning": "nyu sound",
@@ -970,7 +965,7 @@
     },
     {
       "id": "hiragana-nyo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "にょ",
       "romaji": "nyo",
       "meaning": "nyo sound",
@@ -981,7 +976,7 @@
     },
     {
       "id": "hiragana-hya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ひゃ",
       "romaji": "hya",
       "meaning": "hya sound",
@@ -992,7 +987,7 @@
     },
     {
       "id": "hiragana-hyu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ひゅ",
       "romaji": "hyu",
       "meaning": "hyu sound",
@@ -1003,7 +998,7 @@
     },
     {
       "id": "hiragana-hyo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ひょ",
       "romaji": "hyo",
       "meaning": "hyo sound",
@@ -1014,18 +1009,18 @@
     },
     {
       "id": "hiragana-bya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "びゃ",
       "romaji": "bya",
       "meaning": "bya sound",
-
+      
       "tags": ["h-column", "combination", "ya-combination", "dakuten"],
       "mnemonic": "Combination of び + small ゃ",
       "pronunciation": "bi + ya = bya (drop the 'i' sound)"
     },
     {
       "id": "hiragana-byu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "びゅ",
       "romaji": "byu",
       "meaning": "byu sound",
@@ -1036,7 +1031,7 @@
     },
     {
       "id": "hiragana-byo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "びょ",
       "romaji": "byo",
       "meaning": "byo sound",
@@ -1047,7 +1042,7 @@
     },
     {
       "id": "hiragana-pya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぴゃ",
       "romaji": "pya",
       "meaning": "pya sound",
@@ -1058,7 +1053,7 @@
     },
     {
       "id": "hiragana-pyu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぴゅ",
       "romaji": "pyu",
       "meaning": "pyu sound",
@@ -1069,7 +1064,7 @@
     },
     {
       "id": "hiragana-pyo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "ぴょ",
       "romaji": "pyo",
       "meaning": "pyo sound",
@@ -1080,7 +1075,7 @@
     },
     {
       "id": "hiragana-mya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "みゃ",
       "romaji": "mya",
       "meaning": "mya sound",
@@ -1091,7 +1086,7 @@
     },
     {
       "id": "hiragana-myu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "みゅ",
       "romaji": "myu",
       "meaning": "myu sound",
@@ -1102,7 +1097,7 @@
     },
     {
       "id": "hiragana-myo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "みょ",
       "romaji": "myo",
       "meaning": "myo sound",
@@ -1113,7 +1108,7 @@
     },
     {
       "id": "hiragana-rya",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "りゃ",
       "romaji": "rya",
       "meaning": "rya sound",
@@ -1124,7 +1119,7 @@
     },
     {
       "id": "hiragana-ryu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "りゅ",
       "romaji": "ryu",
       "meaning": "ryu sound",
@@ -1135,7 +1130,7 @@
     },
     {
       "id": "hiragana-ryo",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "りょ",
       "romaji": "ryo",
       "meaning": "ryo sound",
@@ -1146,7 +1141,7 @@
     },
     {
       "id": "hiragana-small-tsu",
-      "type": "HIRAGANA",
+      "type": "HIRAGANA", "mnemonic_img": "", 
       "japanese": "っ",
       "romaji": "sokuon",
       "meaning": "double consonant pause",
