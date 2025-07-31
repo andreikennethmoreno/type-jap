@@ -90,7 +90,7 @@ export async function getAllHistory(): Promise<SessionHistory[]> {
 
   const uniquePromptIds: string[] = [...new Set(allPromptIds)];
 
-  const prompts = awaitgetVocabByIds(uniquePromptIds);
+  const prompts = await getVocabByIds(uniquePromptIds);
 
   const promptMap = new Map(prompts.map((p: Prompt) => [p.id, p]));
 
