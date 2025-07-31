@@ -1,6 +1,6 @@
 import { PromptType } from "@prisma/client";
 
-export function toPromptType(type: string): PromptType {
+export function toVocabType(type: string): PromptType {
   const match = Object.values(PromptType).find(
     (v) => v.toLowerCase() === type.toLowerCase()
   );

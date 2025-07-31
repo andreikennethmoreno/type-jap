@@ -83,8 +83,8 @@ export default function InfoDialog({
               ) : (
             <div className="flex items-center justify-center w-full h-full p-2">
                 <span className="text-[#45ACE7] font-bold text-center text-[4.5rem] leading-none whitespace-nowrap">
-    {info.japanese}
-</span>
+              {info.japanese}
+          </span>
             </div>
 
 

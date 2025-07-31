@@ -2,7 +2,7 @@
 
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
-import { getPromptsByIds } from "./prompt.actions";
+import {getVocabByIds } from "./prompt.actions";
 import { JsonValue } from "@prisma/client/runtime/library";
 
 interface Answer {
@@ -90,7 +90,7 @@ export async function getAllHistory(): Promise<SessionHistory[]> {
 
   const uniquePromptIds: string[] = [...new Set(allPromptIds)];
 
-  const prompts = await getPromptsByIds(uniquePromptIds);
+  const prompts = awaitgetVocabByIds(uniquePromptIds);
 
   const promptMap = new Map(prompts.map((p: Prompt) => [p.id, p]));
 

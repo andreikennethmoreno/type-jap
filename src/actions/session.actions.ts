@@ -3,14 +3,14 @@
 // /actions/session.actions.ts
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
-import { getRandomPrompts } from "./prompt.actions";
-import { toPromptType } from "@/lib/helpers/prompt";
+import { getRandomVocabs } from "./prompt.actions";
+import { toVocabType } from "@/lib/helpers/prompt";
 
 export async function startOrResumeSession(type: string) {
   const userId = await getDbUserId();
   if (!userId) throw new Error("User not found");
 
-  const normalizedType = toPromptType(type);
+  const normalizedType = toVocabType(type);
 
   // Step 1: Check for existing unfinished session
   const existing = await prisma.session.findFirst({
@@ -30,7 +30,7 @@ export async function startOrResumeSession(type: string) {
   }
 
   // Step 2: Generate prompt IDs with fast random fetching
-  const prompts = await getRandomPrompts(normalizedType, 10);
+  const prompts = await getRandomVocabs(normalizedType, 10);
   if (!prompts.length) throw new Error("No prompts found for this type");
 
   const promptIds = prompts.map((p) => p.id);

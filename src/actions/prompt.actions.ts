@@ -1,6 +1,6 @@
 "use server";
 
-import { toPromptType } from "@/lib/helpers/prompt";
+import { toVocabType } from "@/lib/helpers/prompt";
 import { loadJLPTLevels } from "@/actions/jlpt-config.actions";
 
 // ✅ Import vocabulary JSON data
@@ -18,8 +18,8 @@ const vocabulary = [
 ];
 
 // ✅ Get random prompts based on type AND JLPT level config
-export async function getRandomPrompts(type: string, count = 10) {
-  const normalizedType = toPromptType(type);
+export async function getRandomVocabs(type: string, count = 10) {
+  const normalizedType = toVocabType(type);
   const userLevels = await loadJLPTLevels();
 
   const filtered = vocabulary.filter(
@@ -35,11 +35,11 @@ export async function getRandomPrompts(type: string, count = 10) {
 }
 
 // ✅ Get a single prompt by ID
-export async function getPromptById(id: string) {
+export async function getVocabById(id: string) {
   return vocabulary.find((word) => word.id === id) ?? null;
 }
 
 // ✅ Get multiple prompts by ID array
-export async function getPromptsByIds(ids: string[]) {
+export async function getVocabByIds(ids: string[]) {
   return vocabulary.filter((word) => ids.includes(word.id));
 }
