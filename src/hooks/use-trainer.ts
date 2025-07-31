@@ -9,7 +9,7 @@ import {
   submitAnswer,
   updateSessionProgress,
 } from "@/actions/session.actions";
-import { getPromptById, getRandomPrompts } from "@/actions/prompt.actions";
+import { getVocabById, getRandomVocabs } from "@/actions/vocabulary.actions";
 import { PromptType } from "@prisma/client";
 import { getCurrentDbUser } from "@/actions/user.actions";
 import { checkRomaji } from "@/lib/trainers/check-romaji";
@@ -77,13 +77,13 @@ const [user, setUser] = useState<DbUser | null>(null);
         setPromptIds(session.promptIds);
         setCurrentIndex(session.progress || 0);
 
-        const firstPrompt = await getPromptById(
+        const firstPrompt = await getVocabById(
           session.promptIds[session.progress || 0]
         );
         setCurrentPrompt(firstPrompt);
         console.log("[PROMPT] Loaded first prompt (user):", firstPrompt);
       } else {
-        const prompts = await getRandomPrompts(script as PromptType, 10);
+        const prompts = await getRandomVocabs(script as PromptType, 10);
         const ids = prompts.map((p) => p.id);
         setPromptIds(ids);
         setCurrentIndex(0);
@@ -168,13 +168,13 @@ const [user, setUser] = useState<DbUser | null>(null);
         setPromptIds(newSession.promptIds);
         setCurrentIndex(newSession.progress || 0);
 
-        const firstPrompt = await getPromptById(
+        const firstPrompt = await getVocabById(
           newSession.promptIds[newSession.progress || 0]
         );
         setCurrentPrompt(firstPrompt);
         console.log("[PROMPT] Loaded next session prompt:", firstPrompt);
       } else {
-        const prompts = await getRandomPrompts(script as PromptType, 10);
+        const prompts = await getRandomVocabs(script as PromptType, 10);
         const ids = prompts.map((p) => p.id);
         setPromptIds(ids);
         setCurrentIndex(0);
@@ -185,7 +185,7 @@ const [user, setUser] = useState<DbUser | null>(null);
       return;
     }
 
-    const nextPrompt = await getPromptById(promptIds[nextIndex]);
+    const nextPrompt = await getVocabById(promptIds[nextIndex]);
     setCurrentPrompt(nextPrompt);
     setCurrentIndex(nextIndex);
 

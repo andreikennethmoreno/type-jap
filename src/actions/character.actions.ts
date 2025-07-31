@@ -1,3 +1,4 @@
+import { tokenizeKana } from "@/lib/helpers/tokenize-char";
 import hiraganaChars from "../../prisma/data/json/characters/hiragana-characters.json";
 import katakanaChars from "../../prisma/data/json/characters/katakana-characters.json";
 
@@ -9,7 +10,7 @@ const characters = [
 ];
 
 // ✅ Get random kana character prompts based on type (HIRAGANA or KATAKANA)
-export async function getRandomKanaPrompts(type: string, count = 10) {
+export async function getRandomCharacters(type: string, count = 10) {
   const filtered = characters.filter(
     (char) => char.type === type.toUpperCase()
   );
@@ -23,70 +24,95 @@ export async function getRandomKanaPrompts(type: string, count = 10) {
 
 
 // ✅ Get a single kana character by ID
-export async function getKanaPromptById(id: string) {
+export async function getCharacterById(id: string) {
   return characters.find((char) => char.id === id) ?? null;
 }
 
 // ✅ Get multiple kana characters by ID array
-export async function getKanaPromptsByIds(ids: string[]) {
+export async function geCharacterByIds(ids: string[]) {
   return characters.filter((char) => ids.includes(char.id));
 }
 
+
 const smallKanaFallbacks: Record<string, string> = {
-  // Hiragana small forms
-  "っ": "つ",
-  "ゃ": "や",
-  "ゅ": "ゆ",
-  "ょ": "よ",
-  "ゎ": "わ",
-  // Katakana small forms
-  "ッ": "ツ",
-  "ャ": "ヤ",
-  "ュ": "ユ",
-  "ョ": "ヨ",
-  "ヮ": "ワ",
+  "っ": "つ", "ゃ": "や", "ゅ": "ゆ", "ょ": "よ", "ゎ": "わ",
+  "ッ": "ツ", "ャ": "ヤ", "ュ": "ユ", "ョ": "ヨ", "ヮ": "ワ",
 };
 
-export async function getKanaPromptByCharacter(japanese: string) {
-  const match = characters.find((char) => char.japanese === japanese);
+export async function getCharacterByJapanese(japanese: string) {
+  const tokenized = tokenizeKana(japanese);
+  const token = tokenized[0]; // Only handling single-token input
+
+  const match = characters.find((char) => char.japanese === token);
   if (match) return match;
 
-  // Handle long vowel fallback for katakana/hiragana
-  if (japanese.endsWith("ー")) {
-    const base = japanese.slice(0, -1);
+  // Handle chōonpu (ー)
+  if (token.endsWith("ー")) {
+    const base = token.slice(0, -1);
     const baseMatch = characters.find((char) => char.japanese === base);
     if (baseMatch) {
       return {
         ...baseMatch,
         id: `${baseMatch.id}-long`,
-        japanese,
-        romaji: `${baseMatch.romaji} (long)`,
+        japanese: token,
+        romaji: `${baseMatch.romaji}-`,
         meaning: `${baseMatch.meaning} (long vowel)`,
         pronunciation: `${baseMatch.pronunciation} extended with ー`,
-        mnemonic: `${baseMatch.mnemonic} — Just hold the sound longer!`,
+        mnemonic: `${baseMatch.mnemonic} — hold the sound!`,
+        meta: "long-vowel",
       };
     }
   }
 
-  // Handle small kana fallback
-  if (smallKanaFallbacks[japanese]) {
-    const base = smallKanaFallbacks[japanese];
+  // Handle sokuon (small っ/ッ)
+  if (token === "っ" || token === "ッ") {
+    return {
+      id: `sokuon-${token}`,
+      japanese: token,
+      romaji: "",
+      meaning: "Sokuon (geminate consonant)",
+      pronunciation: "double the next consonant",
+      mnemonic: "Pause briefly and repeat the next sound (e.g., 'kko', 'ppa')",
+      meta: "sokuon",
+    };
+  }
+
+  // Handle small kana
+  if (smallKanaFallbacks[token]) {
+    const base = smallKanaFallbacks[token];
     const baseMatch = characters.find((char) => char.japanese === base);
     if (baseMatch) {
       return {
         ...baseMatch,
         id: `${baseMatch.id}-small`,
-        japanese,
+        japanese: token,
         romaji: `${baseMatch.romaji} (small)`,
-        meaning: `Small version of ${baseMatch.meaning}`,
-        pronunciation: `Used to form combos like きゃ, しゃ, etc.`,
+        meaning: `Small form of ${baseMatch.meaning}`,
+        pronunciation: "Used in yōon combos like きゃ, しゅ, etc.",
         mnemonic: `${baseMatch.mnemonic} — but mini.`,
+        meta: "small-kana",
       };
     }
   }
 
+  // Handle yōon and foreign combos
+  const complexMatch = characters.find((char) => char.japanese === token);
+  if (complexMatch) {
+    return {
+      ...complexMatch,
+      id: `${complexMatch.id}-combo`,
+      japanese: token,
+      romaji: complexMatch.romaji,
+      meaning: complexMatch.meaning,
+      pronunciation: complexMatch.pronunciation,
+      mnemonic: complexMatch.mnemonic,
+      meta: "compound",
+    };
+  }
+
   return null;
 }
+
 
 import imageListJson from "../../prisma/data/kana-image-manifest.json";
 
@@ -94,7 +120,7 @@ type KanaType = "hiragana" | "katakana";
 
 const imageListRaw = imageListJson.imageListRaw as Record<KanaType, string[]>;
 
-export function getKanaImagesForCharacter(kana: string, type: KanaType): string[] {
+export function getImagesForCharacter(kana: string, type: KanaType): string[] {
   if (!imageListRaw || !imageListRaw[type]) return [];
 
   const matches = imageListRaw[type].filter((entry) =>
