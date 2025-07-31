@@ -2,7 +2,7 @@
 
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
-import {getVocabByIds } from "./prompt.actions";
+import {getVocabByIds } from "./vocabulary.actions";
 import { JsonValue } from "@prisma/client/runtime/library";
 
 interface Answer {

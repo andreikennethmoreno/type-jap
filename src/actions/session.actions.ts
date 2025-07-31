@@ -3,7 +3,7 @@
 // /actions/session.actions.ts
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
-import { getRandomVocabs } from "./prompt.actions";
+import { getRandomVocabs } from "./vocabulary.actions";
 import { toVocabType } from "@/lib/helpers/prompt";
 
 export async function startOrResumeSession(type: string) {

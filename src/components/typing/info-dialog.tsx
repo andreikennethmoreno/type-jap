@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getKanaImagesForCharacter, getKanaPromptByCharacter } from "@/actions/character.actions";
+import { getImagesForCharacter, getCharacterByJapanese } from "@/actions/character.actions";
 import {
   Dialog,
   DialogContent,
@@ -37,12 +37,12 @@ export default function InfoDialog({
     const fetchInfo = async () => {
       setIsLoading(true);
       try {
-        const result = await getKanaPromptByCharacter(char);
+        const result = await getCharacterByJapanese(char);
         setInfo(result);
 
         if (result) {
           const type: KanaType = result.id.startsWith("hiragana") ? "hiragana" : "katakana";
-          const imageList = getKanaImagesForCharacter(result.japanese, type);
+          const imageList = getImagesForCharacter(result.japanese, type);
           setImages(imageList);
         }
       } catch (error) {

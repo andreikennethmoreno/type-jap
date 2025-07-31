@@ -9,7 +9,7 @@ import {
   submitAnswer,
   updateSessionProgress,
 } from "@/actions/session.actions";
-import { getVocabById, getRandomVocabs } from "@/actions/prompt.actions";
+import { getVocabById, getRandomVocabs } from "@/actions/vocabulary.actions";
 import { PromptType } from "@prisma/client";
 import { getCurrentDbUser } from "@/actions/user.actions";
 import { checkRomaji } from "@/lib/trainers/check-romaji";
