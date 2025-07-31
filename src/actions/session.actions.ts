@@ -4,19 +4,41 @@
 import { prisma } from "../../lib";
 import { getDbUserId } from "./user.actions";
 import { getRandomVocabs } from "./vocabulary.actions";
+import { getRandomCharacters } from "./character.actions"; // Import character actions
 import { toVocabType } from "@/lib/helpers/prompt";
+import { Prisma, $Enums } from "@prisma/client";
+
+
+// Helper function to determine if type is character-based
+function isCharacterType(type: string): boolean {
+  const normalizedType = type.toUpperCase();
+  return normalizedType === 'HIRAGANA' || normalizedType === 'KATAKANA';
+}
+
+// Helper function to get random prompts based on type
+async function getRandomPrompts(type: string, count: number) {
+  if (isCharacterType(type)) {
+    // For character types, use character actions
+    return await getRandomCharacters(type, count);
+  } else {
+    // For vocabulary types, use vocab actions
+    const normalizedType = toVocabType(type);
+    return await getRandomVocabs(normalizedType, count);
+  }
+}
 
 export async function startOrResumeSession(type: string) {
   const userId = await getDbUserId();
   if (!userId) throw new Error("User not found");
 
-  const normalizedType = toVocabType(type);
+  // Normalize type based on whether it's character or vocab
+  const normalizedType = isCharacterType(type) ? type.toUpperCase() : toVocabType(type);
 
   // Step 1: Check for existing unfinished session
   const existing = await prisma.session.findFirst({
     where: {
       userId,
-      type: normalizedType,
+      type: normalizedType as $Enums.PromptType,
       isCompleted: false,
     },
     orderBy: { startedAt: "desc" }, // prioritize most recent unfinished session
@@ -30,7 +52,7 @@ export async function startOrResumeSession(type: string) {
   }
 
   // Step 2: Generate prompt IDs with fast random fetching
-  const prompts = await getRandomVocabs(normalizedType, 10);
+  const prompts = await getRandomPrompts(type, 10);
   if (!prompts.length) throw new Error("No prompts found for this type");
 
   const promptIds = prompts.map((p) => p.id);
@@ -39,7 +61,7 @@ export async function startOrResumeSession(type: string) {
   const session = await prisma.session.create({
     data: {
       userId,
-      type: normalizedType,
+      type: normalizedType as $Enums.PromptType,
       promptIds,
     },
     select: {
@@ -58,9 +80,6 @@ export async function startOrResumeSession(type: string) {
     session,
   };
 }
-
-
-
 
 export async function submitAnswer(
   sessionId: string,
@@ -148,4 +167,26 @@ export async function finalizeSession(sessionId: string) {
     where: { id: sessionId },
     data: { isCompleted: true },
   });
+}
+
+// Helper function to get prompt by ID (works for both vocab and characters)
+export async function getPromptById(id: string, type: string) {
+  if (isCharacterType(type)) {
+    const { getCharacterById } = await import("./character.actions");
+    return await getCharacterById(id);
+  } else {
+    const { getVocabById } = await import("./vocabulary.actions");
+    return await getVocabById(id);
+  }
+}
+
+// Helper function to get multiple prompts by ID array (works for both vocab and characters)
+export async function getPromptsByIds(ids: string[], type: string) {
+  if (isCharacterType(type)) {
+    const { geCharacterByIds } = await import("./character.actions");
+    return await geCharacterByIds(ids);
+  } else {
+    const { getVocabByIds } = await import("./vocabulary.actions");
+    return await getVocabByIds(ids);
+  }
 }
