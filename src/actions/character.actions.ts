@@ -1,6 +1,6 @@
 import { tokenizeKana } from "@/lib/helpers/tokenize-char";
-import hiraganaChars from "../../prisma/data/json/characters/hiragana-characters.json";
-import katakanaChars from "../../prisma/data/json/characters/katakana-characters.json";
+import hiraganaChars from "../prisma/data/json/characters/hiragana-characters.json";
+import katakanaChars from "../prisma/data/json/characters/katakana-characters.json";
 
 
 // ✅ Merge kana characters
@@ -114,7 +114,7 @@ export async function getCharacterByJapanese(japanese: string) {
 }
 
 
-import imageListJson from "../../prisma/data/kana-image-manifest.json";
+import imageListJson from "../prisma/data/kana-image-manifest.json";
 
 type KanaType = "hiragana" | "katakana";
 

@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack", 
-    "build": "prisma generate && next build",
+    "prisma:generate": "prisma generate --schema=src/prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema=src/prisma/schema.prisma",
+    "prisma:studio": "prisma studio --schema=src/prisma/schema.prisma",
+    "dev": "next dev --turbopack",
+    "build": "prisma generate --schema=src/prisma/schema.prisma && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "prisma": {
-    "seed": "ts-node --transpile-only prisma/seed.ts"
+    "seed": "ts-node --transpile-only src/prisma/seed.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.25.4",

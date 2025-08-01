@@ -4,9 +4,9 @@ import { toVocabType } from "@/lib/helpers/prompt";
 import { loadJLPTLevels } from "@/actions/jlpt-config.actions";
 
 // ✅ Import vocabulary JSON data
-import hiragana from "../../prisma/data/json/vocabulary/hiragana-words.json"
-import katakana from "../../prisma/data/json/vocabulary/katakana-words.json";
-import kanji from "../../prisma/data/json/vocabulary/kanji-words.json";
+import hiragana from "../prisma/data/json/vocabulary/hiragana-words.json"
+import katakana from "../prisma/data/json/vocabulary/katakana-words.json";
+import kanji from "../prisma/data/json/vocabulary/kanji-words.json";
 
 
 
